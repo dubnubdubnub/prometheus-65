@@ -136539,7 +136539,7 @@
 		(property "Reference" "U4"
 			(at 0 1.95 90)
 			(layer "B.SilkS")
-			(uuid "f4eaf754-c18d-4631-b307-dc7035f7cb1f")
+			(uuid "adf6744c-25ee-459d-8c6e-ffe81ce918ac")
 			(effects
 				(font
 					(size 1 1)
@@ -136551,7 +136551,7 @@
 		(property "Value" "TMR2652D"
 			(at 0 -1.95 90)
 			(layer "B.Fab")
-			(uuid "77e59ce7-2e08-404e-a75f-0c85dc892f4e")
+			(uuid "fb544ba6-e0f3-4494-bcae-be6740e81014")
 			(effects
 				(font
 					(size 1 1)
@@ -136564,7 +136564,7 @@
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "9e2bc6f2-5caf-4e26-ab8c-eb1b65b8d294")
+			(uuid "a81f1977-4709-4247-8885-3380fdee311b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -136577,7 +136577,7 @@
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
-			(uuid "f278d5bf-26aa-4b13-bcdd-0b71108d01bf")
+			(uuid "017eac04-d1e9-4ed4-8609-33ded4130606")
 			(effects
 				(font
 					(size 1.27 1.27)

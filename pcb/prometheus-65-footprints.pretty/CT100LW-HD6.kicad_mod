@@ -1,0 +1,306 @@
+(footprint "CT100LW-HD6"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Allegro CT100 DFN, 6 Pin (https://www.allegromicro.com/en/products/sense/linear-and-angular-position-sensor-ics/tmr-linear-sensor-ics/ct100), generated with kicad-footprint-generator ipc_noLead_generator.py")
+	(tags "Allegro DFN NoLead")
+	(property "Reference" "REF**"
+		(at 0 -1.7 0)
+		(layer "F.SilkS")
+		(uuid "5cdab313-c175-482f-930f-5fefdfc91866")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Allegro_CT100_DFN-6-1EP_1.5x1.5mm_P0.5mm_EP1.2x0.7mm"
+		(at 0 1.7 0)
+		(layer "F.Fab")
+		(uuid "9debd1e2-ca54-44f0-92c8-b7c24eb4583d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "214d8aae-d2ee-49de-9cef-0d2547946119")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0e7fe554-cdb6-425f-b55f-b45470c90753")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -0.671884 -0.86)
+		(end 0.86 -0.86)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6ba1e6f7-a5a1-45be-8f69-c74c47b5954b")
+	)
+	(fp_line
+		(start 0.86 0.86)
+		(end -0.86 0.86)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "75913d7b-fae2-47bd-a675-2542c9addbb4")
+	)
+	(fp_poly
+		(pts
+			(xy -0.97 -0.86) (xy -1.11 -1.05) (xy -0.83 -1.05)
+		)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.SilkS")
+		(uuid "750a70f8-e0b5-4532-87a7-d65a0f40e28a")
+	)
+	(fp_line
+		(start -1.38 -0.85)
+		(end -1 -0.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "8f5e4207-30d8-45f7-b6a6-ac0fa5684985")
+	)
+	(fp_line
+		(start -1.38 0.85)
+		(end -1.38 -0.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "e5d138ec-e6bd-40b4-b864-a3c71193efe9")
+	)
+	(fp_line
+		(start -1 -1)
+		(end 1 -1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "6ae9af13-6cde-435a-be71-05eb35185f24")
+	)
+	(fp_line
+		(start -1 -0.85)
+		(end -1 -1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "3d179324-83bf-4042-a697-138162d67d53")
+	)
+	(fp_line
+		(start -1 0.85)
+		(end -1.38 0.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "3cb2cd35-66d4-496e-932d-f28e435b51b1")
+	)
+	(fp_line
+		(start -1 1)
+		(end -1 0.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "04b35df4-de2d-40f7-931f-1c6ab9b65a9e")
+	)
+	(fp_line
+		(start 1 -1)
+		(end 1 -0.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "070ae0e9-6e22-4ffb-961b-5b12aae645a0")
+	)
+	(fp_line
+		(start 1 -0.85)
+		(end 1.38 -0.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "11717906-c31c-4dda-831c-0054e00faaea")
+	)
+	(fp_line
+		(start 1 0.85)
+		(end 1 1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f5f9ce33-d47a-44bf-96a2-9c9a442be6be")
+	)
+	(fp_line
+		(start 1 1)
+		(end -1 1)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "07de7e8a-d440-45cc-a147-d1fd2d375a25")
+	)
+	(fp_line
+		(start 1.38 -0.85)
+		(end 1.38 0.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "09019cf6-9028-4970-8bb6-4f2eefd8b5df")
+	)
+	(fp_line
+		(start 1.38 0.85)
+		(end 1 0.85)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "013df5f5-78bf-44f6-9406-6ff524345c37")
+	)
+	(fp_poly
+		(pts
+			(xy -0.375 -0.75) (xy 0.75 -0.75) (xy 0.75 0.75) (xy -0.75 0.75) (xy -0.75 -0.375)
+		)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "39b4eded-d5f7-40b5-9381-e6273b6553ac")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "7ab2b78d-7fa9-4c46-9177-cea72a9e91b1")
+		(effects
+			(font
+				(size 0.38 0.38)
+				(thickness 0.06)
+			)
+		)
+	)
+	(pad "" smd roundrect
+		(at -0.3 0)
+		(size 0.48 0.56)
+		(layers "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "b83f519d-e6c1-49b5-995c-6b6d723871cd")
+	)
+	(pad "" smd roundrect
+		(at 0.3 0)
+		(size 0.48 0.56)
+		(layers "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "88801f47-e6b6-4923-906c-e5d8182a51d3")
+	)
+	(pad "1" smd roundrect
+		(at -0.9625 -0.5)
+		(size 0.325 0.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "e2b142af-701a-4c8b-9edb-05f85ec4cf31")
+	)
+	(pad "2" smd roundrect
+		(at -0.9625 0)
+		(size 0.325 0.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "d5e32b27-8dd3-4436-bb1d-de535cc50a6c")
+	)
+	(pad "3" smd roundrect
+		(at -0.9625 0.5)
+		(size 0.325 0.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "91033f93-be31-4e81-9d02-2b4fedc7c099")
+	)
+	(pad "4" smd roundrect
+		(at 0.9625 0.5)
+		(size 0.325 0.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "d17cefa6-9f0b-4c9f-b0c8-a19ee46599fd")
+	)
+	(pad "5" smd roundrect
+		(at 0.9625 0)
+		(size 0.325 0.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "58fc51e4-43a8-455b-bc9d-ffd6986f4aa2")
+	)
+	(pad "6" smd roundrect
+		(at 0.9625 -0.5)
+		(size 0.325 0.2)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.25)
+		(uuid "3ecfb167-9f2d-41ea-b440-8363d657b8a2")
+	)
+	(pad "7" smd rect
+		(at 0 0)
+		(size 1.2 0.7)
+		(property pad_prop_heatsink)
+		(layers "F.Cu" "F.Mask")
+		(zone_connect 2)
+		(uuid "b02a58d4-574a-4916-86b2-82e48789514e")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/prometheus-65-models.3dshapes/CT100LW-HD6.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
