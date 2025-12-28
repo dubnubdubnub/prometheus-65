@@ -4593,7 +4593,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "23a844a6-a920-4903-8752-ddd21fddfd89")
-		(property "Reference" "#PWR0220"
+		(property "Reference" "#PWR01"
 			(at 44.45 49.53 0)
 			(effects
 				(font
@@ -4643,7 +4643,7 @@
 		(instances
 			(project ""
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544"
-					(reference "#PWR0220")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -5242,7 +5242,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3c2e819a-6f92-4fa5-9d88-9c914fa93176")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR03"
 			(at 45.72 134.62 0)
 			(effects
 				(font
@@ -5293,7 +5293,7 @@
 		(instances
 			(project ""
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544"
-					(reference "#PWR02")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -7627,7 +7627,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b7ff7609-337b-46d8-acc1-90a5d2a65388")
-		(property "Reference" "#PWR0221"
+		(property "Reference" "#PWR04"
 			(at 44.45 135.89 0)
 			(effects
 				(font
@@ -7677,7 +7677,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544"
-					(reference "#PWR0221")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -8053,7 +8053,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d92ac3f6-104e-4550-a4f4-27692c15bedb")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR02"
 			(at 17.78 132.08 0)
 			(effects
 				(font
@@ -8104,7 +8104,7 @@
 		(instances
 			(project ""
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544"
-					(reference "#PWR01")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)

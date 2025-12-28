@@ -530,52 +530,27 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "LED:SK6812MINI"
-			(pin_names
-				(offset 0.254)
-			)
+		(symbol "PCM_marbastlib-various:SK6812MINI-E"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "D"
-				(at 5.08 5.715 0)
+			(property "Reference" "LED"
+				(at 2.54 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify right bottom)
 				)
 			)
-			(property "Value" "SK6812MINI"
-				(at 1.27 -5.715 0)
+			(property "Value" "SK6812MINI-E"
+				(at 7.62 -6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 				)
 			)
-			(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-				(at 1.27 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-				(at 2.54 -9.525 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "RGB LED with integrated controller"
+			(property "Footprint" "PCM_marbastlib-various:LED_6028R"
 				(at 0 0 0)
 				(effects
 					(font
@@ -584,7 +559,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "RGB LED NeoPixel Mini addressable"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(effects
 					(font
@@ -593,7 +568,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "LED*SK6812MINI*PLCC*3.5x3.5mm*P1.75mm*"
+			(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -602,7 +577,16 @@
 					(hide yes)
 				)
 			)
-			(symbol "SK6812MINI_0_0"
+			(property "ki_keywords" "reverse mount led revmount rgb"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SK6812MINI-E_0_0"
 				(text "RGB"
 					(at 2.286 -4.191 0)
 					(effects
@@ -612,7 +596,7 @@
 					)
 				)
 			)
-			(symbol "SK6812MINI_0_1"
+			(symbol "SK6812MINI-E_0_1"
 				(polyline
 					(pts
 						(xy 1.27 -2.54) (xy 1.778 -2.54)
@@ -709,7 +693,7 @@
 					)
 				)
 			)
-			(symbol "SK6812MINI_1_1"
+			(symbol "SK6812MINI-E_1_1"
 				(pin input line
 					(at -7.62 0 0)
 					(length 2.54)
@@ -738,7 +722,7 @@
 							)
 						)
 					)
-					(number "4"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -756,7 +740,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -774,7 +758,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1079,7 +1063,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0272a093-cb35-42bc-8b9e-4d81286b2d6b")
-		(property "Reference" "#PWR0536"
+		(property "Reference" "#PWR0346"
 			(at 149.86 102.87 0)
 			(effects
 				(font
@@ -1129,7 +1113,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0536")
+					(reference "#PWR0346")
 					(unit 1)
 				)
 			)
@@ -1146,7 +1130,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "02fe901c-1a5f-4526-8682-4de951d69d91")
-		(property "Reference" "#PWR0500"
+		(property "Reference" "#PWR0310"
 			(at 88.9 67.31 0)
 			(effects
 				(font
@@ -1196,14 +1180,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0500")
+					(reference "#PWR0310")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 73.66 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1211,43 +1195,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "032ed66f-5df1-4a32-a118-d2413e40ffdb")
-		(property "Reference" "D3"
-			(at 73.66 19.304 0)
+		(property "Reference" "LED3"
+			(at 76.2 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 73.66 21.844 0)
+		(property "Value" "SK6812MINI-E"
+			(at 81.28 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 74.93 44.45 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 73.66 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 76.2 46.355 0)
+			(at 73.66 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 73.66 36.83 0)
 			(effects
 				(font
@@ -1271,7 +1253,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D3")
+					(reference "LED3")
 					(unit 1)
 				)
 			)
@@ -1288,7 +1270,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "035e802c-4d03-4f94-bebe-b567f8d1cfa7")
-		(property "Reference" "#PWR0581"
+		(property "Reference" "#PWR0391"
 			(at 104.14 156.21 0)
 			(effects
 				(font
@@ -1338,7 +1320,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0581")
+					(reference "#PWR0391")
 					(unit 1)
 				)
 			)
@@ -1354,7 +1336,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "04f12378-4418-4097-9994-7046c50c1b73")
-		(property "Reference" "#PWR0483"
+		(property "Reference" "#PWR0293"
 			(at 73.66 50.8 0)
 			(effects
 				(font
@@ -1404,14 +1386,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0483")
+					(reference "#PWR0293")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 58.42 142.24 0)
 		(mirror y)
 		(unit 1)
@@ -1420,43 +1402,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "07803596-d912-4685-95ca-5eca63f69f28")
-		(property "Reference" "D50"
-			(at 58.42 124.46 0)
+		(property "Reference" "LED50"
+			(at 55.88 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 58.42 127 0)
+		(property "Value" "SK6812MINI-E"
+			(at 50.8 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 57.15 149.86 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 58.42 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 55.88 151.765 0)
+			(at 58.42 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 58.42 142.24 0)
 			(effects
 				(font
@@ -1480,7 +1460,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D50")
+					(reference "LED50")
 					(unit 1)
 				)
 			)
@@ -1496,7 +1476,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "088182a9-56fb-4e78-a7f4-38d8e40f1ebb")
-		(property "Reference" "#PWR0535"
+		(property "Reference" "#PWR0345"
 			(at 134.62 102.87 0)
 			(effects
 				(font
@@ -1546,14 +1526,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0535")
+					(reference "#PWR0345")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 134.62 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1561,43 +1541,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "08e07cf2-c174-4118-a0ff-419222f7b0c5")
-		(property "Reference" "D7"
-			(at 134.62 19.304 0)
+		(property "Reference" "LED7"
+			(at 137.16 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 134.62 21.844 0)
+		(property "Value" "SK6812MINI-E"
+			(at 142.24 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 135.89 44.45 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 134.62 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 137.16 46.355 0)
+			(at 134.62 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 134.62 36.83 0)
 			(effects
 				(font
@@ -1621,14 +1599,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D7")
+					(reference "LED7")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 271.78 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1636,43 +1614,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0bcaf481-660d-493d-a968-6ea513cd23d4")
-		(property "Reference" "D48"
-			(at 271.78 89.154 0)
+		(property "Reference" "LED48"
+			(at 274.32 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 271.78 91.694 0)
+		(property "Value" "SK6812MINI-E"
+			(at 279.4 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 273.05 114.3 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 271.78 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 274.32 116.205 0)
+			(at 271.78 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 271.78 106.68 0)
 			(effects
 				(font
@@ -1696,7 +1672,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D48")
+					(reference "LED48")
 					(unit 1)
 				)
 			)
@@ -1712,7 +1688,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0db49a6c-1e34-4f34-b701-af521307e105")
-		(property "Reference" "#PWR0466"
+		(property "Reference" "#PWR0276"
 			(at 73.66 33.02 0)
 			(effects
 				(font
@@ -1762,7 +1738,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0466")
+					(reference "#PWR0276")
 					(unit 1)
 				)
 			)
@@ -1779,7 +1755,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0f506b13-a20a-4ac7-994c-a791370708b2")
-		(property "Reference" "#PWR0591"
+		(property "Reference" "#PWR0401"
 			(at 256.54 156.21 0)
 			(effects
 				(font
@@ -1829,7 +1805,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0591")
+					(reference "#PWR0401")
 					(unit 1)
 				)
 			)
@@ -1845,7 +1821,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1177f4bd-fd57-40e2-a352-d78ea807a103")
-		(property "Reference" "#PWR0478"
+		(property "Reference" "#PWR0288"
 			(at 256.54 33.02 0)
 			(effects
 				(font
@@ -1895,14 +1871,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0478")
+					(reference "#PWR0288")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 104.14 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1910,43 +1886,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "12dae64b-1d29-434d-b374-4d2f8caa69d0")
-		(property "Reference" "D5"
-			(at 104.14 19.05 0)
+		(property "Reference" "LED5"
+			(at 106.68 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 104.14 21.59 0)
+		(property "Value" "SK6812MINI-E"
+			(at 111.76 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 105.41 44.45 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 104.14 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 106.68 46.355 0)
+			(at 104.14 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 104.14 36.83 0)
 			(effects
 				(font
@@ -1970,7 +1944,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D5")
+					(reference "LED5")
 					(unit 1)
 				)
 			)
@@ -1986,7 +1960,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "15713c13-72f6-48e2-8b67-7af9ca63d9e6")
-		(property "Reference" "#PWR0595"
+		(property "Reference" "#PWR0405"
 			(at 93.98 175.26 0)
 			(effects
 				(font
@@ -2037,14 +2011,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0595")
+					(reference "#PWR0405")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 165.1 142.24 0)
 		(mirror y)
 		(unit 1)
@@ -2053,43 +2027,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "15c33cb2-f8c0-4fb2-bff4-0ecb1d78857f")
-		(property "Reference" "D57"
-			(at 165.1 124.46 0)
+		(property "Reference" "LED57"
+			(at 162.56 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 165.1 127 0)
+		(property "Value" "SK6812MINI-E"
+			(at 157.48 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 163.83 149.86 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 165.1 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 162.56 151.765 0)
+			(at 165.1 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 165.1 142.24 0)
 			(effects
 				(font
@@ -2113,7 +2085,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D57")
+					(reference "LED57")
 					(unit 1)
 				)
 			)
@@ -2233,7 +2205,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "182092ab-5a9e-422b-88da-c5f1a92120c6")
-		(property "Reference" "#PWR0566"
+		(property "Reference" "#PWR0376"
 			(at 119.38 138.43 0)
 			(effects
 				(font
@@ -2283,7 +2255,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0566")
+					(reference "#PWR0376")
 					(unit 1)
 				)
 			)
@@ -2300,7 +2272,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "198075c9-ea42-48dc-b8b2-4c9c61ca9f20")
-		(property "Reference" "#PWR0578"
+		(property "Reference" "#PWR0388"
 			(at 58.42 156.21 0)
 			(effects
 				(font
@@ -2350,7 +2322,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0578")
+					(reference "#PWR0388")
 					(unit 1)
 				)
 			)
@@ -2367,7 +2339,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1cdaa3d4-5b39-49e4-85af-f16b3f6cc95f")
-		(property "Reference" "#PWR0511"
+		(property "Reference" "#PWR0321"
 			(at 256.54 67.31 0)
 			(effects
 				(font
@@ -2417,7 +2389,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0511")
+					(reference "#PWR0321")
 					(unit 1)
 				)
 			)
@@ -2433,7 +2405,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1e6190de-57e9-48d4-af90-0ecff610b4f6")
-		(property "Reference" "#PWR0556"
+		(property "Reference" "#PWR0366"
 			(at 210.82 120.65 0)
 			(effects
 				(font
@@ -2483,14 +2455,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0556")
+					(reference "#PWR0366")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 226.06 71.12 0)
 		(mirror y)
 		(unit 1)
@@ -2499,43 +2471,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1fc5d44a-6202-42a5-be61-e53b4ddcf321")
-		(property "Reference" "D29"
-			(at 226.06 53.594 0)
+		(property "Reference" "LED29"
+			(at 223.52 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 226.06 56.134 0)
+		(property "Value" "SK6812MINI-E"
+			(at 218.44 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 224.79 78.74 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 226.06 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 223.52 80.645 0)
+			(at 226.06 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 226.06 71.12 0)
 			(effects
 				(font
@@ -2559,7 +2529,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D29")
+					(reference "LED29")
 					(unit 1)
 				)
 			)
@@ -2575,7 +2545,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "22b667b8-2340-4d10-9c3c-2696d8bf6dc5")
-		(property "Reference" "#PWR0539"
+		(property "Reference" "#PWR0349"
 			(at 195.58 102.87 0)
 			(effects
 				(font
@@ -2625,14 +2595,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0539")
+					(reference "#PWR0349")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 241.3 142.24 0)
 		(mirror y)
 		(unit 1)
@@ -2641,43 +2611,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "22f4b373-c387-4eaa-823d-c4d60bd84038")
-		(property "Reference" "D62"
-			(at 241.3 124.714 0)
+		(property "Reference" "LED62"
+			(at 238.76 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 241.3 127.254 0)
+		(property "Value" "SK6812MINI-E"
+			(at 233.68 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 240.03 149.86 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 241.3 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 238.76 151.765 0)
+			(at 241.3 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 241.3 142.24 0)
 			(effects
 				(font
@@ -2701,14 +2669,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D62")
+					(reference "LED62")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 165.1 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2716,43 +2684,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "24030a6a-6fc1-4ec9-aa7e-0b735cc1989a")
-		(property "Reference" "D41"
-			(at 165.1 89.154 0)
+		(property "Reference" "LED41"
+			(at 167.64 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 165.1 91.694 0)
+		(property "Value" "SK6812MINI-E"
+			(at 172.72 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 166.37 114.3 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 165.1 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 167.64 116.205 0)
+			(at 165.1 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 165.1 106.68 0)
 			(effects
 				(font
@@ -2776,14 +2742,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D41")
+					(reference "LED41")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 43.18 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2791,43 +2757,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2540404e-c01f-487a-ad36-48dfedc8244b")
-		(property "Reference" "D1"
-			(at 43.18 19.304 0)
+		(property "Reference" "LED1"
+			(at 45.72 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 43.18 21.844 0)
+		(property "Value" "SK6812MINI-E"
+			(at 50.8 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 44.45 44.45 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 43.18 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 45.72 46.355 0)
+			(at 43.18 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 43.18 36.83 0)
 			(effects
 				(font
@@ -2851,14 +2815,14 @@
 		(instances
 			(project ""
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D1")
+					(reference "LED1")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 73.66 71.12 0)
 		(mirror y)
 		(unit 1)
@@ -2867,43 +2831,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "269b476e-d54b-4025-b2a0-5b327fafe3a6")
-		(property "Reference" "D19"
-			(at 73.66 53.594 0)
+		(property "Reference" "LED19"
+			(at 71.12 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 73.66 56.134 0)
+		(property "Value" "SK6812MINI-E"
+			(at 66.04 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 72.39 78.74 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 73.66 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 71.12 80.645 0)
+			(at 73.66 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 73.66 71.12 0)
 			(effects
 				(font
@@ -2927,7 +2889,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D19")
+					(reference "LED19")
 					(unit 1)
 				)
 			)
@@ -2943,7 +2905,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "27d21253-4375-47db-8d20-8dc7290ff8ce")
-		(property "Reference" "#PWR0476"
+		(property "Reference" "#PWR0286"
 			(at 226.06 33.02 0)
 			(effects
 				(font
@@ -2993,7 +2955,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0476")
+					(reference "#PWR0286")
 					(unit 1)
 				)
 			)
@@ -3009,7 +2971,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2840d07d-a105-4855-952a-818750b942d2")
-		(property "Reference" "#PWR0494"
+		(property "Reference" "#PWR0304"
 			(at 241.3 50.8 0)
 			(effects
 				(font
@@ -3059,7 +3021,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0494")
+					(reference "#PWR0304")
 					(unit 1)
 				)
 			)
@@ -3076,7 +3038,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2889d197-089a-462e-b62e-c0483c04a3d1")
-		(property "Reference" "#PWR0587"
+		(property "Reference" "#PWR0397"
 			(at 195.58 156.21 0)
 			(effects
 				(font
@@ -3126,14 +3088,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0587")
+					(reference "#PWR0397")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 58.42 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3141,43 +3103,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2c0ce1b3-46f2-4d0f-b976-2f9366c8de23")
-		(property "Reference" "D2"
-			(at 58.42 19.05 0)
+		(property "Reference" "LED2"
+			(at 60.96 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 58.42 21.59 0)
+		(property "Value" "SK6812MINI-E"
+			(at 66.04 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 59.69 44.45 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 58.42 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 60.96 46.355 0)
+			(at 58.42 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 58.42 36.83 0)
 			(effects
 				(font
@@ -3201,14 +3161,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D2")
+					(reference "LED2")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 149.86 142.24 0)
 		(mirror y)
 		(unit 1)
@@ -3217,43 +3177,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2ea3fbf1-f9ad-40c7-bc67-391314fd8aa6")
-		(property "Reference" "D56"
-			(at 149.86 124.714 0)
+		(property "Reference" "LED56"
+			(at 147.32 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 149.86 127.254 0)
+		(property "Value" "SK6812MINI-E"
+			(at 142.24 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 148.59 149.86 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 149.86 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 147.32 151.765 0)
+			(at 149.86 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 149.86 142.24 0)
 			(effects
 				(font
@@ -3277,7 +3235,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D56")
+					(reference "LED56")
 					(unit 1)
 				)
 			)
@@ -3293,7 +3251,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2ef48c53-74a2-4c53-a304-0633dce8f466")
-		(property "Reference" "#PWR0559"
+		(property "Reference" "#PWR0369"
 			(at 256.54 120.65 0)
 			(effects
 				(font
@@ -3343,14 +3301,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0559")
+					(reference "#PWR0369")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 195.58 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3358,43 +3316,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2f9bf137-8872-41f9-9837-5b0689612472")
-		(property "Reference" "D11"
-			(at 195.58 19.05 0)
+		(property "Reference" "LED11"
+			(at 198.12 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 195.58 21.59 0)
+		(property "Value" "SK6812MINI-E"
+			(at 203.2 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 196.85 44.45 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 195.58 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 198.12 46.355 0)
+			(at 195.58 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 195.58 36.83 0)
 			(effects
 				(font
@@ -3418,7 +3374,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D11")
+					(reference "LED11")
 					(unit 1)
 				)
 			)
@@ -3435,7 +3391,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2fd53c05-4522-48a4-b6ca-a6ab6229236d")
-		(property "Reference" "#PWR0507"
+		(property "Reference" "#PWR0317"
 			(at 195.58 67.31 0)
 			(effects
 				(font
@@ -3485,14 +3441,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0507")
+					(reference "#PWR0317")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 43.18 142.24 0)
 		(mirror y)
 		(unit 1)
@@ -3501,43 +3457,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3022a9fc-02a3-4293-acbc-114ebd3f081e")
-		(property "Reference" "D49"
-			(at 43.18 124.714 0)
+		(property "Reference" "LED49"
+			(at 40.64 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 43.18 127.254 0)
+		(property "Value" "SK6812MINI-E"
+			(at 35.56 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 41.91 149.86 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 43.18 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 40.64 151.765 0)
+			(at 43.18 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 43.18 142.24 0)
 			(effects
 				(font
@@ -3561,7 +3515,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D49")
+					(reference "LED49")
 					(unit 1)
 				)
 			)
@@ -3577,7 +3531,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "30bcd562-5471-4520-a00c-105bd10932f4")
-		(property "Reference" "#PWR0544"
+		(property "Reference" "#PWR0354"
 			(at 271.78 102.87 0)
 			(effects
 				(font
@@ -3627,14 +3581,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0544")
+					(reference "#PWR0354")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 256.54 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3642,43 +3596,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "31810453-10b1-45f3-8e5d-5c351389767f")
-		(property "Reference" "D47"
-			(at 256.54 88.9 0)
+		(property "Reference" "LED47"
+			(at 259.08 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 256.54 91.44 0)
+		(property "Value" "SK6812MINI-E"
+			(at 264.16 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 257.81 114.3 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 256.54 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 259.08 116.205 0)
+			(at 256.54 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 256.54 106.68 0)
 			(effects
 				(font
@@ -3702,14 +3654,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D47")
+					(reference "LED47")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 58.42 71.12 0)
 		(mirror y)
 		(unit 1)
@@ -3718,43 +3670,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "32e5e011-b726-4aa0-bd82-4980885569e3")
-		(property "Reference" "D18"
-			(at 58.42 53.34 0)
+		(property "Reference" "LED18"
+			(at 55.88 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 58.42 55.88 0)
+		(property "Value" "SK6812MINI-E"
+			(at 50.8 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 57.15 78.74 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 58.42 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 55.88 80.645 0)
+			(at 58.42 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 58.42 71.12 0)
 			(effects
 				(font
@@ -3778,7 +3728,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D18")
+					(reference "LED18")
 					(unit 1)
 				)
 			)
@@ -3794,7 +3744,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3355e2e3-0665-4888-83e2-6b6fe204df19")
-		(property "Reference" "#PWR0553"
+		(property "Reference" "#PWR0363"
 			(at 165.1 120.65 0)
 			(effects
 				(font
@@ -3844,7 +3794,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0553")
+					(reference "#PWR0363")
 					(unit 1)
 				)
 			)
@@ -3860,7 +3810,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "338f7bb7-3ceb-4f35-ac74-28862944c9b9")
-		(property "Reference" "#PWR0598"
+		(property "Reference" "#PWR0408"
 			(at 107.95 187.96 0)
 			(effects
 				(font
@@ -3910,14 +3860,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0598")
+					(reference "#PWR0408")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 241.3 71.12 0)
 		(mirror y)
 		(unit 1)
@@ -3926,43 +3876,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "340f174d-ab77-4f37-aeed-84f510e72034")
-		(property "Reference" "D30"
-			(at 241.3 53.594 0)
+		(property "Reference" "LED30"
+			(at 238.76 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 241.3 56.134 0)
+		(property "Value" "SK6812MINI-E"
+			(at 233.68 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 240.03 78.74 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 241.3 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 238.76 80.645 0)
+			(at 241.3 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 241.3 71.12 0)
 			(effects
 				(font
@@ -3986,7 +3934,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D30")
+					(reference "LED30")
 					(unit 1)
 				)
 			)
@@ -4002,7 +3950,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "35ef81f6-43b3-472c-8ca6-295a014f2709")
-		(property "Reference" "#PWR0597"
+		(property "Reference" "#PWR0407"
 			(at 76.2 187.96 0)
 			(effects
 				(font
@@ -4052,7 +4000,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0597")
+					(reference "#PWR0407")
 					(unit 1)
 				)
 			)
@@ -4068,7 +4016,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "36780dd3-a03a-4c2e-a0b9-754c152f4e37")
-		(property "Reference" "#PWR0551"
+		(property "Reference" "#PWR0361"
 			(at 134.62 120.65 0)
 			(effects
 				(font
@@ -4118,7 +4066,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0551")
+					(reference "#PWR0361")
 					(unit 1)
 				)
 			)
@@ -4134,7 +4082,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "36eb3d8e-c124-4361-bfda-d99d1bcd7032")
-		(property "Reference" "#PWR0555"
+		(property "Reference" "#PWR0365"
 			(at 195.58 120.65 0)
 			(effects
 				(font
@@ -4184,7 +4132,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0555")
+					(reference "#PWR0365")
 					(unit 1)
 				)
 			)
@@ -4200,7 +4148,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "37b744ff-556d-4c2c-9a54-23d3c7d9ffbf")
-		(property "Reference" "#PWR0540"
+		(property "Reference" "#PWR0350"
 			(at 210.82 102.87 0)
 			(effects
 				(font
@@ -4250,7 +4198,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0540")
+					(reference "#PWR0350")
 					(unit 1)
 				)
 			)
@@ -4266,7 +4214,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3b53660b-9007-4139-b450-0ab4c009d90c")
-		(property "Reference" "#PWR0474"
+		(property "Reference" "#PWR0284"
 			(at 195.58 33.02 0)
 			(effects
 				(font
@@ -4316,7 +4264,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0474")
+					(reference "#PWR0284")
 					(unit 1)
 				)
 			)
@@ -4332,7 +4280,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3b9bc0dc-512f-4ad3-8b51-1bb9f14c93f0")
-		(property "Reference" "#PWR0467"
+		(property "Reference" "#PWR0277"
 			(at 88.9 33.02 0)
 			(effects
 				(font
@@ -4382,7 +4330,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0467")
+					(reference "#PWR0277")
 					(unit 1)
 				)
 			)
@@ -4457,7 +4405,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 104.14 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4465,43 +4413,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3fcaf279-8b49-4084-83fe-71eb8e7bcf93")
-		(property "Reference" "D37"
-			(at 104.14 88.9 0)
+		(property "Reference" "LED37"
+			(at 106.68 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 104.14 91.44 0)
+		(property "Value" "SK6812MINI-E"
+			(at 111.76 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 105.41 114.3 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 104.14 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 106.68 116.205 0)
+			(at 104.14 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 104.14 106.68 0)
 			(effects
 				(font
@@ -4525,7 +4471,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D37")
+					(reference "LED37")
 					(unit 1)
 				)
 			)
@@ -4542,7 +4488,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3ff1ac60-517b-4033-b29a-7ef1d17dc5a5")
-		(property "Reference" "#PWR0586"
+		(property "Reference" "#PWR0396"
 			(at 180.34 156.21 0)
 			(effects
 				(font
@@ -4592,7 +4538,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0586")
+					(reference "#PWR0396")
 					(unit 1)
 				)
 			)
@@ -4609,7 +4555,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "40bc5cbe-4ece-4bb8-be91-69f1cf41f179")
-		(property "Reference" "#PWR0502"
+		(property "Reference" "#PWR0312"
 			(at 119.38 67.31 0)
 			(effects
 				(font
@@ -4659,7 +4605,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0502")
+					(reference "#PWR0312")
 					(unit 1)
 				)
 			)
@@ -4675,7 +4621,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "40db9107-ded4-482d-8d76-7d29b63a7220")
-		(property "Reference" "#PWR0546"
+		(property "Reference" "#PWR0356"
 			(at 58.42 120.65 0)
 			(effects
 				(font
@@ -4725,7 +4671,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0546")
+					(reference "#PWR0356")
 					(unit 1)
 				)
 			)
@@ -4741,7 +4687,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "40f1b1ef-2e13-4b9d-b973-7989d9fddd82")
-		(property "Reference" "#PWR0479"
+		(property "Reference" "#PWR0289"
 			(at 271.78 33.02 0)
 			(effects
 				(font
@@ -4791,7 +4737,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0479")
+					(reference "#PWR0289")
 					(unit 1)
 				)
 			)
@@ -4807,7 +4753,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4198de20-a911-4c52-9de3-a524b5d95757")
-		(property "Reference" "#PWR0465"
+		(property "Reference" "#PWR0275"
 			(at 58.42 33.02 0)
 			(effects
 				(font
@@ -4857,14 +4803,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0465")
+					(reference "#PWR0275")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 119.38 142.24 0)
 		(mirror y)
 		(unit 1)
@@ -4873,43 +4819,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "41c5f8ad-b203-4458-83e0-e3d4341753f8")
-		(property "Reference" "D54"
-			(at 119.38 124.46 0)
+		(property "Reference" "LED54"
+			(at 116.84 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 119.38 127 0)
+		(property "Value" "SK6812MINI-E"
+			(at 111.76 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 118.11 149.86 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 119.38 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 116.84 151.765 0)
+			(at 119.38 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 119.38 142.24 0)
 			(effects
 				(font
@@ -4933,14 +4877,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D54")
+					(reference "LED54")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 119.38 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4948,43 +4892,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "42980cf3-fd0c-4157-b11a-bd10b847d1c9")
-		(property "Reference" "D6"
-			(at 119.38 19.304 0)
+		(property "Reference" "LED6"
+			(at 121.92 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 119.38 21.844 0)
+		(property "Value" "SK6812MINI-E"
+			(at 127 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 120.65 44.45 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 119.38 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 121.92 46.355 0)
+			(at 119.38 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 119.38 36.83 0)
 			(effects
 				(font
@@ -5008,7 +4950,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D6")
+					(reference "LED6")
 					(unit 1)
 				)
 			)
@@ -5025,7 +4967,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4559511a-7e71-4e9e-9eaf-357c26a409ab")
-		(property "Reference" "#PWR0519"
+		(property "Reference" "#PWR0329"
 			(at 134.62 85.09 0)
 			(effects
 				(font
@@ -5075,7 +5017,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0519")
+					(reference "#PWR0329")
 					(unit 1)
 				)
 			)
@@ -5091,7 +5033,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "482d18c0-8cd4-4e4c-a7e2-caa1f0302166")
-		(property "Reference" "#PWR0537"
+		(property "Reference" "#PWR0347"
 			(at 165.1 102.87 0)
 			(effects
 				(font
@@ -5141,7 +5083,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0537")
+					(reference "#PWR0347")
 					(unit 1)
 				)
 			)
@@ -5157,7 +5099,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "48eb18f3-1bba-43be-9969-0115d80b2c4c")
-		(property "Reference" "#PWR0491"
+		(property "Reference" "#PWR0301"
 			(at 195.58 50.8 0)
 			(effects
 				(font
@@ -5207,7 +5149,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0491")
+					(reference "#PWR0301")
 					(unit 1)
 				)
 			)
@@ -5224,7 +5166,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "49fe70f4-6297-4cbc-a004-7446f93c7595")
-		(property "Reference" "#PWR0565"
+		(property "Reference" "#PWR0375"
 			(at 104.14 138.43 0)
 			(effects
 				(font
@@ -5274,7 +5216,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0565")
+					(reference "#PWR0375")
 					(unit 1)
 				)
 			)
@@ -5290,7 +5232,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4aa80450-2bb4-41e2-b9c0-3bd58edb904f")
-		(property "Reference" "#PWR0533"
+		(property "Reference" "#PWR0343"
 			(at 104.14 102.87 0)
 			(effects
 				(font
@@ -5340,14 +5282,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0533")
+					(reference "#PWR0343")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 226.06 142.24 0)
 		(mirror y)
 		(unit 1)
@@ -5356,43 +5298,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4bb391d5-b427-4630-8ac0-92d69c07c1d1")
-		(property "Reference" "D61"
-			(at 226.06 124.714 0)
+		(property "Reference" "LED61"
+			(at 223.52 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 226.06 127.254 0)
+		(property "Value" "SK6812MINI-E"
+			(at 218.44 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 224.79 149.86 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 226.06 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 223.52 151.765 0)
+			(at 226.06 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 226.06 142.24 0)
 			(effects
 				(font
@@ -5416,7 +5356,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D61")
+					(reference "LED61")
 					(unit 1)
 				)
 			)
@@ -5433,7 +5373,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4c9d21d3-3e72-4ade-ab96-d2d94941a60e")
-		(property "Reference" "#PWR0516"
+		(property "Reference" "#PWR0326"
 			(at 88.9 85.09 0)
 			(effects
 				(font
@@ -5483,14 +5423,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0516")
+					(reference "#PWR0326")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 271.78 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5498,43 +5438,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4d4e8aee-1e91-46a4-8b52-556c1254282d")
-		(property "Reference" "D16"
-			(at 271.78 19.304 0)
+		(property "Reference" "LED16"
+			(at 274.32 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 271.78 21.844 0)
+		(property "Value" "SK6812MINI-E"
+			(at 279.4 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 273.05 44.45 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 271.78 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 274.32 46.355 0)
+			(at 271.78 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 271.78 36.83 0)
 			(effects
 				(font
@@ -5558,14 +5496,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D16")
+					(reference "LED16")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 88.9 142.24 0)
 		(mirror y)
 		(unit 1)
@@ -5574,43 +5512,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4d62d1af-361b-44a4-ac00-12dbdbc47e55")
-		(property "Reference" "D52"
-			(at 88.9 124.714 0)
+		(property "Reference" "LED52"
+			(at 86.36 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 88.9 127.254 0)
+		(property "Value" "SK6812MINI-E"
+			(at 81.28 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 87.63 149.86 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 88.9 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 86.36 151.765 0)
+			(at 88.9 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 88.9 142.24 0)
 			(effects
 				(font
@@ -5634,7 +5570,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D52")
+					(reference "LED52")
 					(unit 1)
 				)
 			)
@@ -5650,7 +5586,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4e191126-d9c0-4c80-84fd-8743f3a66eea")
-		(property "Reference" "#PWR0543"
+		(property "Reference" "#PWR0353"
 			(at 256.54 102.87 0)
 			(effects
 				(font
@@ -5700,7 +5636,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0543")
+					(reference "#PWR0353")
 					(unit 1)
 				)
 			)
@@ -5716,7 +5652,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4e32c0e1-d783-42e7-9488-6d5196417888")
-		(property "Reference" "#PWR0486"
+		(property "Reference" "#PWR0296"
 			(at 119.38 50.8 0)
 			(effects
 				(font
@@ -5766,14 +5702,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0486")
+					(reference "#PWR0296")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 180.34 71.12 0)
 		(mirror y)
 		(unit 1)
@@ -5782,43 +5718,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4e6529d8-5e50-4264-b62d-26e9af4930e8")
-		(property "Reference" "D26"
-			(at 180.34 53.594 0)
+		(property "Reference" "LED26"
+			(at 177.8 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 180.34 56.134 0)
+		(property "Value" "SK6812MINI-E"
+			(at 172.72 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 179.07 78.74 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 180.34 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 177.8 80.645 0)
+			(at 180.34 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 180.34 71.12 0)
 			(effects
 				(font
@@ -5842,7 +5776,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D26")
+					(reference "LED26")
 					(unit 1)
 				)
 			)
@@ -5859,7 +5793,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4fadfbfa-2bb4-4a20-9b82-3481c6feaeb6")
-		(property "Reference" "#PWR0582"
+		(property "Reference" "#PWR0392"
 			(at 119.38 156.21 0)
 			(effects
 				(font
@@ -5909,14 +5843,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0582")
+					(reference "#PWR0392")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 73.66 142.24 0)
 		(mirror y)
 		(unit 1)
@@ -5925,43 +5859,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4fc22570-27f2-45ac-9eb2-6e15cb46ba58")
-		(property "Reference" "D51"
-			(at 73.66 124.714 0)
+		(property "Reference" "LED51"
+			(at 71.12 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 73.66 127.254 0)
+		(property "Value" "SK6812MINI-E"
+			(at 66.04 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 72.39 149.86 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 73.66 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 71.12 151.765 0)
+			(at 73.66 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 73.66 142.24 0)
 			(effects
 				(font
@@ -5985,7 +5917,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D51")
+					(reference "LED51")
 					(unit 1)
 				)
 			)
@@ -6002,7 +5934,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "50377c76-b47f-4e67-9df0-471a4bbd1b7e")
-		(property "Reference" "#PWR0501"
+		(property "Reference" "#PWR0311"
 			(at 104.14 67.31 0)
 			(effects
 				(font
@@ -6052,7 +5984,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0501")
+					(reference "#PWR0311")
 					(unit 1)
 				)
 			)
@@ -6069,7 +6001,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "50e8f56a-09a7-4c85-8981-b3184843f522")
-		(property "Reference" "#PWR0588"
+		(property "Reference" "#PWR0398"
 			(at 210.82 156.21 0)
 			(effects
 				(font
@@ -6119,14 +6051,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0588")
+					(reference "#PWR0398")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 195.58 71.12 0)
 		(mirror y)
 		(unit 1)
@@ -6135,43 +6067,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "54422a1d-3ded-4490-b2e3-12bd14e0cd67")
-		(property "Reference" "D27"
-			(at 195.58 53.594 0)
+		(property "Reference" "LED27"
+			(at 193.04 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 195.58 56.134 0)
+		(property "Value" "SK6812MINI-E"
+			(at 187.96 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 194.31 78.74 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 195.58 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 193.04 80.645 0)
+			(at 195.58 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 195.58 71.12 0)
 			(effects
 				(font
@@ -6195,7 +6125,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D27")
+					(reference "LED27")
 					(unit 1)
 				)
 			)
@@ -6211,7 +6141,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "555ca859-8bb9-4141-a197-96bff5e3814e")
-		(property "Reference" "#PWR0489"
+		(property "Reference" "#PWR0299"
 			(at 165.1 50.8 0)
 			(effects
 				(font
@@ -6261,7 +6191,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0489")
+					(reference "#PWR0299")
 					(unit 1)
 				)
 			)
@@ -6374,7 +6304,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 104.14 71.12 0)
 		(mirror y)
 		(unit 1)
@@ -6383,43 +6313,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "593ca613-b321-4ef1-b3cc-ea972022d7d4")
-		(property "Reference" "D21"
-			(at 104.14 53.594 0)
+		(property "Reference" "LED21"
+			(at 101.6 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 104.14 56.134 0)
+		(property "Value" "SK6812MINI-E"
+			(at 96.52 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 102.87 78.74 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 104.14 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 101.6 80.645 0)
+			(at 104.14 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 104.14 71.12 0)
 			(effects
 				(font
@@ -6443,7 +6371,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D21")
+					(reference "LED21")
 					(unit 1)
 				)
 			)
@@ -6459,7 +6387,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "599df272-bbdd-4f46-819b-e6612b868ff3")
-		(property "Reference" "#PWR0480"
+		(property "Reference" "#PWR0290"
 			(at 20.32 49.53 0)
 			(effects
 				(font
@@ -6509,14 +6437,14 @@
 		(instances
 			(project ""
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0480")
+					(reference "#PWR0290")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 119.38 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6524,43 +6452,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5ad50e13-2181-4715-9781-3db2aa813e29")
-		(property "Reference" "D38"
-			(at 119.38 89.154 0)
+		(property "Reference" "LED38"
+			(at 121.92 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 119.38 91.694 0)
+		(property "Value" "SK6812MINI-E"
+			(at 127 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 120.65 114.3 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 119.38 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 121.92 116.205 0)
+			(at 119.38 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 119.38 106.68 0)
 			(effects
 				(font
@@ -6584,7 +6510,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D38")
+					(reference "LED38")
 					(unit 1)
 				)
 			)
@@ -6601,7 +6527,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5b678578-036b-499c-b3c9-54a96f0eb5af")
-		(property "Reference" "#PWR0577"
+		(property "Reference" "#PWR0387"
 			(at 43.18 156.21 0)
 			(effects
 				(font
@@ -6651,7 +6577,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0577")
+					(reference "#PWR0387")
 					(unit 1)
 				)
 			)
@@ -6667,7 +6593,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5ce481c9-589b-4007-8f8c-6576fc98139a")
-		(property "Reference" "#PWR0530"
+		(property "Reference" "#PWR0340"
 			(at 58.42 102.87 0)
 			(effects
 				(font
@@ -6717,14 +6643,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0530")
+					(reference "#PWR0340")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 104.14 142.24 0)
 		(mirror y)
 		(unit 1)
@@ -6733,43 +6659,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5d05407c-f6a2-44c9-a92d-b87b940b74e0")
-		(property "Reference" "D53"
-			(at 104.14 124.714 0)
+		(property "Reference" "LED53"
+			(at 101.6 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 104.14 127.254 0)
+		(property "Value" "SK6812MINI-E"
+			(at 96.52 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 102.87 149.86 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 104.14 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 101.6 151.765 0)
+			(at 104.14 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 104.14 142.24 0)
 			(effects
 				(font
@@ -6793,7 +6717,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D53")
+					(reference "LED53")
 					(unit 1)
 				)
 			)
@@ -6809,7 +6733,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5d0f3cd6-d7c3-4346-9b1e-af6651bb9989")
-		(property "Reference" "#PWR0542"
+		(property "Reference" "#PWR0352"
 			(at 241.3 102.87 0)
 			(effects
 				(font
@@ -6859,7 +6783,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0542")
+					(reference "#PWR0352")
 					(unit 1)
 				)
 			)
@@ -6875,7 +6799,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5e190c08-2b64-4f5e-9299-d97eac1c8189")
-		(property "Reference" "#PWR0534"
+		(property "Reference" "#PWR0344"
 			(at 119.38 102.87 0)
 			(effects
 				(font
@@ -6925,7 +6849,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0534")
+					(reference "#PWR0344")
 					(unit 1)
 				)
 			)
@@ -6941,7 +6865,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5e2751d1-5b46-47f0-bcb1-516c6af59d4a")
-		(property "Reference" "#PWR0529"
+		(property "Reference" "#PWR0339"
 			(at 43.18 102.87 0)
 			(effects
 				(font
@@ -6991,7 +6915,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0529")
+					(reference "#PWR0339")
 					(unit 1)
 				)
 			)
@@ -7008,7 +6932,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5fa7d365-9bc1-4d10-ba0e-417775cd5f55")
-		(property "Reference" "#PWR0508"
+		(property "Reference" "#PWR0318"
 			(at 210.82 67.31 0)
 			(effects
 				(font
@@ -7058,7 +6982,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0508")
+					(reference "#PWR0318")
 					(unit 1)
 				)
 			)
@@ -7074,7 +6998,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5fe7f6d6-4d00-494e-b965-9dd463050d05")
-		(property "Reference" "#PWR0470"
+		(property "Reference" "#PWR0280"
 			(at 134.62 33.02 0)
 			(effects
 				(font
@@ -7124,14 +7048,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0470")
+					(reference "#PWR0280")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 180.34 142.24 0)
 		(mirror y)
 		(unit 1)
@@ -7140,43 +7064,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "62bfe1a4-31f4-4830-9423-9fdb3cdc8be3")
-		(property "Reference" "D58"
-			(at 180.34 124.714 0)
+		(property "Reference" "LED58"
+			(at 177.8 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 180.34 127.254 0)
+		(property "Value" "SK6812MINI-E"
+			(at 172.72 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 179.07 149.86 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 180.34 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 177.8 151.765 0)
+			(at 180.34 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 180.34 142.24 0)
 			(effects
 				(font
@@ -7200,7 +7122,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D58")
+					(reference "LED58")
 					(unit 1)
 				)
 			)
@@ -7217,7 +7139,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "66f55133-55dd-4dce-b3bf-64c8b5e57940")
-		(property "Reference" "#PWR0576"
+		(property "Reference" "#PWR0386"
 			(at 271.78 138.43 0)
 			(effects
 				(font
@@ -7267,7 +7189,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0576")
+					(reference "#PWR0386")
 					(unit 1)
 				)
 			)
@@ -7283,7 +7205,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "68f0a748-e708-4902-8e84-ae4e8bb06d18")
-		(property "Reference" "#PWR0485"
+		(property "Reference" "#PWR0295"
 			(at 104.14 50.8 0)
 			(effects
 				(font
@@ -7333,7 +7255,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0485")
+					(reference "#PWR0295")
 					(unit 1)
 				)
 			)
@@ -7350,7 +7272,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "698f760d-31a4-4565-9102-74351fc155e0")
-		(property "Reference" "#PWR0567"
+		(property "Reference" "#PWR0377"
 			(at 134.62 138.43 0)
 			(effects
 				(font
@@ -7400,7 +7322,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0567")
+					(reference "#PWR0377")
 					(unit 1)
 				)
 			)
@@ -7416,7 +7338,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "69a63dc8-ad0c-493b-b25d-cd6873a614bf")
-		(property "Reference" "#PWR0596"
+		(property "Reference" "#PWR0406"
 			(at 125.73 175.26 0)
 			(effects
 				(font
@@ -7467,14 +7389,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0596")
+					(reference "#PWR0406")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 210.82 71.12 0)
 		(mirror y)
 		(unit 1)
@@ -7483,43 +7405,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6a03a734-05bc-4b50-ae9b-2b0b18c2183c")
-		(property "Reference" "D28"
-			(at 210.82 53.34 0)
+		(property "Reference" "LED28"
+			(at 208.28 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 210.82 55.88 0)
+		(property "Value" "SK6812MINI-E"
+			(at 203.2 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 209.55 78.74 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 210.82 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 208.28 80.645 0)
+			(at 210.82 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 210.82 71.12 0)
 			(effects
 				(font
@@ -7543,7 +7463,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D28")
+					(reference "LED28")
 					(unit 1)
 				)
 			)
@@ -7560,7 +7480,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6a7764ec-ee7d-4fd6-a7ea-da31d33aa05e")
-		(property "Reference" "#PWR0569"
+		(property "Reference" "#PWR0379"
 			(at 165.1 138.43 0)
 			(effects
 				(font
@@ -7610,14 +7530,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0569")
+					(reference "#PWR0379")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 149.86 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7625,43 +7545,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6f72a12b-dcc8-40c5-8dc6-fa6ffe2fc705")
-		(property "Reference" "D8"
-			(at 149.86 19.05 0)
+		(property "Reference" "LED8"
+			(at 152.4 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 149.86 21.59 0)
+		(property "Value" "SK6812MINI-E"
+			(at 157.48 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 151.13 44.45 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 149.86 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 152.4 46.355 0)
+			(at 149.86 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 149.86 36.83 0)
 			(effects
 				(font
@@ -7685,7 +7603,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D8")
+					(reference "LED8")
 					(unit 1)
 				)
 			)
@@ -7702,7 +7620,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6f922e7f-9c34-490f-ac0e-2619261c509e")
-		(property "Reference" "#PWR0590"
+		(property "Reference" "#PWR0400"
 			(at 241.3 156.21 0)
 			(effects
 				(font
@@ -7752,7 +7670,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0590")
+					(reference "#PWR0400")
 					(unit 1)
 				)
 			)
@@ -7769,7 +7687,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "70b2f482-4555-4bf7-b74f-0565d6e274ce")
-		(property "Reference" "#PWR0505"
+		(property "Reference" "#PWR0315"
 			(at 165.1 67.31 0)
 			(effects
 				(font
@@ -7819,7 +7737,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0505")
+					(reference "#PWR0315")
 					(unit 1)
 				)
 			)
@@ -7835,7 +7753,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "73904bec-17ff-4156-a7e6-5af0ade9c958")
-		(property "Reference" "#PWR0495"
+		(property "Reference" "#PWR0305"
 			(at 256.54 50.8 0)
 			(effects
 				(font
@@ -7885,14 +7803,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0495")
+					(reference "#PWR0305")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 256.54 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7900,43 +7818,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7492f028-3892-4cff-af40-98302e277d64")
-		(property "Reference" "D15"
-			(at 256.54 19.05 0)
+		(property "Reference" "LED15"
+			(at 259.08 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 256.54 21.59 0)
+		(property "Value" "SK6812MINI-E"
+			(at 264.16 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 257.81 44.45 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 256.54 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 259.08 46.355 0)
+			(at 256.54 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 256.54 36.83 0)
 			(effects
 				(font
@@ -7960,7 +7876,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D15")
+					(reference "LED15")
 					(unit 1)
 				)
 			)
@@ -7976,7 +7892,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "79dab4f0-5c9a-4d3f-8b82-467c2af060dc")
-		(property "Reference" "#PWR0472"
+		(property "Reference" "#PWR0282"
 			(at 165.1 33.02 0)
 			(effects
 				(font
@@ -8026,14 +7942,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0472")
+					(reference "#PWR0282")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 195.58 142.24 0)
 		(mirror y)
 		(unit 1)
@@ -8042,43 +7958,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7ae6fabe-13c6-4f0e-8481-6a667a94ac6e")
-		(property "Reference" "D59"
-			(at 195.58 124.714 0)
+		(property "Reference" "LED59"
+			(at 193.04 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 195.58 127.254 0)
+		(property "Value" "SK6812MINI-E"
+			(at 187.96 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 194.31 149.86 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 195.58 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 193.04 151.765 0)
+			(at 195.58 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 195.58 142.24 0)
 			(effects
 				(font
@@ -8102,7 +8016,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D59")
+					(reference "LED59")
 					(unit 1)
 				)
 			)
@@ -8222,7 +8136,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7c3b4fae-5b69-485e-b462-f7d059a9426c")
-		(property "Reference" "#PWR0475"
+		(property "Reference" "#PWR0285"
 			(at 210.82 33.02 0)
 			(effects
 				(font
@@ -8272,7 +8186,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0475")
+					(reference "#PWR0285")
 					(unit 1)
 				)
 			)
@@ -8289,7 +8203,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7cb14c44-a82a-4ace-8a92-3666dceea7f7")
-		(property "Reference" "#PWR0528"
+		(property "Reference" "#PWR0338"
 			(at 271.78 85.09 0)
 			(effects
 				(font
@@ -8339,14 +8253,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0528")
+					(reference "#PWR0338")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 226.06 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8354,43 +8268,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7e8cafdc-2671-41be-9df6-ee0ad721d7df")
-		(property "Reference" "D45"
-			(at 226.06 89.154 0)
+		(property "Reference" "LED45"
+			(at 228.6 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 226.06 91.694 0)
+		(property "Value" "SK6812MINI-E"
+			(at 233.68 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 227.33 114.3 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 226.06 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 228.6 116.205 0)
+			(at 226.06 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 226.06 106.68 0)
 			(effects
 				(font
@@ -8414,7 +8326,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D45")
+					(reference "LED45")
 					(unit 1)
 				)
 			)
@@ -8430,7 +8342,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7f763309-204d-4cb1-ac42-cb5aa5eaeca2")
-		(property "Reference" "#PWR0531"
+		(property "Reference" "#PWR0341"
 			(at 73.66 102.87 0)
 			(effects
 				(font
@@ -8480,14 +8392,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0531")
+					(reference "#PWR0341")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 73.66 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8495,43 +8407,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "85733ec5-207c-42a4-8769-288b0043b811")
-		(property "Reference" "D35"
-			(at 73.66 89.154 0)
+		(property "Reference" "LED35"
+			(at 76.2 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 73.66 91.694 0)
+		(property "Value" "SK6812MINI-E"
+			(at 81.28 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 74.93 114.3 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 73.66 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 76.2 116.205 0)
+			(at 73.66 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 73.66 106.68 0)
 			(effects
 				(font
@@ -8555,14 +8465,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D35")
+					(reference "LED35")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 149.86 71.12 0)
 		(mirror y)
 		(unit 1)
@@ -8571,43 +8481,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "85a46978-a2c8-4385-b412-1344ca6b5a9d")
-		(property "Reference" "D24"
-			(at 149.86 53.594 0)
+		(property "Reference" "LED24"
+			(at 147.32 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 149.86 56.134 0)
+		(property "Value" "SK6812MINI-E"
+			(at 142.24 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 148.59 78.74 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 149.86 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 147.32 80.645 0)
+			(at 149.86 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 149.86 71.12 0)
 			(effects
 				(font
@@ -8631,7 +8539,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D24")
+					(reference "LED24")
 					(unit 1)
 				)
 			)
@@ -8647,7 +8555,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "85d60015-051d-42fb-b5e0-cd104086b4db")
-		(property "Reference" "#PWR0552"
+		(property "Reference" "#PWR0362"
 			(at 149.86 120.65 0)
 			(effects
 				(font
@@ -8697,14 +8605,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0552")
+					(reference "#PWR0362")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 210.82 142.24 0)
 		(mirror y)
 		(unit 1)
@@ -8713,43 +8621,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "868ed750-1932-4906-baee-946900b792ca")
-		(property "Reference" "D60"
-			(at 210.82 124.46 0)
+		(property "Reference" "LED60"
+			(at 208.28 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 210.82 127 0)
+		(property "Value" "SK6812MINI-E"
+			(at 203.2 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 209.55 149.86 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 210.82 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 208.28 151.765 0)
+			(at 210.82 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 210.82 142.24 0)
 			(effects
 				(font
@@ -8773,7 +8679,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D60")
+					(reference "LED60")
 					(unit 1)
 				)
 			)
@@ -8790,7 +8696,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "86d10b8b-132c-4baf-a1c2-bfe4d03e21a0")
-		(property "Reference" "#PWR0592"
+		(property "Reference" "#PWR0402"
 			(at 271.78 156.21 0)
 			(effects
 				(font
@@ -8840,7 +8746,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0592")
+					(reference "#PWR0402")
 					(unit 1)
 				)
 			)
@@ -8857,7 +8763,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8a870dd1-b70f-46b4-af73-387abedb4b88")
-		(property "Reference" "#PWR0524"
+		(property "Reference" "#PWR0334"
 			(at 210.82 85.09 0)
 			(effects
 				(font
@@ -8907,14 +8813,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0524")
+					(reference "#PWR0334")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 88.9 71.12 0)
 		(mirror y)
 		(unit 1)
@@ -8923,43 +8829,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8b9ec67e-d0a3-46df-ae37-98edfbc406fe")
-		(property "Reference" "D20"
-			(at 88.9 53.594 0)
+		(property "Reference" "LED20"
+			(at 86.36 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 88.9 56.134 0)
+		(property "Value" "SK6812MINI-E"
+			(at 81.28 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 87.63 78.74 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 88.9 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 86.36 80.645 0)
+			(at 88.9 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 88.9 71.12 0)
 			(effects
 				(font
@@ -8983,7 +8887,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D20")
+					(reference "LED20")
 					(unit 1)
 				)
 			)
@@ -9000,7 +8904,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8c3d5dbe-d21b-4a7b-974b-462696a7d3ec")
-		(property "Reference" "#PWR0583"
+		(property "Reference" "#PWR0393"
 			(at 134.62 156.21 0)
 			(effects
 				(font
@@ -9050,7 +8954,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0583")
+					(reference "#PWR0393")
 					(unit 1)
 				)
 			)
@@ -9066,7 +8970,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8c4a77cb-cd25-468c-9c06-f098e04f21ed")
-		(property "Reference" "#PWR0532"
+		(property "Reference" "#PWR0342"
 			(at 88.9 102.87 0)
 			(effects
 				(font
@@ -9116,7 +9020,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0532")
+					(reference "#PWR0342")
 					(unit 1)
 				)
 			)
@@ -9133,7 +9037,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8c79f64a-cf56-4ccb-a9d3-2dec49f3dc0e")
-		(property "Reference" "#PWR0520"
+		(property "Reference" "#PWR0330"
 			(at 149.86 85.09 0)
 			(effects
 				(font
@@ -9183,14 +9087,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0520")
+					(reference "#PWR0330")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 119.38 71.12 0)
 		(mirror y)
 		(unit 1)
@@ -9199,43 +9103,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8f10ba35-485a-4e51-8dcd-cd1cca1fba1b")
-		(property "Reference" "D22"
-			(at 119.38 53.34 0)
+		(property "Reference" "LED22"
+			(at 116.84 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 119.38 55.88 0)
+		(property "Value" "SK6812MINI-E"
+			(at 111.76 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 118.11 78.74 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 119.38 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 116.84 80.645 0)
+			(at 119.38 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 119.38 71.12 0)
 			(effects
 				(font
@@ -9259,7 +9161,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D22")
+					(reference "LED22")
 					(unit 1)
 				)
 			)
@@ -9275,7 +9177,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9530b636-473a-4e88-86a7-615547f02eab")
-		(property "Reference" "#PWR0547"
+		(property "Reference" "#PWR0357"
 			(at 73.66 120.65 0)
 			(effects
 				(font
@@ -9325,7 +9227,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0547")
+					(reference "#PWR0357")
 					(unit 1)
 				)
 			)
@@ -9342,7 +9244,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "956999c4-1ebd-4dfd-a3f9-c65469a55193")
-		(property "Reference" "#PWR0561"
+		(property "Reference" "#PWR0371"
 			(at 43.18 138.43 0)
 			(effects
 				(font
@@ -9392,7 +9294,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0561")
+					(reference "#PWR0371")
 					(unit 1)
 				)
 			)
@@ -9408,7 +9310,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "95985602-873e-4ac2-bdb6-7eeb013ef7b4")
-		(property "Reference" "#PWR0541"
+		(property "Reference" "#PWR0351"
 			(at 226.06 102.87 0)
 			(effects
 				(font
@@ -9458,7 +9360,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0541")
+					(reference "#PWR0351")
 					(unit 1)
 				)
 			)
@@ -9475,7 +9377,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9697ffd9-4318-4966-812e-0722da5f0e7e")
-		(property "Reference" "#PWR0589"
+		(property "Reference" "#PWR0399"
 			(at 226.06 156.21 0)
 			(effects
 				(font
@@ -9525,7 +9427,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0589")
+					(reference "#PWR0399")
 					(unit 1)
 				)
 			)
@@ -9541,7 +9443,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "96fcc19c-d1f0-44dd-8cf4-ca95f5911768")
-		(property "Reference" "#PWR0557"
+		(property "Reference" "#PWR0367"
 			(at 226.06 120.65 0)
 			(effects
 				(font
@@ -9591,7 +9493,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0557")
+					(reference "#PWR0367")
 					(unit 1)
 				)
 			)
@@ -9607,7 +9509,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "97f54d0c-e680-4dc8-a9fa-a4ef820c93b7")
-		(property "Reference" "#PWR0496"
+		(property "Reference" "#PWR0306"
 			(at 271.78 50.8 0)
 			(effects
 				(font
@@ -9657,7 +9559,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0496")
+					(reference "#PWR0306")
 					(unit 1)
 				)
 			)
@@ -9673,7 +9575,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9a853546-0981-46c9-9a82-f258a202f305")
-		(property "Reference" "#PWR0468"
+		(property "Reference" "#PWR0278"
 			(at 104.14 33.02 0)
 			(effects
 				(font
@@ -9723,7 +9625,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0468")
+					(reference "#PWR0278")
 					(unit 1)
 				)
 			)
@@ -9739,7 +9641,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9af6ea71-addb-457b-b1e3-07c043dd33d3")
-		(property "Reference" "#PWR0469"
+		(property "Reference" "#PWR0279"
 			(at 119.38 33.02 0)
 			(effects
 				(font
@@ -9789,14 +9691,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0469")
+					(reference "#PWR0279")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 256.54 142.24 0)
 		(mirror y)
 		(unit 1)
@@ -9805,43 +9707,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9bef0a6d-c4c2-4b5f-a9b5-0d9482256adc")
-		(property "Reference" "D63"
-			(at 256.54 124.46 0)
+		(property "Reference" "LED63"
+			(at 254 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 256.54 127 0)
+		(property "Value" "SK6812MINI-E"
+			(at 248.92 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 255.27 149.86 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 256.54 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 254 151.765 0)
+			(at 256.54 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 256.54 142.24 0)
 			(effects
 				(font
@@ -9865,14 +9765,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D63")
+					(reference "LED63")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 271.78 142.24 0)
 		(mirror y)
 		(unit 1)
@@ -9881,43 +9781,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9c4f5851-214b-480f-b047-6698762bde18")
-		(property "Reference" "D64"
-			(at 271.78 124.714 0)
+		(property "Reference" "LED64"
+			(at 269.24 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 271.78 127.254 0)
+		(property "Value" "SK6812MINI-E"
+			(at 264.16 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 270.51 149.86 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 271.78 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 269.24 151.765 0)
+			(at 271.78 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 271.78 142.24 0)
 			(effects
 				(font
@@ -9941,7 +9839,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D64")
+					(reference "LED64")
 					(unit 1)
 				)
 			)
@@ -9957,7 +9855,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9d5c67c2-a448-4d43-b74a-345792f613e5")
-		(property "Reference" "#PWR0490"
+		(property "Reference" "#PWR0300"
 			(at 180.34 50.8 0)
 			(effects
 				(font
@@ -10007,7 +9905,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0490")
+					(reference "#PWR0300")
 					(unit 1)
 				)
 			)
@@ -10023,7 +9921,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9fe46a2f-54a7-4d65-af75-740e471b4cce")
-		(property "Reference" "#PWR0477"
+		(property "Reference" "#PWR0287"
 			(at 241.3 33.02 0)
 			(effects
 				(font
@@ -10073,7 +9971,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0477")
+					(reference "#PWR0287")
 					(unit 1)
 				)
 			)
@@ -10089,7 +9987,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a2135194-79d5-490f-9387-0735c60c649c")
-		(property "Reference" "#PWR0593"
+		(property "Reference" "#PWR0403"
 			(at 157.48 166.37 0)
 			(effects
 				(font
@@ -10139,14 +10037,14 @@
 		(instances
 			(project ""
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0593")
+					(reference "#PWR0403")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 134.62 71.12 0)
 		(mirror y)
 		(unit 1)
@@ -10155,43 +10053,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a282857d-660c-464d-aa1d-5fe88196d5c3")
-		(property "Reference" "D23"
-			(at 134.62 53.594 0)
+		(property "Reference" "LED23"
+			(at 132.08 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 134.62 56.134 0)
+		(property "Value" "SK6812MINI-E"
+			(at 127 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 133.35 78.74 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 134.62 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 132.08 80.645 0)
+			(at 134.62 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 134.62 71.12 0)
 			(effects
 				(font
@@ -10215,7 +10111,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D23")
+					(reference "LED23")
 					(unit 1)
 				)
 			)
@@ -10232,7 +10128,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a4681dc8-7151-4ef9-a3a2-5fd9a48a3f2d")
-		(property "Reference" "#PWR0509"
+		(property "Reference" "#PWR0319"
 			(at 226.06 67.31 0)
 			(effects
 				(font
@@ -10282,14 +10178,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0509")
+					(reference "#PWR0319")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 180.34 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10297,43 +10193,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a4ae741a-0924-4bbb-b7e9-689b9cc1d900")
-		(property "Reference" "D42"
-			(at 180.34 89.154 0)
+		(property "Reference" "LED42"
+			(at 182.88 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 180.34 91.694 0)
+		(property "Value" "SK6812MINI-E"
+			(at 187.96 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 181.61 114.3 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 180.34 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 182.88 116.205 0)
+			(at 180.34 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 180.34 106.68 0)
 			(effects
 				(font
@@ -10357,14 +10251,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D42")
+					(reference "LED42")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 149.86 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10372,43 +10266,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a57dbb06-2b17-4255-ae38-8dbfed34a0ad")
-		(property "Reference" "D40"
-			(at 149.86 88.9 0)
+		(property "Reference" "LED40"
+			(at 152.4 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 149.86 91.44 0)
+		(property "Value" "SK6812MINI-E"
+			(at 157.48 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 151.13 114.3 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 149.86 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 152.4 116.205 0)
+			(at 149.86 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 149.86 106.68 0)
 			(effects
 				(font
@@ -10432,7 +10324,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D40")
+					(reference "LED40")
 					(unit 1)
 				)
 			)
@@ -10448,7 +10340,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a6f64937-5256-4857-b2bf-7fb59c4ed50b")
-		(property "Reference" "#PWR0492"
+		(property "Reference" "#PWR0302"
 			(at 210.82 50.8 0)
 			(effects
 				(font
@@ -10498,7 +10390,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0492")
+					(reference "#PWR0302")
 					(unit 1)
 				)
 			)
@@ -10515,7 +10407,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a8cd41c1-98e2-4ea4-85c9-769482bffc26")
-		(property "Reference" "#PWR0568"
+		(property "Reference" "#PWR0378"
 			(at 149.86 138.43 0)
 			(effects
 				(font
@@ -10565,7 +10457,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0568")
+					(reference "#PWR0378")
 					(unit 1)
 				)
 			)
@@ -10581,7 +10473,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a9062a3c-76b6-4eee-9266-b80fc91eeb0d")
-		(property "Reference" "#PWR0554"
+		(property "Reference" "#PWR0364"
 			(at 180.34 120.65 0)
 			(effects
 				(font
@@ -10631,7 +10523,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0554")
+					(reference "#PWR0364")
 					(unit 1)
 				)
 			)
@@ -10648,7 +10540,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a95e9885-118c-41c3-83a8-7eb163d40065")
-		(property "Reference" "#PWR0564"
+		(property "Reference" "#PWR0374"
 			(at 88.9 138.43 0)
 			(effects
 				(font
@@ -10698,14 +10590,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0564")
+					(reference "#PWR0374")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 241.3 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10713,43 +10605,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "aa809a10-6064-4e2f-a4e5-31226a3b66a3")
-		(property "Reference" "D14"
-			(at 241.3 19.304 0)
+		(property "Reference" "LED14"
+			(at 243.84 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 241.3 21.844 0)
+		(property "Value" "SK6812MINI-E"
+			(at 248.92 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 242.57 44.45 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 241.3 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 243.84 46.355 0)
+			(at 241.3 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 241.3 36.83 0)
 			(effects
 				(font
@@ -10773,7 +10663,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D14")
+					(reference "LED14")
 					(unit 1)
 				)
 			)
@@ -10790,7 +10680,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ac127ff8-42fb-4f5e-bc79-95ad8ad429e9")
-		(property "Reference" "#PWR0585"
+		(property "Reference" "#PWR0395"
 			(at 165.1 156.21 0)
 			(effects
 				(font
@@ -10840,14 +10730,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0585")
+					(reference "#PWR0395")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 195.58 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10855,43 +10745,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ac4c717d-7d90-46c2-b897-3ca329c7bce7")
-		(property "Reference" "D43"
-			(at 195.58 88.9 0)
+		(property "Reference" "LED43"
+			(at 198.12 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 195.58 91.44 0)
+		(property "Value" "SK6812MINI-E"
+			(at 203.2 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 196.85 114.3 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 195.58 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 198.12 116.205 0)
+			(at 195.58 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 195.58 106.68 0)
 			(effects
 				(font
@@ -10915,7 +10803,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D43")
+					(reference "LED43")
 					(unit 1)
 				)
 			)
@@ -10932,7 +10820,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "acc47e99-e202-4f3c-a5c1-1436c87a6830")
-		(property "Reference" "#PWR0506"
+		(property "Reference" "#PWR0316"
 			(at 180.34 67.31 0)
 			(effects
 				(font
@@ -10982,7 +10870,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0506")
+					(reference "#PWR0316")
 					(unit 1)
 				)
 			)
@@ -10998,7 +10886,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aded7e53-53d2-4de5-926d-ecf593773208")
-		(property "Reference" "#PWR0482"
+		(property "Reference" "#PWR0292"
 			(at 58.42 50.8 0)
 			(effects
 				(font
@@ -11048,14 +10936,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0482")
+					(reference "#PWR0292")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 43.18 71.12 0)
 		(mirror y)
 		(unit 1)
@@ -11064,43 +10952,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "aeb4dd65-e2b9-40f1-b969-1bdf08379362")
-		(property "Reference" "D17"
-			(at 43.18 53.594 0)
+		(property "Reference" "LED17"
+			(at 40.64 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 43.18 56.134 0)
+		(property "Value" "SK6812MINI-E"
+			(at 35.56 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 41.91 78.74 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 43.18 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 40.64 80.645 0)
+			(at 43.18 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 43.18 71.12 0)
 			(effects
 				(font
@@ -11124,7 +11010,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D17")
+					(reference "LED17")
 					(unit 1)
 				)
 			)
@@ -11141,7 +11027,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aef6a9c4-f277-4fb9-930f-77bc777593b5")
-		(property "Reference" "#PWR0513"
+		(property "Reference" "#PWR0323"
 			(at 43.18 85.09 0)
 			(effects
 				(font
@@ -11191,7 +11077,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0513")
+					(reference "#PWR0323")
 					(unit 1)
 				)
 			)
@@ -11208,7 +11094,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "af0f0c6f-3522-4e0c-8862-151cfa1f457f")
-		(property "Reference" "#PWR0580"
+		(property "Reference" "#PWR0390"
 			(at 88.9 156.21 0)
 			(effects
 				(font
@@ -11258,7 +11144,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0580")
+					(reference "#PWR0390")
 					(unit 1)
 				)
 			)
@@ -11275,7 +11161,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "af523dab-5934-4232-bc37-1978ad19c72a")
-		(property "Reference" "#PWR0521"
+		(property "Reference" "#PWR0331"
 			(at 165.1 85.09 0)
 			(effects
 				(font
@@ -11325,14 +11211,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0521")
+					(reference "#PWR0331")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 88.9 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11340,43 +11226,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b029644d-9f47-4f71-bcdb-3779df24135b")
-		(property "Reference" "D36"
-			(at 88.9 89.154 0)
+		(property "Reference" "LED36"
+			(at 91.44 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 88.9 91.694 0)
+		(property "Value" "SK6812MINI-E"
+			(at 96.52 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 90.17 114.3 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 88.9 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 91.44 116.205 0)
+			(at 88.9 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 88.9 106.68 0)
 			(effects
 				(font
@@ -11400,7 +11284,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D36")
+					(reference "LED36")
 					(unit 1)
 				)
 			)
@@ -11511,7 +11395,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 165.1 71.12 0)
 		(mirror y)
 		(unit 1)
@@ -11520,43 +11404,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b14a3e12-51ab-4583-b9fc-8f2b1cbe701f")
-		(property "Reference" "D25"
-			(at 165.1 53.34 0)
+		(property "Reference" "LED25"
+			(at 162.56 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 165.1 55.88 0)
+		(property "Value" "SK6812MINI-E"
+			(at 157.48 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 163.83 78.74 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 165.1 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 162.56 80.645 0)
+			(at 165.1 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 165.1 71.12 0)
 			(effects
 				(font
@@ -11580,7 +11462,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D25")
+					(reference "LED25")
 					(unit 1)
 				)
 			)
@@ -11597,7 +11479,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b180ca2d-bb41-4013-864b-883ff51151c3")
-		(property "Reference" "#PWR0573"
+		(property "Reference" "#PWR0383"
 			(at 226.06 138.43 0)
 			(effects
 				(font
@@ -11647,7 +11529,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0573")
+					(reference "#PWR0383")
 					(unit 1)
 				)
 			)
@@ -11664,7 +11546,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b431ac6a-1b4f-488c-bf73-6dc425cdba99")
-		(property "Reference" "#PWR0518"
+		(property "Reference" "#PWR0328"
 			(at 119.38 85.09 0)
 			(effects
 				(font
@@ -11714,14 +11596,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0518")
+					(reference "#PWR0328")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 210.82 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11729,43 +11611,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b5df5172-a4af-43c3-9938-9ad7e392ca34")
-		(property "Reference" "D44"
-			(at 210.82 89.154 0)
+		(property "Reference" "LED44"
+			(at 213.36 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 210.82 91.694 0)
+		(property "Value" "SK6812MINI-E"
+			(at 218.44 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 212.09 114.3 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 210.82 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 213.36 116.205 0)
+			(at 210.82 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 210.82 106.68 0)
 			(effects
 				(font
@@ -11789,7 +11669,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D44")
+					(reference "LED44")
 					(unit 1)
 				)
 			)
@@ -11805,7 +11685,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b6eca84e-0e69-4ed6-8e3b-a5a96b5a9e52")
-		(property "Reference" "#PWR0550"
+		(property "Reference" "#PWR0360"
 			(at 119.38 120.65 0)
 			(effects
 				(font
@@ -11855,7 +11735,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0550")
+					(reference "#PWR0360")
 					(unit 1)
 				)
 			)
@@ -11872,7 +11752,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b7b1a56c-04b2-4a49-b091-0c2f956be9b6")
-		(property "Reference" "#PWR0526"
+		(property "Reference" "#PWR0336"
 			(at 241.3 85.09 0)
 			(effects
 				(font
@@ -11922,7 +11802,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0526")
+					(reference "#PWR0336")
 					(unit 1)
 				)
 			)
@@ -11939,7 +11819,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b8806009-6254-4535-a3c0-8a93a3c2ad77")
-		(property "Reference" "#PWR0527"
+		(property "Reference" "#PWR0337"
 			(at 256.54 85.09 0)
 			(effects
 				(font
@@ -11989,7 +11869,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0527")
+					(reference "#PWR0337")
 					(unit 1)
 				)
 			)
@@ -12006,7 +11886,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b91c9f02-67c2-4ba3-a5f1-f273fcdbd32d")
-		(property "Reference" "#PWR0562"
+		(property "Reference" "#PWR0372"
 			(at 58.42 138.43 0)
 			(effects
 				(font
@@ -12056,7 +11936,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0562")
+					(reference "#PWR0372")
 					(unit 1)
 				)
 			)
@@ -12073,7 +11953,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bacba4fd-6698-46c1-9916-b5b539b1b197")
-		(property "Reference" "#PWR0504"
+		(property "Reference" "#PWR0314"
 			(at 149.86 67.31 0)
 			(effects
 				(font
@@ -12123,7 +12003,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0504")
+					(reference "#PWR0314")
 					(unit 1)
 				)
 			)
@@ -12139,7 +12019,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c0ea42e2-601a-4662-8bb7-33cc0f9c4863")
-		(property "Reference" "#PWR0473"
+		(property "Reference" "#PWR0283"
 			(at 180.34 33.02 0)
 			(effects
 				(font
@@ -12189,14 +12069,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0473")
+					(reference "#PWR0283")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 134.62 142.24 0)
 		(mirror y)
 		(unit 1)
@@ -12205,43 +12085,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c147ea2f-58ef-40fe-bf44-643189b887cc")
-		(property "Reference" "D55"
-			(at 134.62 124.714 0)
+		(property "Reference" "LED55"
+			(at 132.08 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 134.62 127.254 0)
+		(property "Value" "SK6812MINI-E"
+			(at 127 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 133.35 149.86 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 134.62 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 132.08 151.765 0)
+			(at 134.62 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 134.62 142.24 0)
 			(effects
 				(font
@@ -12265,14 +12143,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D55")
+					(reference "LED55")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 134.62 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12280,43 +12158,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c63a8475-eaf6-4bdc-b80e-03260c25f993")
-		(property "Reference" "D39"
-			(at 134.62 89.154 0)
+		(property "Reference" "LED39"
+			(at 137.16 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 134.62 91.694 0)
+		(property "Value" "SK6812MINI-E"
+			(at 142.24 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 135.89 114.3 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 134.62 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 137.16 116.205 0)
+			(at 134.62 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 134.62 106.68 0)
 			(effects
 				(font
@@ -12340,7 +12216,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D39")
+					(reference "LED39")
 					(unit 1)
 				)
 			)
@@ -12357,7 +12233,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ca3344b7-8f5f-43c7-b0c1-3f2c52390e5f")
-		(property "Reference" "#PWR0514"
+		(property "Reference" "#PWR0324"
 			(at 58.42 85.09 0)
 			(effects
 				(font
@@ -12407,14 +12283,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0514")
+					(reference "#PWR0324")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 88.9 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -12422,43 +12298,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cc564126-3685-4fb8-9b8e-0222279d7bf8")
-		(property "Reference" "D4"
-			(at 88.9 19.304 0)
+		(property "Reference" "LED4"
+			(at 91.44 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 88.9 21.844 0)
+		(property "Value" "SK6812MINI-E"
+			(at 96.52 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 90.17 44.45 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 88.9 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 91.44 46.355 0)
+			(at 88.9 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 88.9 36.83 0)
 			(effects
 				(font
@@ -12482,7 +12356,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D4")
+					(reference "LED4")
 					(unit 1)
 				)
 			)
@@ -12498,7 +12372,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ccb3fbde-4d60-440d-8679-66c7c39257b3")
-		(property "Reference" "#PWR0548"
+		(property "Reference" "#PWR0358"
 			(at 88.9 120.65 0)
 			(effects
 				(font
@@ -12548,7 +12422,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0548")
+					(reference "#PWR0358")
 					(unit 1)
 				)
 			)
@@ -12669,7 +12543,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cf045bc6-103a-45c9-8e85-6b39d640e742")
-		(property "Reference" "#PWR0563"
+		(property "Reference" "#PWR0373"
 			(at 73.66 138.43 0)
 			(effects
 				(font
@@ -12719,7 +12593,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0563")
+					(reference "#PWR0373")
 					(unit 1)
 				)
 			)
@@ -12736,7 +12610,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cfc330ff-357d-4edb-a5e2-5c24983d4b1d")
-		(property "Reference" "#PWR0510"
+		(property "Reference" "#PWR0320"
 			(at 241.3 67.31 0)
 			(effects
 				(font
@@ -12786,7 +12660,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0510")
+					(reference "#PWR0320")
 					(unit 1)
 				)
 			)
@@ -12802,7 +12676,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d18227ca-b231-46ea-803b-ce78ded08ace")
-		(property "Reference" "#PWR0481"
+		(property "Reference" "#PWR0291"
 			(at 43.18 50.8 0)
 			(effects
 				(font
@@ -12852,7 +12726,7 @@
 		(instances
 			(project ""
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0481")
+					(reference "#PWR0291")
 					(unit 1)
 				)
 			)
@@ -12869,7 +12743,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d187815a-577e-4b28-8d5f-237dc60e1a1e")
-		(property "Reference" "#PWR0512"
+		(property "Reference" "#PWR0322"
 			(at 271.78 67.31 0)
 			(effects
 				(font
@@ -12919,14 +12793,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0512")
+					(reference "#PWR0322")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 256.54 71.12 0)
 		(mirror y)
 		(unit 1)
@@ -12935,43 +12809,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d313927b-24f9-4d87-9d3f-577b29c1e20e")
-		(property "Reference" "D31"
-			(at 256.54 53.34 0)
+		(property "Reference" "LED31"
+			(at 254 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 256.54 55.88 0)
+		(property "Value" "SK6812MINI-E"
+			(at 248.92 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 255.27 78.74 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 256.54 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 254 80.645 0)
+			(at 256.54 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 256.54 71.12 0)
 			(effects
 				(font
@@ -12995,7 +12867,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D31")
+					(reference "LED31")
 					(unit 1)
 				)
 			)
@@ -13012,7 +12884,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d47f839f-1559-4cc4-b8e4-933d767170c9")
-		(property "Reference" "#PWR0497"
+		(property "Reference" "#PWR0307"
 			(at 43.18 67.31 0)
 			(effects
 				(font
@@ -13062,7 +12934,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0497")
+					(reference "#PWR0307")
 					(unit 1)
 				)
 			)
@@ -13078,7 +12950,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d5721ab7-28ab-40b4-b760-09b6b759965f")
-		(property "Reference" "#PWR0545"
+		(property "Reference" "#PWR0355"
 			(at 43.18 120.65 0)
 			(effects
 				(font
@@ -13128,7 +13000,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0545")
+					(reference "#PWR0355")
 					(unit 1)
 				)
 			)
@@ -13145,7 +13017,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d5831dd8-44d6-4e36-87c3-1b8047bc45b6")
-		(property "Reference" "#PWR0499"
+		(property "Reference" "#PWR0309"
 			(at 73.66 67.31 0)
 			(effects
 				(font
@@ -13195,7 +13067,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0499")
+					(reference "#PWR0309")
 					(unit 1)
 				)
 			)
@@ -13212,7 +13084,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d696d8b5-0224-4396-8a94-26ff784cf881")
-		(property "Reference" "#PWR0523"
+		(property "Reference" "#PWR0333"
 			(at 195.58 85.09 0)
 			(effects
 				(font
@@ -13262,14 +13134,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0523")
+					(reference "#PWR0333")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 210.82 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13277,43 +13149,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d6f71efe-d075-462e-87b8-70b59bd8ee6d")
-		(property "Reference" "D12"
-			(at 210.82 19.304 0)
+		(property "Reference" "LED12"
+			(at 213.36 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 210.82 21.844 0)
+		(property "Value" "SK6812MINI-E"
+			(at 218.44 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 212.09 44.45 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 210.82 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 213.36 46.355 0)
+			(at 210.82 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 210.82 36.83 0)
 			(effects
 				(font
@@ -13337,7 +13207,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D12")
+					(reference "LED12")
 					(unit 1)
 				)
 			)
@@ -13353,7 +13223,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d96a6203-4f9c-46bd-8d13-27f83b5f5af1")
-		(property "Reference" "#PWR0493"
+		(property "Reference" "#PWR0303"
 			(at 226.06 50.8 0)
 			(effects
 				(font
@@ -13403,14 +13273,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0493")
+					(reference "#PWR0303")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 43.18 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13418,43 +13288,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d9e5ca53-dc1c-4d3d-9a03-a58c75331d48")
-		(property "Reference" "D33"
-			(at 43.18 89.154 0)
+		(property "Reference" "LED33"
+			(at 45.72 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 43.18 91.694 0)
+		(property "Value" "SK6812MINI-E"
+			(at 50.8 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 44.45 114.3 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 43.18 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 45.72 116.205 0)
+			(at 43.18 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 43.18 106.68 0)
 			(effects
 				(font
@@ -13478,7 +13346,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D33")
+					(reference "LED33")
 					(unit 1)
 				)
 			)
@@ -13494,7 +13362,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "db17fd05-65af-430d-aaab-2e5bdf0f789b")
-		(property "Reference" "#PWR0487"
+		(property "Reference" "#PWR0297"
 			(at 134.62 50.8 0)
 			(effects
 				(font
@@ -13544,7 +13412,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0487")
+					(reference "#PWR0297")
 					(unit 1)
 				)
 			)
@@ -13561,7 +13429,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dcb15ab3-2937-4f14-ad45-7c2b4bdbff57")
-		(property "Reference" "#PWR0575"
+		(property "Reference" "#PWR0385"
 			(at 256.54 138.43 0)
 			(effects
 				(font
@@ -13611,7 +13479,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0575")
+					(reference "#PWR0385")
 					(unit 1)
 				)
 			)
@@ -13628,7 +13496,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "de973744-1413-4cf9-90eb-8d21972bc12e")
-		(property "Reference" "#PWR0571"
+		(property "Reference" "#PWR0381"
 			(at 195.58 138.43 0)
 			(effects
 				(font
@@ -13678,14 +13546,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0571")
+					(reference "#PWR0381")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 180.34 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13693,43 +13561,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e01591b9-bafb-447a-8da6-ce818b5736ae")
-		(property "Reference" "D10"
-			(at 180.34 19.304 0)
+		(property "Reference" "LED10"
+			(at 182.88 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 180.34 21.844 0)
+		(property "Value" "SK6812MINI-E"
+			(at 187.96 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 181.61 44.45 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 180.34 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 182.88 46.355 0)
+			(at 180.34 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 180.34 36.83 0)
 			(effects
 				(font
@@ -13753,7 +13619,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D10")
+					(reference "LED10")
 					(unit 1)
 				)
 			)
@@ -13770,7 +13636,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e0580c80-4611-4a3b-8726-901650816077")
-		(property "Reference" "#PWR0498"
+		(property "Reference" "#PWR0308"
 			(at 58.42 67.31 0)
 			(effects
 				(font
@@ -13820,7 +13686,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0498")
+					(reference "#PWR0308")
 					(unit 1)
 				)
 			)
@@ -13837,7 +13703,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e37256d1-4b61-4cd7-a6f1-97b5b2a42cb0")
-		(property "Reference" "#PWR0572"
+		(property "Reference" "#PWR0382"
 			(at 210.82 138.43 0)
 			(effects
 				(font
@@ -13887,7 +13753,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0572")
+					(reference "#PWR0382")
 					(unit 1)
 				)
 			)
@@ -13904,7 +13770,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e3899290-46f7-4e26-8715-c4a41babdbe6")
-		(property "Reference" "#PWR0579"
+		(property "Reference" "#PWR0389"
 			(at 73.66 156.21 0)
 			(effects
 				(font
@@ -13954,7 +13820,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0579")
+					(reference "#PWR0389")
 					(unit 1)
 				)
 			)
@@ -13970,7 +13836,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e8e9f796-19cd-41aa-9375-1421f8c643c5")
-		(property "Reference" "#PWR0600"
+		(property "Reference" "#PWR0410"
 			(at 157.48 194.31 0)
 			(effects
 				(font
@@ -14020,7 +13886,7 @@
 		(instances
 			(project ""
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0600")
+					(reference "#PWR0410")
 					(unit 1)
 				)
 			)
@@ -14036,7 +13902,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e91f5d98-6a1d-4583-9bb9-af5f493f7873")
-		(property "Reference" "#PWR0560"
+		(property "Reference" "#PWR0370"
 			(at 271.78 120.65 0)
 			(effects
 				(font
@@ -14086,7 +13952,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0560")
+					(reference "#PWR0370")
 					(unit 1)
 				)
 			)
@@ -14102,7 +13968,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e9b8ded1-4550-4c4a-929b-86bf764f7073")
-		(property "Reference" "#PWR0558"
+		(property "Reference" "#PWR0368"
 			(at 241.3 120.65 0)
 			(effects
 				(font
@@ -14152,7 +14018,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0558")
+					(reference "#PWR0368")
 					(unit 1)
 				)
 			)
@@ -14169,7 +14035,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e9c95bde-ba7c-4e64-835c-0bb90b820d16")
-		(property "Reference" "#PWR0574"
+		(property "Reference" "#PWR0384"
 			(at 241.3 138.43 0)
 			(effects
 				(font
@@ -14219,7 +14085,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0574")
+					(reference "#PWR0384")
 					(unit 1)
 				)
 			)
@@ -14235,7 +14101,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ea49d134-08f6-432a-8309-7d99411b9908")
-		(property "Reference" "#PWR0471"
+		(property "Reference" "#PWR0281"
 			(at 149.86 33.02 0)
 			(effects
 				(font
@@ -14285,14 +14151,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0471")
+					(reference "#PWR0281")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 226.06 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14300,43 +14166,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "eabe3d70-4798-4b95-9343-3b038a8ee0e7")
-		(property "Reference" "D13"
-			(at 226.06 19.304 0)
+		(property "Reference" "LED13"
+			(at 228.6 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 226.06 21.844 0)
+		(property "Value" "SK6812MINI-E"
+			(at 233.68 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 227.33 44.45 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 226.06 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 228.6 46.355 0)
+			(at 226.06 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 226.06 36.83 0)
 			(effects
 				(font
@@ -14360,7 +14224,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D13")
+					(reference "LED13")
 					(unit 1)
 				)
 			)
@@ -14376,7 +14240,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eb5ed4ac-b8e6-4f69-b89b-3aca39821f43")
-		(property "Reference" "#PWR0549"
+		(property "Reference" "#PWR0359"
 			(at 104.14 120.65 0)
 			(effects
 				(font
@@ -14426,7 +14290,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0549")
+					(reference "#PWR0359")
 					(unit 1)
 				)
 			)
@@ -14442,7 +14306,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ec47e3b0-c0ca-4844-9e3a-34857e327f27")
-		(property "Reference" "#PWR0488"
+		(property "Reference" "#PWR0298"
 			(at 149.86 50.8 0)
 			(effects
 				(font
@@ -14492,7 +14356,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0488")
+					(reference "#PWR0298")
 					(unit 1)
 				)
 			)
@@ -14508,7 +14372,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eec66ddf-3b75-45da-ace3-489e0ef50bc0")
-		(property "Reference" "#PWR0538"
+		(property "Reference" "#PWR0348"
 			(at 180.34 102.87 0)
 			(effects
 				(font
@@ -14558,14 +14422,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0538")
+					(reference "#PWR0348")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 241.3 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14573,43 +14437,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "efe9d5d2-6099-4162-bb11-693045df8eba")
-		(property "Reference" "D46"
-			(at 241.3 89.154 0)
+		(property "Reference" "LED46"
+			(at 243.84 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 241.3 91.694 0)
+		(property "Value" "SK6812MINI-E"
+			(at 248.92 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 242.57 114.3 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 241.3 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 243.84 116.205 0)
+			(at 241.3 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 241.3 106.68 0)
 			(effects
 				(font
@@ -14633,7 +14495,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D46")
+					(reference "LED46")
 					(unit 1)
 				)
 			)
@@ -14650,7 +14512,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "effc6078-2b23-499a-b72f-0b4ed520aea5")
-		(property "Reference" "#PWR0584"
+		(property "Reference" "#PWR0394"
 			(at 149.86 156.21 0)
 			(effects
 				(font
@@ -14700,7 +14562,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0584")
+					(reference "#PWR0394")
 					(unit 1)
 				)
 			)
@@ -14716,7 +14578,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f1127273-87d8-4584-ac3b-1bb1c42af197")
-		(property "Reference" "#PWR0464"
+		(property "Reference" "#PWR0274"
 			(at 43.18 33.02 0)
 			(effects
 				(font
@@ -14766,7 +14628,7 @@
 		(instances
 			(project ""
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0464")
+					(reference "#PWR0274")
 					(unit 1)
 				)
 			)
@@ -14782,7 +14644,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f246dcdd-690a-4c53-a2fc-92c60dc988a3")
-		(property "Reference" "#PWR0594"
+		(property "Reference" "#PWR0404"
 			(at 62.23 175.26 0)
 			(effects
 				(font
@@ -14833,7 +14695,7 @@
 		(instances
 			(project ""
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0594")
+					(reference "#PWR0404")
 					(unit 1)
 				)
 			)
@@ -14850,7 +14712,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f6a11b44-ec9f-4468-9e0c-2657f2109382")
-		(property "Reference" "#PWR0525"
+		(property "Reference" "#PWR0335"
 			(at 226.06 85.09 0)
 			(effects
 				(font
@@ -14900,7 +14762,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0525")
+					(reference "#PWR0335")
 					(unit 1)
 				)
 			)
@@ -14917,7 +14779,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f870ee0a-20a7-4c15-a241-32d9f249f44e")
-		(property "Reference" "#PWR0503"
+		(property "Reference" "#PWR0313"
 			(at 134.62 67.31 0)
 			(effects
 				(font
@@ -14967,14 +14829,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0503")
+					(reference "#PWR0313")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 58.42 106.68 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14982,43 +14844,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fa428365-096b-4f68-8dbe-3111c1235e2c")
-		(property "Reference" "D34"
-			(at 58.42 88.9 0)
+		(property "Reference" "LED34"
+			(at 60.96 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 58.42 91.44 0)
+		(property "Value" "SK6812MINI-E"
+			(at 66.04 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 59.69 114.3 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 58.42 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 60.96 116.205 0)
+			(at 58.42 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 58.42 106.68 0)
 			(effects
 				(font
@@ -15042,7 +14902,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D34")
+					(reference "LED34")
 					(unit 1)
 				)
 			)
@@ -15059,7 +14919,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fa7ae9dc-5283-47b5-b06b-e08e6933ff20")
-		(property "Reference" "#PWR0517"
+		(property "Reference" "#PWR0327"
 			(at 104.14 85.09 0)
 			(effects
 				(font
@@ -15109,14 +14969,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0517")
+					(reference "#PWR0327")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 165.1 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15124,43 +14984,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fac45206-f860-4d08-8883-33334130a128")
-		(property "Reference" "D9"
-			(at 165.1 19.304 0)
+		(property "Reference" "LED9"
+			(at 167.64 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 165.1 21.844 0)
+		(property "Value" "SK6812MINI-E"
+			(at 172.72 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 166.37 44.45 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 165.1 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 167.64 46.355 0)
+			(at 165.1 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 165.1 36.83 0)
 			(effects
 				(font
@@ -15184,7 +15042,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D9")
+					(reference "LED9")
 					(unit 1)
 				)
 			)
@@ -15201,7 +15059,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fb35f82d-5074-4bde-9e27-f07c26b279c8")
-		(property "Reference" "#PWR0522"
+		(property "Reference" "#PWR0332"
 			(at 180.34 85.09 0)
 			(effects
 				(font
@@ -15251,7 +15109,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0522")
+					(reference "#PWR0332")
 					(unit 1)
 				)
 			)
@@ -15267,7 +15125,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fbdb89a3-a7ff-47aa-a5ba-49e803f159d8")
-		(property "Reference" "#PWR0484"
+		(property "Reference" "#PWR0294"
 			(at 88.9 50.8 0)
 			(effects
 				(font
@@ -15317,7 +15175,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0484")
+					(reference "#PWR0294")
 					(unit 1)
 				)
 			)
@@ -15334,7 +15192,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fd11b372-5372-4e26-80ae-f557a91862c9")
-		(property "Reference" "#PWR0570"
+		(property "Reference" "#PWR0380"
 			(at 180.34 138.43 0)
 			(effects
 				(font
@@ -15384,7 +15242,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0570")
+					(reference "#PWR0380")
 					(unit 1)
 				)
 			)
@@ -15400,7 +15258,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fed3281b-dec6-469b-930e-3274b0fd2c55")
-		(property "Reference" "#PWR0599"
+		(property "Reference" "#PWR0409"
 			(at 139.7 187.96 0)
 			(effects
 				(font
@@ -15450,7 +15308,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0599")
+					(reference "#PWR0409")
 					(unit 1)
 				)
 			)
@@ -15467,7 +15325,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ff875802-aad2-409b-b8f8-e2ffa23f8aca")
-		(property "Reference" "#PWR0515"
+		(property "Reference" "#PWR0325"
 			(at 73.66 85.09 0)
 			(effects
 				(font
@@ -15517,14 +15375,14 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "#PWR0515")
+					(reference "#PWR0325")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "LED:SK6812MINI")
+		(lib_id "PCM_marbastlib-various:SK6812MINI-E")
 		(at 271.78 71.12 0)
 		(mirror y)
 		(unit 1)
@@ -15533,43 +15391,41 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ffb0f20c-356a-4874-9ec2-c2b53e7b5296")
-		(property "Reference" "D32"
-			(at 271.78 53.594 0)
+		(property "Reference" "LED32"
+			(at 269.24 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "SK6812MINI"
-			(at 271.78 56.134 0)
+		(property "Value" "SK6812MINI-E"
+			(at 264.16 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_SK6812MINI_PLCC4_3.5x3.5mm_P1.75mm"
-			(at 270.51 78.74 0)
+		(property "Footprint" "PCM_marbastlib-various:LED_6028R"
+			(at 271.78 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/2686/SK6812MINI_REV.01-1-2.pdf"
-			(at 269.24 80.645 0)
+			(at 271.78 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "RGB LED with integrated controller"
+		(property "Description" "Reverse mount adressable LED (WS2812 protocol)"
 			(at 271.78 71.12 0)
 			(effects
 				(font
@@ -15593,7 +15449,7 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/d970b0fa-c6f1-41cf-abc4-7c21438e8c5b"
-					(reference "D32")
+					(reference "LED32")
 					(unit 1)
 				)
 			)

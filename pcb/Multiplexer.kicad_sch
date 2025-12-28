@@ -777,7 +777,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "24d8377e-e04a-4225-8563-a59aec931db4")
-		(property "Reference" "#PWR054"
+		(property "Reference" "#PWR053"
 			(at 78.74 66.04 0)
 			(effects
 				(font
@@ -827,35 +827,35 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/0adfa91a-0784-424f-9949-4c22152ab92f"
-					(reference "#PWR0448")
+					(reference "#PWR0258")
 					(unit 1)
 				)
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/4aa91533-6d19-4b18-bd97-843bbf9a2ebd"
-					(reference "#PWR0452")
+					(reference "#PWR0262")
 					(unit 1)
 				)
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/57499abe-bae0-4aba-b387-192b72537f00"
-					(reference "#PWR0252")
+					(reference "#PWR0158")
 					(unit 1)
 				)
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/5fb3d5f1-a778-4ba7-9988-406cde0bb447"
-					(reference "#PWR0200")
+					(reference "#PWR0130")
 					(unit 1)
 				)
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/8fd9d515-2105-4930-9563-b36413125d29"
-					(reference "#PWR0148")
+					(reference "#PWR0102")
 					(unit 1)
 				)
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/a9c42e61-5ec1-4fa9-ae2f-cdc1de1fa9fe"
-					(reference "#PWR054")
+					(reference "#PWR053")
 					(unit 1)
 				)
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/ea62a3f7-6568-4743-86d5-db015650f22d"
-					(reference "#PWR0456")
+					(reference "#PWR0266")
 					(unit 1)
 				)
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/f2e1a5a1-adb9-4d0f-84af-2191946e6f18"
-					(reference "#PWR0460")
+					(reference "#PWR0270")
 					(unit 1)
 				)
 			)
@@ -871,7 +871,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7338d84e-18c2-4946-85ef-e36f2b1c6891")
-		(property "Reference" "#PWR055"
+		(property "Reference" "#PWR054"
 			(at 63.5 82.55 0)
 			(effects
 				(font
@@ -922,35 +922,35 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/0adfa91a-0784-424f-9949-4c22152ab92f"
-					(reference "#PWR0449")
+					(reference "#PWR0259")
 					(unit 1)
 				)
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/4aa91533-6d19-4b18-bd97-843bbf9a2ebd"
-					(reference "#PWR0453")
+					(reference "#PWR0263")
 					(unit 1)
 				)
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/57499abe-bae0-4aba-b387-192b72537f00"
-					(reference "#PWR0253")
+					(reference "#PWR0159")
 					(unit 1)
 				)
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/5fb3d5f1-a778-4ba7-9988-406cde0bb447"
-					(reference "#PWR0201")
+					(reference "#PWR0131")
 					(unit 1)
 				)
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/8fd9d515-2105-4930-9563-b36413125d29"
-					(reference "#PWR0149")
+					(reference "#PWR0103")
 					(unit 1)
 				)
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/a9c42e61-5ec1-4fa9-ae2f-cdc1de1fa9fe"
-					(reference "#PWR055")
+					(reference "#PWR054")
 					(unit 1)
 				)
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/ea62a3f7-6568-4743-86d5-db015650f22d"
-					(reference "#PWR0457")
+					(reference "#PWR0267")
 					(unit 1)
 				)
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/f2e1a5a1-adb9-4d0f-84af-2191946e6f18"
-					(reference "#PWR0461")
+					(reference "#PWR0271")
 					(unit 1)
 				)
 			)
@@ -965,7 +965,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a60aa985-1242-448f-a37f-dac1dfe38dd2")
-		(property "Reference" "#PWR056"
+		(property "Reference" "#PWR055"
 			(at 77.47 99.06 0)
 			(effects
 				(font
@@ -1015,35 +1015,35 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/0adfa91a-0784-424f-9949-4c22152ab92f"
-					(reference "#PWR0450")
+					(reference "#PWR0260")
 					(unit 1)
 				)
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/4aa91533-6d19-4b18-bd97-843bbf9a2ebd"
-					(reference "#PWR0454")
+					(reference "#PWR0264")
 					(unit 1)
 				)
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/57499abe-bae0-4aba-b387-192b72537f00"
-					(reference "#PWR0254")
+					(reference "#PWR0160")
 					(unit 1)
 				)
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/5fb3d5f1-a778-4ba7-9988-406cde0bb447"
-					(reference "#PWR0202")
+					(reference "#PWR0132")
 					(unit 1)
 				)
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/8fd9d515-2105-4930-9563-b36413125d29"
-					(reference "#PWR0150")
+					(reference "#PWR0104")
 					(unit 1)
 				)
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/a9c42e61-5ec1-4fa9-ae2f-cdc1de1fa9fe"
-					(reference "#PWR056")
+					(reference "#PWR055")
 					(unit 1)
 				)
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/ea62a3f7-6568-4743-86d5-db015650f22d"
-					(reference "#PWR0458")
+					(reference "#PWR0268")
 					(unit 1)
 				)
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/f2e1a5a1-adb9-4d0f-84af-2191946e6f18"
-					(reference "#PWR0462")
+					(reference "#PWR0272")
 					(unit 1)
 				)
 			)
@@ -1201,7 +1201,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f325306a-3af5-4c97-9c13-baee0356a4f9")
-		(property "Reference" "#PWR057"
+		(property "Reference" "#PWR056"
 			(at 80.01 99.06 0)
 			(effects
 				(font
@@ -1251,35 +1251,35 @@
 		(instances
 			(project "prometheus-65"
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/0adfa91a-0784-424f-9949-4c22152ab92f"
-					(reference "#PWR0451")
+					(reference "#PWR0261")
 					(unit 1)
 				)
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/4aa91533-6d19-4b18-bd97-843bbf9a2ebd"
-					(reference "#PWR0455")
+					(reference "#PWR0265")
 					(unit 1)
 				)
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/57499abe-bae0-4aba-b387-192b72537f00"
-					(reference "#PWR0255")
+					(reference "#PWR0161")
 					(unit 1)
 				)
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/5fb3d5f1-a778-4ba7-9988-406cde0bb447"
-					(reference "#PWR0203")
+					(reference "#PWR0133")
 					(unit 1)
 				)
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/8fd9d515-2105-4930-9563-b36413125d29"
-					(reference "#PWR0151")
+					(reference "#PWR0105")
 					(unit 1)
 				)
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/a9c42e61-5ec1-4fa9-ae2f-cdc1de1fa9fe"
-					(reference "#PWR057")
+					(reference "#PWR056")
 					(unit 1)
 				)
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/ea62a3f7-6568-4743-86d5-db015650f22d"
-					(reference "#PWR0459")
+					(reference "#PWR0269")
 					(unit 1)
 				)
 				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/f2e1a5a1-adb9-4d0f-84af-2191946e6f18"
-					(reference "#PWR0463")
+					(reference "#PWR0273")
 					(unit 1)
 				)
 			)
