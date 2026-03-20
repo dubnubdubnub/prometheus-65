@@ -1,15 +1,32 @@
 [
   {
-    "backcolor": "#ffffff",
-    "name": "Prometheus 65",
-    "radii": "10px",
+    "name": "Nitōryū 75",
+    "author": "Anshul Noori",
     "switchMount": "cherry",
-    "switchBrand": "gateron",
-    "pcb": false,
     "plate": true
   },
   [
+    {
+      "sm": "cherry"
+    },
     "Esc",
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    "Insert",
+    "Delete"
+  ],
+  [
+    "~\n`",
     "!\n1",
     "@\n2",
     "#\n3",
@@ -25,7 +42,8 @@
     {
       "w": 2
     },
-    "Backspace"
+    "Backspace",
+    "PgUp"
   ],
   [
     {
@@ -47,7 +65,8 @@
     {
       "w": 1.5
     },
-    "|\n\\"
+    "|\n\\",
+    "PgDn"
   ],
   [
     {
@@ -69,14 +88,10 @@
       "w": 2.25
     },
     "Enter",
-    {
-      "a": 7
-    },
-    ""
+    "Home"
   ],
   [
     {
-      "a": 4,
       "w": 2.25
     },
     "Shift",
@@ -91,53 +106,38 @@
     ">\n.",
     "?\n/",
     {
-      "w": 2.75
+      "w": 1.75
     },
     "Shift",
-    {
-      "a": 7
-    },
-    ""
+    "↑",
+    "End"
   ],
   [
     {
-      "a": 4,
       "w": 1.25
     },
     "Ctrl",
     {
       "w": 1.25
     },
-    "Win",
+    "Option",
     {
       "w": 1.25
     },
-    "Alt",
+    "Super",
     {
       "a": 7,
       "w": 6.25
     },
     "",
     {
-      "a": 4,
-      "w": 1.25
+      "a": 4
     },
-    "Alt",
-    {
-      "w": 1.25
-    },
-    "Win",
-    {
-      "w": 1.25
-    },
-    "Menu",
-    {
-      "w": 1.25
-    },
+    "Super",
+    "Fn",
     "Ctrl",
-    {
-      "a": 7
-    },
-    ""
+    "←",
+    "↓",
+    "→"
   ]
 ]

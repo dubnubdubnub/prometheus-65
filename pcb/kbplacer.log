@@ -1,0 +1,864 @@
+INFO: kbplacer_plugin_action.py:70: Plugin version: 0.14
+INFO: kbplacer_plugin_action.py:71: Python version: '3.9.13 (v3.9.13:6de2ca5339, May 17 2022, 11:37:23) \n[Clang 13.0.0 (clang-1300.0.29.30)]'
+INFO: kbplacer_plugin_action.py:72: KiCad version: 9.0.6 with 4.2.2a1 osx-cocoa (phoenix) wxWidgets 3.2.8
+INFO: kbplacer_dialog.py:631: Language: en
+INFO: kbplacer_plugin_action.py:80: GUI state: {"layout_path": "/Users/anshuln/Projects/prometheus-65/nit\u014dry\u016b-75.json", "key_distance": [19.05, 19.05], "key_info": {"annotation_format": "S{}", "position_option": "Default", "position": {"x": 0.0, "y": 0.0, "orientation": 180.0, "side": "Front"}, "template_path": ""}, "enable_diode_placement": false, "route_switches_with_diodes": false, "optimize_diodes_orientation": false, "diode_info": {"annotation_format": "D{}", "position_option": "Default", "position": {"x": 5.08, "y": 3.03, "orientation": 90.0, "side": "Back"}, "template_path": ""}, "additional_elements": [{"annotation_format": "LED{}", "position_option": "Custom", "position": {"x": 0.0, "y": 5.08, "orientation": 180.0, "side": "Back"}, "template_path": ""}], "route_rows_and_columns": false, "template_path": "", "generate_outline": false, "outline_delta": 0.0}
+DEBUG: key_placer.py:424: Set key 1U distance: 19050000/19050000
+WARNING: key_placer.py:134: Unexpected switch net position detected, each switch should have two unique nets unambiguously defining position in key matrix, switch-by-matrix association can't be used
+DEBUG: key_placer.py:141: Switches by nets: {}
+DEBUG: key_placer.py:145: Diodes by switch: {}
+DEBUG: board_modifier.py:73: Searching for S1 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+INFO: key_placer.py:620: Looking for connection template between S1 and other elements
+DEBUG: board_modifier.py:107: Getting S1 footprint position: (38100000, 38100000)
+INFO: key_placer.py:664: Got connection template: 
+INFO: kle_serial.py:931: User layout: [{'name': 'Nitōryū 75', 'author': 'Anshul Noori', 'switchMount': 'cherry', 'plate': True}, [{'sm': 'cherry'}, 'Esc', 'F1', 'F2', 'F3', 'F4', 'F5', 'F6', 'F7', 'F8', 'F9', 'F10', 'F11', 'F12', 'Insert', 'Delete'], ['~\n`', '!\n1', '@\n2', '#\n3', '$\n4', '%\n5', '^\n6', '&\n7', '*\n8', '(\n9', ')\n0', '_\n-', '+\n=', {'w': 2}, 'Backspace', 'PgUp'], [{'w': 1.5}, 'Tab', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', '{\n[', '}\n]', {'w': 1.5}, '|\n\\', 'PgDn'], [{'w': 1.75}, 'Caps Lock', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', ':\n;', '"\n\'', {'w': 2.25}, 'Enter', 'Home'], [{'w': 2.25}, 'Shift', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', '<\n,', '>\n.', '?\n/', {'w': 1.75}, 'Shift', '↑', 'End'], [{'w': 1.25}, 'Ctrl', {'w': 1.25}, 'Option', {'w': 1.25}, 'Super', {'a': 7, 'w': 6.25}, '', {'a': 4}, 'Super', 'Fn', 'Ctrl', '←', '↓', '→']]
+DEBUG: key_placer.py:724: Layout offset: (28575000, 28575000)
+DEBUG: kle_serial.py:990: Layout with: x_ortholinear_keys=44, y_ortholinear_keys=83, rotated_keys=0, encoders=0, iso_enters=0 and unrecognized_shape_keys=0
+DEBUG: kle_serial.py:1015: Layout tagged: [<KeyboardTag.ROW_STAGGERED: 2>]
+DEBUG: board_modifier.py:94: Setting S1 footprint position: (38100000, 38100000)
+DEBUG: board_modifier.py:94: Setting S2 footprint position: (57150000, 38100000)
+DEBUG: board_modifier.py:94: Setting S3 footprint position: (76200000, 38100000)
+DEBUG: board_modifier.py:94: Setting S4 footprint position: (95250000, 38100000)
+DEBUG: board_modifier.py:94: Setting S5 footprint position: (114300000, 38100000)
+DEBUG: board_modifier.py:94: Setting S6 footprint position: (133350000, 38100000)
+DEBUG: board_modifier.py:94: Setting S7 footprint position: (152400000, 38100000)
+DEBUG: board_modifier.py:94: Setting S8 footprint position: (171450000, 38100000)
+DEBUG: board_modifier.py:94: Setting S9 footprint position: (190500000, 38100000)
+DEBUG: board_modifier.py:94: Setting S10 footprint position: (209550000, 38100000)
+DEBUG: board_modifier.py:94: Setting S11 footprint position: (228600000, 38100000)
+DEBUG: board_modifier.py:94: Setting S12 footprint position: (247650000, 38100000)
+DEBUG: board_modifier.py:94: Setting S13 footprint position: (266700000, 38100000)
+DEBUG: board_modifier.py:94: Setting S14 footprint position: (285750000, 38100000)
+DEBUG: board_modifier.py:94: Setting S15 footprint position: (304800000, 38100000)
+DEBUG: board_modifier.py:94: Setting S16 footprint position: (38100000, 57150000)
+DEBUG: board_modifier.py:94: Setting S17 footprint position: (57150000, 57150000)
+DEBUG: board_modifier.py:94: Setting S18 footprint position: (76200000, 57150000)
+DEBUG: board_modifier.py:94: Setting S19 footprint position: (95250000, 57150000)
+DEBUG: board_modifier.py:94: Setting S20 footprint position: (114300000, 57150000)
+DEBUG: board_modifier.py:94: Setting S21 footprint position: (133350000, 57150000)
+DEBUG: board_modifier.py:94: Setting S22 footprint position: (152400000, 57150000)
+DEBUG: board_modifier.py:94: Setting S23 footprint position: (171450000, 57150000)
+DEBUG: board_modifier.py:94: Setting S24 footprint position: (190500000, 57150000)
+DEBUG: board_modifier.py:94: Setting S25 footprint position: (209550000, 57150000)
+DEBUG: board_modifier.py:94: Setting S26 footprint position: (228600000, 57150000)
+DEBUG: board_modifier.py:94: Setting S27 footprint position: (247650000, 57150000)
+DEBUG: board_modifier.py:94: Setting S28 footprint position: (266700000, 57150000)
+DEBUG: board_modifier.py:94: Setting S29 footprint position: (295275000, 57150000)
+DEBUG: board_modifier.py:94: Setting S30 footprint position: (323850000, 57150000)
+DEBUG: board_modifier.py:94: Setting S31 footprint position: (42862500, 76200000)
+DEBUG: board_modifier.py:94: Setting S32 footprint position: (66675000, 76200000)
+DEBUG: board_modifier.py:94: Setting S33 footprint position: (85725000, 76200000)
+DEBUG: board_modifier.py:94: Setting S34 footprint position: (104775000, 76200000)
+DEBUG: board_modifier.py:94: Setting S35 footprint position: (123825000, 76200000)
+DEBUG: board_modifier.py:94: Setting S36 footprint position: (142875000, 76200000)
+DEBUG: board_modifier.py:94: Setting S37 footprint position: (161925000, 76200000)
+DEBUG: board_modifier.py:94: Setting S38 footprint position: (180975000, 76200000)
+DEBUG: board_modifier.py:94: Setting S39 footprint position: (200025000, 76200000)
+DEBUG: board_modifier.py:94: Setting S40 footprint position: (219075000, 76200000)
+DEBUG: board_modifier.py:94: Setting S41 footprint position: (238125000, 76200000)
+DEBUG: board_modifier.py:94: Setting S42 footprint position: (257175000, 76200000)
+DEBUG: board_modifier.py:94: Setting S43 footprint position: (276225000, 76200000)
+DEBUG: board_modifier.py:94: Setting S44 footprint position: (300037500, 76200000)
+DEBUG: board_modifier.py:94: Setting S45 footprint position: (323850000, 76200000)
+DEBUG: board_modifier.py:94: Setting S46 footprint position: (45243750, 95250000)
+DEBUG: board_modifier.py:94: Setting S47 footprint position: (71437500, 95250000)
+DEBUG: board_modifier.py:94: Setting S48 footprint position: (90487500, 95250000)
+DEBUG: board_modifier.py:94: Setting S49 footprint position: (109537500, 95250000)
+DEBUG: board_modifier.py:94: Setting S50 footprint position: (128587500, 95250000)
+DEBUG: board_modifier.py:94: Setting S51 footprint position: (147637500, 95250000)
+DEBUG: board_modifier.py:94: Setting S52 footprint position: (166687500, 95250000)
+DEBUG: board_modifier.py:94: Setting S53 footprint position: (185737500, 95250000)
+DEBUG: board_modifier.py:94: Setting S54 footprint position: (204787500, 95250000)
+DEBUG: board_modifier.py:94: Setting S55 footprint position: (223837500, 95250000)
+DEBUG: board_modifier.py:94: Setting S56 footprint position: (242887500, 95250000)
+DEBUG: board_modifier.py:94: Setting S57 footprint position: (261937500, 95250000)
+DEBUG: board_modifier.py:94: Setting S58 footprint position: (292893750, 95250000)
+DEBUG: board_modifier.py:94: Setting S59 footprint position: (323850000, 95250000)
+DEBUG: board_modifier.py:94: Setting S60 footprint position: (50006250, 114300000)
+DEBUG: board_modifier.py:94: Setting S61 footprint position: (80962500, 114300000)
+DEBUG: board_modifier.py:94: Setting S62 footprint position: (100012500, 114300000)
+DEBUG: board_modifier.py:94: Setting S63 footprint position: (119062500, 114300000)
+DEBUG: board_modifier.py:94: Setting S64 footprint position: (138112500, 114300000)
+DEBUG: board_modifier.py:94: Setting S65 footprint position: (157162500, 114300000)
+DEBUG: board_modifier.py:94: Setting S66 footprint position: (176212500, 114300000)
+DEBUG: board_modifier.py:94: Setting S67 footprint position: (195262500, 114300000)
+DEBUG: board_modifier.py:94: Setting S68 footprint position: (214312500, 114300000)
+DEBUG: board_modifier.py:94: Setting S69 footprint position: (233362500, 114300000)
+DEBUG: board_modifier.py:94: Setting S70 footprint position: (252412500, 114300000)
+DEBUG: board_modifier.py:94: Setting S71 footprint position: (278606250, 114300000)
+DEBUG: board_modifier.py:94: Setting S72 footprint position: (304800000, 114300000)
+DEBUG: board_modifier.py:94: Setting S73 footprint position: (323850000, 114300000)
+DEBUG: board_modifier.py:94: Setting S74 footprint position: (40481250, 133350000)
+DEBUG: board_modifier.py:94: Setting S75 footprint position: (64293750, 133350000)
+DEBUG: board_modifier.py:94: Setting S76 footprint position: (88106250, 133350000)
+DEBUG: board_modifier.py:94: Setting S77 footprint position: (159543750, 133350000)
+DEBUG: board_modifier.py:94: Setting S78 footprint position: (228600000, 133350000)
+DEBUG: board_modifier.py:94: Setting S79 footprint position: (247650000, 133350000)
+DEBUG: board_modifier.py:94: Setting S80 footprint position: (266700000, 133350000)
+DEBUG: board_modifier.py:94: Setting S81 footprint position: (285750000, 133350000)
+DEBUG: board_modifier.py:94: Setting S82 footprint position: (304800000, 133350000)
+DEBUG: board_modifier.py:94: Setting S83 footprint position: (323850000, 133350000)
+INFO: key_placer.py:1078: Diode info: [ElementInfo(annotation_format='D{}', position_option=<PositionOption.UNCHANGED: 'Unchanged'>, position=ElementPosition(x=5.08, y=3.03, orientation=90.0, side=<Side.BACK: 'Back'>), template_path='')]
+DEBUG: key_placer.py:854: Placing additional elements for S31
+DEBUG: board_modifier.py:107: Getting S31 footprint position: (42862500, 76200000)
+DEBUG: board_modifier.py:84: Searching for optional LED31 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED31 footprint position: (42862500, 71120000)
+DEBUG: board_modifier.py:107: Getting LED31 footprint position: (42862500, 71120000)
+DEBUG: key_placer.py:854: Placing additional elements for SW1
+DEBUG: board_modifier.py:107: Getting SW1 footprint position: (101057500, -214200000)
+DEBUG: board_modifier.py:84: Searching for optional LEDW1 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC84
+DEBUG: board_modifier.py:107: Getting SC84 footprint position: (208407500, -87140000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC84 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC83
+DEBUG: board_modifier.py:107: Getting SC83 footprint position: (208407500, -154940000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC83 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC82
+DEBUG: board_modifier.py:107: Getting SC82 footprint position: (264297500, -109740000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC82 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC81
+DEBUG: board_modifier.py:107: Getting SC81 footprint position: (245667500, -41940000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC81 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC80
+DEBUG: board_modifier.py:107: Getting SC80 footprint position: (227037500, -19340000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC80 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC79
+DEBUG: board_modifier.py:107: Getting SC79 footprint position: (245667500, -109740000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC79 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC78
+DEBUG: board_modifier.py:107: Getting SC78 footprint position: (171147500, -109740000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC78 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC77
+DEBUG: board_modifier.py:107: Getting SC77 footprint position: (189777500, -64540000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC77 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC76
+DEBUG: board_modifier.py:107: Getting SC76 footprint position: (189777500, -154940000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC76 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC75
+DEBUG: board_modifier.py:107: Getting SC75 footprint position: (245667500, -154940000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC75 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC74
+DEBUG: board_modifier.py:107: Getting SC74 footprint position: (133887500, -64540000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC74 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC73
+DEBUG: board_modifier.py:107: Getting SC73 footprint position: (171147500, -64540000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC73 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC72
+DEBUG: board_modifier.py:107: Getting SC72 footprint position: (282927500, -154940000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC72 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC71
+DEBUG: board_modifier.py:107: Getting SC71 footprint position: (245667500, -19340000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC71 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC70
+DEBUG: board_modifier.py:107: Getting SC70 footprint position: (208407500, -200140000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC70 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC69
+DEBUG: board_modifier.py:107: Getting SC69 footprint position: (208407500, -19340000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC69 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC68
+DEBUG: board_modifier.py:107: Getting SC68 footprint position: (171147500, -177540000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC68 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC67
+DEBUG: board_modifier.py:107: Getting SC67 footprint position: (133887500, -109740000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC67 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC66
+DEBUG: board_modifier.py:107: Getting SC66 footprint position: (245667500, -87140000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC66 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC65
+DEBUG: board_modifier.py:107: Getting SC65 footprint position: (133887500, -132340000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC65 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC64
+DEBUG: board_modifier.py:107: Getting SC64 footprint position: (189777500, -177540000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC64 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC63
+DEBUG: board_modifier.py:107: Getting SC63 footprint position: (109327500, -175440000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC63 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC62
+DEBUG: board_modifier.py:107: Getting SC62 footprint position: (133887500, -177540000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC62 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC61
+DEBUG: board_modifier.py:107: Getting SC61 footprint position: (189777500, -19340000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC61 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC60
+DEBUG: board_modifier.py:107: Getting SC60 footprint position: (189777500, -41940000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC60 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC59
+DEBUG: board_modifier.py:107: Getting SC59 footprint position: (133887500, -41940000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC59 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC58
+DEBUG: board_modifier.py:107: Getting SC58 footprint position: (227037500, -177540000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC58 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC57
+DEBUG: board_modifier.py:107: Getting SC57 footprint position: (109327500, -130240000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC57 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC56
+DEBUG: board_modifier.py:107: Getting SC56 footprint position: (171147500, -87140000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC56 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC55
+DEBUG: board_modifier.py:107: Getting SC55 footprint position: (264297500, -154940000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC55 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC54
+DEBUG: board_modifier.py:107: Getting SC54 footprint position: (109327500, -152840000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC54 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC53
+DEBUG: board_modifier.py:107: Getting SC53 footprint position: (171147500, -132340000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC53 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC52
+DEBUG: board_modifier.py:107: Getting SC52 footprint position: (245667500, -64540000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC52 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC51
+DEBUG: board_modifier.py:107: Getting SC51 footprint position: (189777500, -132340000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC51 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC50
+DEBUG: board_modifier.py:107: Getting SC50 footprint position: (208407500, -132340000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC50 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC49
+DEBUG: board_modifier.py:107: Getting SC49 footprint position: (133887500, -87140000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC49 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC48
+DEBUG: board_modifier.py:107: Getting SC48 footprint position: (264297500, -200140000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC48 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC47
+DEBUG: board_modifier.py:107: Getting SC47 footprint position: (208407500, -109740000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC47 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC46
+DEBUG: board_modifier.py:107: Getting SC46 footprint position: (227037500, -41940000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC46 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC45
+DEBUG: board_modifier.py:107: Getting SC45 footprint position: (152517500, -64540000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC45 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC44
+DEBUG: board_modifier.py:107: Getting SC44 footprint position: (282927500, -87140000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC44 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC43
+DEBUG: board_modifier.py:107: Getting SC43 footprint position: (109327500, -107640000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC43 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC42
+DEBUG: board_modifier.py:107: Getting SC42 footprint position: (264297500, -87140000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC42 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC41
+DEBUG: board_modifier.py:107: Getting SC41 footprint position: (245667500, -200140000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC41 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC40
+DEBUG: board_modifier.py:107: Getting SC40 footprint position: (227037500, -200140000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC40 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC39
+DEBUG: board_modifier.py:107: Getting SC39 footprint position: (282927500, -132340000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC39 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC38
+DEBUG: board_modifier.py:107: Getting SC38 footprint position: (227037500, -109740000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC38 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC37
+DEBUG: board_modifier.py:107: Getting SC37 footprint position: (152517500, -109740000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC37 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC36
+DEBUG: board_modifier.py:107: Getting SC36 footprint position: (171147500, -19340000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC36 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC35
+DEBUG: board_modifier.py:107: Getting SC35 footprint position: (171147500, -154940000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC35 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC34
+DEBUG: board_modifier.py:107: Getting SC34 footprint position: (245667500, -132340000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC34 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC33
+DEBUG: board_modifier.py:107: Getting SC33 footprint position: (152517500, -200140000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC33 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC32
+DEBUG: board_modifier.py:107: Getting SC32 footprint position: (152517500, -177540000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC32 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC31
+DEBUG: board_modifier.py:107: Getting SC31 footprint position: (264297500, -132340000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC31 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC30
+DEBUG: board_modifier.py:107: Getting SC30 footprint position: (227037500, -132340000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC30 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC29
+DEBUG: board_modifier.py:107: Getting SC29 footprint position: (152517500, -154940000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC29 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC28
+DEBUG: board_modifier.py:107: Getting SC28 footprint position: (227037500, -154940000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC28 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC27
+DEBUG: board_modifier.py:107: Getting SC27 footprint position: (109327500, -39840000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC27 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC26
+DEBUG: board_modifier.py:107: Getting SC26 footprint position: (152517500, -41940000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC26 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC25
+DEBUG: board_modifier.py:107: Getting SC25 footprint position: (189777500, -109740000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC25 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC24
+DEBUG: board_modifier.py:107: Getting SC24 footprint position: (109327500, -62440000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC24 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC23
+DEBUG: board_modifier.py:107: Getting SC23 footprint position: (264297500, -64540000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC23 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC22
+DEBUG: board_modifier.py:107: Getting SC22 footprint position: (189777500, -87140000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC22 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC21
+DEBUG: board_modifier.py:107: Getting SC21 footprint position: (189777500, -200140000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC21 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC20
+DEBUG: board_modifier.py:107: Getting SC20 footprint position: (208407500, -177540000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC20 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC19
+DEBUG: board_modifier.py:107: Getting SC19 footprint position: (245667500, -177540000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC19 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC18
+DEBUG: board_modifier.py:107: Getting SC18 footprint position: (152517500, -87140000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC18 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC17
+DEBUG: board_modifier.py:107: Getting SC17 footprint position: (171147500, -41940000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC17 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC16
+DEBUG: board_modifier.py:107: Getting SC16 footprint position: (282927500, -109740000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC16 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC15
+DEBUG: board_modifier.py:107: Getting SC15 footprint position: (208407500, -64540000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC15 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC14
+DEBUG: board_modifier.py:107: Getting SC14 footprint position: (152517500, -19340000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC14 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC13
+DEBUG: board_modifier.py:107: Getting SC13 footprint position: (133887500, -19340000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC13 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC12
+DEBUG: board_modifier.py:107: Getting SC12 footprint position: (152517500, -132340000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC12 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC11
+DEBUG: board_modifier.py:107: Getting SC11 footprint position: (227037500, -87140000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC11 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC10
+DEBUG: board_modifier.py:107: Getting SC10 footprint position: (133887500, -200140000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC10 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC9
+DEBUG: board_modifier.py:107: Getting SC9 footprint position: (171147500, -200140000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC9 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC8
+DEBUG: board_modifier.py:107: Getting SC8 footprint position: (109327500, -85040000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC8 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC7
+DEBUG: board_modifier.py:107: Getting SC7 footprint position: (282927500, -64540000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC7 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC6
+DEBUG: board_modifier.py:107: Getting SC6 footprint position: (282927500, -177540000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC6 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC5
+DEBUG: board_modifier.py:107: Getting SC5 footprint position: (282927500, -200140000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC5 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC4
+DEBUG: board_modifier.py:107: Getting SC4 footprint position: (264297500, -177540000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC4 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC3
+DEBUG: board_modifier.py:107: Getting SC3 footprint position: (208407500, -41940000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC3 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC2
+DEBUG: board_modifier.py:107: Getting SC2 footprint position: (-5430000, 24650000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC2 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for SC1
+DEBUG: board_modifier.py:107: Getting SC1 footprint position: (-6800000, 17575000)
+DEBUG: board_modifier.py:84: Searching for optional LEDC1 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for S84
+DEBUG: board_modifier.py:107: Getting S84 footprint position: (206972500, -98550000)
+DEBUG: board_modifier.py:84: Searching for optional LED84 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED84 footprint position: (206972500, -93470000)
+DEBUG: key_placer.py:854: Placing additional elements for S83
+DEBUG: board_modifier.py:107: Getting S83 footprint position: (323850000, 133350000)
+DEBUG: board_modifier.py:84: Searching for optional LED83 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED83 footprint position: (323850000, 128270000)
+DEBUG: board_modifier.py:107: Getting LED83 footprint position: (323850000, 128270000)
+DEBUG: key_placer.py:854: Placing additional elements for S82
+DEBUG: board_modifier.py:107: Getting S82 footprint position: (304800000, 133350000)
+DEBUG: board_modifier.py:84: Searching for optional LED82 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED82 footprint position: (304800000, 128270000)
+DEBUG: board_modifier.py:107: Getting LED82 footprint position: (304800000, 128270000)
+DEBUG: key_placer.py:854: Placing additional elements for S81
+DEBUG: board_modifier.py:107: Getting S81 footprint position: (285750000, 133350000)
+DEBUG: board_modifier.py:84: Searching for optional LED81 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED81 footprint position: (285750000, 128270000)
+DEBUG: board_modifier.py:107: Getting LED81 footprint position: (285750000, 128270000)
+DEBUG: key_placer.py:854: Placing additional elements for S80
+DEBUG: board_modifier.py:107: Getting S80 footprint position: (266700000, 133350000)
+DEBUG: board_modifier.py:84: Searching for optional LED80 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED80 footprint position: (266700000, 128270000)
+DEBUG: board_modifier.py:107: Getting LED80 footprint position: (266700000, 128270000)
+DEBUG: key_placer.py:854: Placing additional elements for S79
+DEBUG: board_modifier.py:107: Getting S79 footprint position: (247650000, 133350000)
+DEBUG: board_modifier.py:84: Searching for optional LED79 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED79 footprint position: (247650000, 128270000)
+DEBUG: board_modifier.py:107: Getting LED79 footprint position: (247650000, 128270000)
+DEBUG: key_placer.py:854: Placing additional elements for S78
+DEBUG: board_modifier.py:107: Getting S78 footprint position: (228600000, 133350000)
+DEBUG: board_modifier.py:84: Searching for optional LED78 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED78 footprint position: (228600000, 128270000)
+DEBUG: board_modifier.py:107: Getting LED78 footprint position: (228600000, 128270000)
+DEBUG: key_placer.py:854: Placing additional elements for S77
+DEBUG: board_modifier.py:107: Getting S77 footprint position: (159543750, 133350000)
+DEBUG: board_modifier.py:84: Searching for optional LED77 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED77 footprint position: (159543750, 128270000)
+DEBUG: board_modifier.py:107: Getting LED77 footprint position: (159543750, 128270000)
+DEBUG: key_placer.py:854: Placing additional elements for S76
+DEBUG: board_modifier.py:107: Getting S76 footprint position: (88106250, 133350000)
+DEBUG: board_modifier.py:84: Searching for optional LED76 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED76 footprint position: (88106250, 128270000)
+DEBUG: board_modifier.py:107: Getting LED76 footprint position: (88106250, 128270000)
+DEBUG: key_placer.py:854: Placing additional elements for S75
+DEBUG: board_modifier.py:107: Getting S75 footprint position: (64293750, 133350000)
+DEBUG: board_modifier.py:84: Searching for optional LED75 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED75 footprint position: (64293750, 128270000)
+DEBUG: board_modifier.py:107: Getting LED75 footprint position: (64293750, 128270000)
+DEBUG: key_placer.py:854: Placing additional elements for S74
+DEBUG: board_modifier.py:107: Getting S74 footprint position: (40481250, 133350000)
+DEBUG: board_modifier.py:84: Searching for optional LED74 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED74 footprint position: (40481250, 128270000)
+DEBUG: board_modifier.py:107: Getting LED74 footprint position: (40481250, 128270000)
+DEBUG: key_placer.py:854: Placing additional elements for S73
+DEBUG: board_modifier.py:107: Getting S73 footprint position: (323850000, 114300000)
+DEBUG: board_modifier.py:84: Searching for optional LED73 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED73 footprint position: (323850000, 109220000)
+DEBUG: board_modifier.py:107: Getting LED73 footprint position: (323850000, 109220000)
+DEBUG: key_placer.py:854: Placing additional elements for S72
+DEBUG: board_modifier.py:107: Getting S72 footprint position: (304800000, 114300000)
+DEBUG: board_modifier.py:84: Searching for optional LED72 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED72 footprint position: (304800000, 109220000)
+DEBUG: board_modifier.py:107: Getting LED72 footprint position: (304800000, 109220000)
+DEBUG: key_placer.py:854: Placing additional elements for S71
+DEBUG: board_modifier.py:107: Getting S71 footprint position: (278606250, 114300000)
+DEBUG: board_modifier.py:84: Searching for optional LED71 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED71 footprint position: (278606250, 109220000)
+DEBUG: board_modifier.py:107: Getting LED71 footprint position: (278606250, 109220000)
+DEBUG: key_placer.py:854: Placing additional elements for S70
+DEBUG: board_modifier.py:107: Getting S70 footprint position: (252412500, 114300000)
+DEBUG: board_modifier.py:84: Searching for optional LED70 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED70 footprint position: (252412500, 109220000)
+DEBUG: board_modifier.py:107: Getting LED70 footprint position: (252412500, 109220000)
+DEBUG: key_placer.py:854: Placing additional elements for S69
+DEBUG: board_modifier.py:107: Getting S69 footprint position: (233362500, 114300000)
+DEBUG: board_modifier.py:84: Searching for optional LED69 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED69 footprint position: (233362500, 109220000)
+DEBUG: board_modifier.py:107: Getting LED69 footprint position: (233362500, 109220000)
+DEBUG: key_placer.py:854: Placing additional elements for S68
+DEBUG: board_modifier.py:107: Getting S68 footprint position: (214312500, 114300000)
+DEBUG: board_modifier.py:84: Searching for optional LED68 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED68 footprint position: (214312500, 109220000)
+DEBUG: board_modifier.py:107: Getting LED68 footprint position: (214312500, 109220000)
+DEBUG: key_placer.py:854: Placing additional elements for S67
+DEBUG: board_modifier.py:107: Getting S67 footprint position: (195262500, 114300000)
+DEBUG: board_modifier.py:84: Searching for optional LED67 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED67 footprint position: (195262500, 109220000)
+DEBUG: board_modifier.py:107: Getting LED67 footprint position: (195262500, 109220000)
+DEBUG: key_placer.py:854: Placing additional elements for S66
+DEBUG: board_modifier.py:107: Getting S66 footprint position: (176212500, 114300000)
+DEBUG: board_modifier.py:84: Searching for optional LED66 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED66 footprint position: (176212500, 109220000)
+DEBUG: board_modifier.py:107: Getting LED66 footprint position: (176212500, 109220000)
+DEBUG: key_placer.py:854: Placing additional elements for S65
+DEBUG: board_modifier.py:107: Getting S65 footprint position: (157162500, 114300000)
+DEBUG: board_modifier.py:84: Searching for optional LED65 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED65 footprint position: (157162500, 109220000)
+DEBUG: board_modifier.py:107: Getting LED65 footprint position: (157162500, 109220000)
+DEBUG: key_placer.py:854: Placing additional elements for S64
+DEBUG: board_modifier.py:107: Getting S64 footprint position: (138112500, 114300000)
+DEBUG: board_modifier.py:84: Searching for optional LED64 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED64 footprint position: (138112500, 109220000)
+DEBUG: board_modifier.py:107: Getting LED64 footprint position: (138112500, 109220000)
+DEBUG: key_placer.py:854: Placing additional elements for S63
+DEBUG: board_modifier.py:107: Getting S63 footprint position: (119062500, 114300000)
+DEBUG: board_modifier.py:84: Searching for optional LED63 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED63 footprint position: (119062500, 109220000)
+DEBUG: board_modifier.py:107: Getting LED63 footprint position: (119062500, 109220000)
+DEBUG: key_placer.py:854: Placing additional elements for S62
+DEBUG: board_modifier.py:107: Getting S62 footprint position: (100012500, 114300000)
+DEBUG: board_modifier.py:84: Searching for optional LED62 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED62 footprint position: (100012500, 109220000)
+DEBUG: board_modifier.py:107: Getting LED62 footprint position: (100012500, 109220000)
+DEBUG: key_placer.py:854: Placing additional elements for S61
+DEBUG: board_modifier.py:107: Getting S61 footprint position: (80962500, 114300000)
+DEBUG: board_modifier.py:84: Searching for optional LED61 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED61 footprint position: (80962500, 109220000)
+DEBUG: board_modifier.py:107: Getting LED61 footprint position: (80962500, 109220000)
+DEBUG: key_placer.py:854: Placing additional elements for S60
+DEBUG: board_modifier.py:107: Getting S60 footprint position: (50006250, 114300000)
+DEBUG: board_modifier.py:84: Searching for optional LED60 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED60 footprint position: (50006250, 109220000)
+DEBUG: board_modifier.py:107: Getting LED60 footprint position: (50006250, 109220000)
+DEBUG: key_placer.py:854: Placing additional elements for S59
+DEBUG: board_modifier.py:107: Getting S59 footprint position: (323850000, 95250000)
+DEBUG: board_modifier.py:84: Searching for optional LED59 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED59 footprint position: (323850000, 90170000)
+DEBUG: board_modifier.py:107: Getting LED59 footprint position: (323850000, 90170000)
+DEBUG: key_placer.py:854: Placing additional elements for S58
+DEBUG: board_modifier.py:107: Getting S58 footprint position: (292893750, 95250000)
+DEBUG: board_modifier.py:84: Searching for optional LED58 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED58 footprint position: (292893750, 90170000)
+DEBUG: board_modifier.py:107: Getting LED58 footprint position: (292893750, 90170000)
+DEBUG: key_placer.py:854: Placing additional elements for S57
+DEBUG: board_modifier.py:107: Getting S57 footprint position: (261937500, 95250000)
+DEBUG: board_modifier.py:84: Searching for optional LED57 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED57 footprint position: (261937500, 90170000)
+DEBUG: board_modifier.py:107: Getting LED57 footprint position: (261937500, 90170000)
+DEBUG: key_placer.py:854: Placing additional elements for S56
+DEBUG: board_modifier.py:107: Getting S56 footprint position: (242887500, 95250000)
+DEBUG: board_modifier.py:84: Searching for optional LED56 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED56 footprint position: (242887500, 90170000)
+DEBUG: board_modifier.py:107: Getting LED56 footprint position: (242887500, 90170000)
+DEBUG: key_placer.py:854: Placing additional elements for S55
+DEBUG: board_modifier.py:107: Getting S55 footprint position: (223837500, 95250000)
+DEBUG: board_modifier.py:84: Searching for optional LED55 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED55 footprint position: (223837500, 90170000)
+DEBUG: board_modifier.py:107: Getting LED55 footprint position: (223837500, 90170000)
+DEBUG: key_placer.py:854: Placing additional elements for S54
+DEBUG: board_modifier.py:107: Getting S54 footprint position: (204787500, 95250000)
+DEBUG: board_modifier.py:84: Searching for optional LED54 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED54 footprint position: (204787500, 90170000)
+DEBUG: board_modifier.py:107: Getting LED54 footprint position: (204787500, 90170000)
+DEBUG: key_placer.py:854: Placing additional elements for S53
+DEBUG: board_modifier.py:107: Getting S53 footprint position: (185737500, 95250000)
+DEBUG: board_modifier.py:84: Searching for optional LED53 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED53 footprint position: (185737500, 90170000)
+DEBUG: board_modifier.py:107: Getting LED53 footprint position: (185737500, 90170000)
+DEBUG: key_placer.py:854: Placing additional elements for S52
+DEBUG: board_modifier.py:107: Getting S52 footprint position: (166687500, 95250000)
+DEBUG: board_modifier.py:84: Searching for optional LED52 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED52 footprint position: (166687500, 90170000)
+DEBUG: board_modifier.py:107: Getting LED52 footprint position: (166687500, 90170000)
+DEBUG: key_placer.py:854: Placing additional elements for S51
+DEBUG: board_modifier.py:107: Getting S51 footprint position: (147637500, 95250000)
+DEBUG: board_modifier.py:84: Searching for optional LED51 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED51 footprint position: (147637500, 90170000)
+DEBUG: board_modifier.py:107: Getting LED51 footprint position: (147637500, 90170000)
+DEBUG: key_placer.py:854: Placing additional elements for S50
+DEBUG: board_modifier.py:107: Getting S50 footprint position: (128587500, 95250000)
+DEBUG: board_modifier.py:84: Searching for optional LED50 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED50 footprint position: (128587500, 90170000)
+DEBUG: board_modifier.py:107: Getting LED50 footprint position: (128587500, 90170000)
+DEBUG: key_placer.py:854: Placing additional elements for S49
+DEBUG: board_modifier.py:107: Getting S49 footprint position: (109537500, 95250000)
+DEBUG: board_modifier.py:84: Searching for optional LED49 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED49 footprint position: (109537500, 90170000)
+DEBUG: board_modifier.py:107: Getting LED49 footprint position: (109537500, 90170000)
+DEBUG: key_placer.py:854: Placing additional elements for S48
+DEBUG: board_modifier.py:107: Getting S48 footprint position: (90487500, 95250000)
+DEBUG: board_modifier.py:84: Searching for optional LED48 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED48 footprint position: (90487500, 90170000)
+DEBUG: board_modifier.py:107: Getting LED48 footprint position: (90487500, 90170000)
+DEBUG: key_placer.py:854: Placing additional elements for S47
+DEBUG: board_modifier.py:107: Getting S47 footprint position: (71437500, 95250000)
+DEBUG: board_modifier.py:84: Searching for optional LED47 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED47 footprint position: (71437500, 90170000)
+DEBUG: board_modifier.py:107: Getting LED47 footprint position: (71437500, 90170000)
+DEBUG: key_placer.py:854: Placing additional elements for S46
+DEBUG: board_modifier.py:107: Getting S46 footprint position: (45243750, 95250000)
+DEBUG: board_modifier.py:84: Searching for optional LED46 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED46 footprint position: (45243750, 90170000)
+DEBUG: board_modifier.py:107: Getting LED46 footprint position: (45243750, 90170000)
+DEBUG: key_placer.py:854: Placing additional elements for S45
+DEBUG: board_modifier.py:107: Getting S45 footprint position: (323850000, 76200000)
+DEBUG: board_modifier.py:84: Searching for optional LED45 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED45 footprint position: (323850000, 71120000)
+DEBUG: board_modifier.py:107: Getting LED45 footprint position: (323850000, 71120000)
+DEBUG: key_placer.py:854: Placing additional elements for S44
+DEBUG: board_modifier.py:107: Getting S44 footprint position: (300037500, 76200000)
+DEBUG: board_modifier.py:84: Searching for optional LED44 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED44 footprint position: (300037500, 71120000)
+DEBUG: board_modifier.py:107: Getting LED44 footprint position: (300037500, 71120000)
+DEBUG: key_placer.py:854: Placing additional elements for S43
+DEBUG: board_modifier.py:107: Getting S43 footprint position: (276225000, 76200000)
+DEBUG: board_modifier.py:84: Searching for optional LED43 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED43 footprint position: (276225000, 71120000)
+DEBUG: board_modifier.py:107: Getting LED43 footprint position: (276225000, 71120000)
+DEBUG: key_placer.py:854: Placing additional elements for S42
+DEBUG: board_modifier.py:107: Getting S42 footprint position: (257175000, 76200000)
+DEBUG: board_modifier.py:84: Searching for optional LED42 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED42 footprint position: (257175000, 71120000)
+DEBUG: board_modifier.py:107: Getting LED42 footprint position: (257175000, 71120000)
+DEBUG: key_placer.py:854: Placing additional elements for S41
+DEBUG: board_modifier.py:107: Getting S41 footprint position: (238125000, 76200000)
+DEBUG: board_modifier.py:84: Searching for optional LED41 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED41 footprint position: (238125000, 71120000)
+DEBUG: board_modifier.py:107: Getting LED41 footprint position: (238125000, 71120000)
+DEBUG: key_placer.py:854: Placing additional elements for S40
+DEBUG: board_modifier.py:107: Getting S40 footprint position: (219075000, 76200000)
+DEBUG: board_modifier.py:84: Searching for optional LED40 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED40 footprint position: (219075000, 71120000)
+DEBUG: board_modifier.py:107: Getting LED40 footprint position: (219075000, 71120000)
+DEBUG: key_placer.py:854: Placing additional elements for S39
+DEBUG: board_modifier.py:107: Getting S39 footprint position: (200025000, 76200000)
+DEBUG: board_modifier.py:84: Searching for optional LED39 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED39 footprint position: (200025000, 71120000)
+DEBUG: board_modifier.py:107: Getting LED39 footprint position: (200025000, 71120000)
+DEBUG: key_placer.py:854: Placing additional elements for S38
+DEBUG: board_modifier.py:107: Getting S38 footprint position: (180975000, 76200000)
+DEBUG: board_modifier.py:84: Searching for optional LED38 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED38 footprint position: (180975000, 71120000)
+DEBUG: board_modifier.py:107: Getting LED38 footprint position: (180975000, 71120000)
+DEBUG: key_placer.py:854: Placing additional elements for S37
+DEBUG: board_modifier.py:107: Getting S37 footprint position: (161925000, 76200000)
+DEBUG: board_modifier.py:84: Searching for optional LED37 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED37 footprint position: (161925000, 71120000)
+DEBUG: board_modifier.py:107: Getting LED37 footprint position: (161925000, 71120000)
+DEBUG: key_placer.py:854: Placing additional elements for S36
+DEBUG: board_modifier.py:107: Getting S36 footprint position: (142875000, 76200000)
+DEBUG: board_modifier.py:84: Searching for optional LED36 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED36 footprint position: (142875000, 71120000)
+DEBUG: board_modifier.py:107: Getting LED36 footprint position: (142875000, 71120000)
+DEBUG: key_placer.py:854: Placing additional elements for S35
+DEBUG: board_modifier.py:107: Getting S35 footprint position: (123825000, 76200000)
+DEBUG: board_modifier.py:84: Searching for optional LED35 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED35 footprint position: (123825000, 71120000)
+DEBUG: board_modifier.py:107: Getting LED35 footprint position: (123825000, 71120000)
+DEBUG: key_placer.py:854: Placing additional elements for S34
+DEBUG: board_modifier.py:107: Getting S34 footprint position: (104775000, 76200000)
+DEBUG: board_modifier.py:84: Searching for optional LED34 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED34 footprint position: (104775000, 71120000)
+DEBUG: board_modifier.py:107: Getting LED34 footprint position: (104775000, 71120000)
+DEBUG: key_placer.py:854: Placing additional elements for S33
+DEBUG: board_modifier.py:107: Getting S33 footprint position: (85725000, 76200000)
+DEBUG: board_modifier.py:84: Searching for optional LED33 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED33 footprint position: (85725000, 71120000)
+DEBUG: board_modifier.py:107: Getting LED33 footprint position: (85725000, 71120000)
+DEBUG: key_placer.py:854: Placing additional elements for S32
+DEBUG: board_modifier.py:107: Getting S32 footprint position: (66675000, 76200000)
+DEBUG: board_modifier.py:84: Searching for optional LED32 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED32 footprint position: (66675000, 71120000)
+DEBUG: board_modifier.py:107: Getting LED32 footprint position: (66675000, 71120000)
+DEBUG: key_placer.py:854: Placing additional elements for S30
+DEBUG: board_modifier.py:107: Getting S30 footprint position: (323850000, 57150000)
+DEBUG: board_modifier.py:84: Searching for optional LED30 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED30 footprint position: (323850000, 52070000)
+DEBUG: board_modifier.py:107: Getting LED30 footprint position: (323850000, 52070000)
+DEBUG: key_placer.py:854: Placing additional elements for S29
+DEBUG: board_modifier.py:107: Getting S29 footprint position: (295275000, 57150000)
+DEBUG: board_modifier.py:84: Searching for optional LED29 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED29 footprint position: (295275000, 52070000)
+DEBUG: board_modifier.py:107: Getting LED29 footprint position: (295275000, 52070000)
+DEBUG: key_placer.py:854: Placing additional elements for S28
+DEBUG: board_modifier.py:107: Getting S28 footprint position: (266700000, 57150000)
+DEBUG: board_modifier.py:84: Searching for optional LED28 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED28 footprint position: (266700000, 52070000)
+DEBUG: board_modifier.py:107: Getting LED28 footprint position: (266700000, 52070000)
+DEBUG: key_placer.py:854: Placing additional elements for S27
+DEBUG: board_modifier.py:107: Getting S27 footprint position: (247650000, 57150000)
+DEBUG: board_modifier.py:84: Searching for optional LED27 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED27 footprint position: (247650000, 52070000)
+DEBUG: board_modifier.py:107: Getting LED27 footprint position: (247650000, 52070000)
+DEBUG: key_placer.py:854: Placing additional elements for S26
+DEBUG: board_modifier.py:107: Getting S26 footprint position: (228600000, 57150000)
+DEBUG: board_modifier.py:84: Searching for optional LED26 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED26 footprint position: (228600000, 52070000)
+DEBUG: board_modifier.py:107: Getting LED26 footprint position: (228600000, 52070000)
+DEBUG: key_placer.py:854: Placing additional elements for S25
+DEBUG: board_modifier.py:107: Getting S25 footprint position: (209550000, 57150000)
+DEBUG: board_modifier.py:84: Searching for optional LED25 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED25 footprint position: (209550000, 52070000)
+DEBUG: board_modifier.py:107: Getting LED25 footprint position: (209550000, 52070000)
+DEBUG: key_placer.py:854: Placing additional elements for S24
+DEBUG: board_modifier.py:107: Getting S24 footprint position: (190500000, 57150000)
+DEBUG: board_modifier.py:84: Searching for optional LED24 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED24 footprint position: (190500000, 52070000)
+DEBUG: board_modifier.py:107: Getting LED24 footprint position: (190500000, 52070000)
+DEBUG: key_placer.py:854: Placing additional elements for S23
+DEBUG: board_modifier.py:107: Getting S23 footprint position: (171450000, 57150000)
+DEBUG: board_modifier.py:84: Searching for optional LED23 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED23 footprint position: (171450000, 52070000)
+DEBUG: board_modifier.py:107: Getting LED23 footprint position: (171450000, 52070000)
+DEBUG: key_placer.py:854: Placing additional elements for S22
+DEBUG: board_modifier.py:107: Getting S22 footprint position: (152400000, 57150000)
+DEBUG: board_modifier.py:84: Searching for optional LED22 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED22 footprint position: (152400000, 52070000)
+DEBUG: board_modifier.py:107: Getting LED22 footprint position: (152400000, 52070000)
+DEBUG: key_placer.py:854: Placing additional elements for S21
+DEBUG: board_modifier.py:107: Getting S21 footprint position: (133350000, 57150000)
+DEBUG: board_modifier.py:84: Searching for optional LED21 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED21 footprint position: (133350000, 52070000)
+DEBUG: board_modifier.py:107: Getting LED21 footprint position: (133350000, 52070000)
+DEBUG: key_placer.py:854: Placing additional elements for S20
+DEBUG: board_modifier.py:107: Getting S20 footprint position: (114300000, 57150000)
+DEBUG: board_modifier.py:84: Searching for optional LED20 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED20 footprint position: (114300000, 52070000)
+DEBUG: board_modifier.py:107: Getting LED20 footprint position: (114300000, 52070000)
+DEBUG: key_placer.py:854: Placing additional elements for S19
+DEBUG: board_modifier.py:107: Getting S19 footprint position: (95250000, 57150000)
+DEBUG: board_modifier.py:84: Searching for optional LED19 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED19 footprint position: (95250000, 52070000)
+DEBUG: board_modifier.py:107: Getting LED19 footprint position: (95250000, 52070000)
+DEBUG: key_placer.py:854: Placing additional elements for S18
+DEBUG: board_modifier.py:107: Getting S18 footprint position: (76200000, 57150000)
+DEBUG: board_modifier.py:84: Searching for optional LED18 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED18 footprint position: (76200000, 52070000)
+DEBUG: board_modifier.py:107: Getting LED18 footprint position: (76200000, 52070000)
+DEBUG: key_placer.py:854: Placing additional elements for S17
+DEBUG: board_modifier.py:107: Getting S17 footprint position: (57150000, 57150000)
+DEBUG: board_modifier.py:84: Searching for optional LED17 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED17 footprint position: (57150000, 52070000)
+DEBUG: board_modifier.py:107: Getting LED17 footprint position: (57150000, 52070000)
+DEBUG: key_placer.py:854: Placing additional elements for S16
+DEBUG: board_modifier.py:107: Getting S16 footprint position: (38100000, 57150000)
+DEBUG: board_modifier.py:84: Searching for optional LED16 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED16 footprint position: (38100000, 52070000)
+DEBUG: board_modifier.py:107: Getting LED16 footprint position: (38100000, 52070000)
+DEBUG: key_placer.py:854: Placing additional elements for S15
+DEBUG: board_modifier.py:107: Getting S15 footprint position: (304800000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED15 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED15 footprint position: (304800000, 33020000)
+DEBUG: board_modifier.py:107: Getting LED15 footprint position: (304800000, 33020000)
+DEBUG: key_placer.py:854: Placing additional elements for S14
+DEBUG: board_modifier.py:107: Getting S14 footprint position: (285750000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED14 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED14 footprint position: (285750000, 33020000)
+DEBUG: board_modifier.py:107: Getting LED14 footprint position: (285750000, 33020000)
+DEBUG: key_placer.py:854: Placing additional elements for S13
+DEBUG: board_modifier.py:107: Getting S13 footprint position: (266700000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED13 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED13 footprint position: (266700000, 33020000)
+DEBUG: board_modifier.py:107: Getting LED13 footprint position: (266700000, 33020000)
+DEBUG: key_placer.py:854: Placing additional elements for S12
+DEBUG: board_modifier.py:107: Getting S12 footprint position: (247650000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED12 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED12 footprint position: (247650000, 33020000)
+DEBUG: board_modifier.py:107: Getting LED12 footprint position: (247650000, 33020000)
+DEBUG: key_placer.py:854: Placing additional elements for S11
+DEBUG: board_modifier.py:107: Getting S11 footprint position: (228600000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED11 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED11 footprint position: (228600000, 33020000)
+DEBUG: board_modifier.py:107: Getting LED11 footprint position: (228600000, 33020000)
+DEBUG: key_placer.py:854: Placing additional elements for S10
+DEBUG: board_modifier.py:107: Getting S10 footprint position: (209550000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED10 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED10 footprint position: (209550000, 33020000)
+DEBUG: board_modifier.py:107: Getting LED10 footprint position: (209550000, 33020000)
+DEBUG: key_placer.py:854: Placing additional elements for S9
+DEBUG: board_modifier.py:107: Getting S9 footprint position: (190500000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED9 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED9 footprint position: (190500000, 33020000)
+DEBUG: board_modifier.py:107: Getting LED9 footprint position: (190500000, 33020000)
+DEBUG: key_placer.py:854: Placing additional elements for S8
+DEBUG: board_modifier.py:107: Getting S8 footprint position: (171450000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED8 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED8 footprint position: (171450000, 33020000)
+DEBUG: board_modifier.py:107: Getting LED8 footprint position: (171450000, 33020000)
+DEBUG: key_placer.py:854: Placing additional elements for S7
+DEBUG: board_modifier.py:107: Getting S7 footprint position: (152400000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED7 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED7 footprint position: (152400000, 33020000)
+DEBUG: board_modifier.py:107: Getting LED7 footprint position: (152400000, 33020000)
+DEBUG: key_placer.py:854: Placing additional elements for S6
+DEBUG: board_modifier.py:107: Getting S6 footprint position: (133350000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED6 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED6 footprint position: (133350000, 33020000)
+DEBUG: board_modifier.py:107: Getting LED6 footprint position: (133350000, 33020000)
+DEBUG: key_placer.py:854: Placing additional elements for S5
+DEBUG: board_modifier.py:107: Getting S5 footprint position: (114300000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED5 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED5 footprint position: (114300000, 33020000)
+DEBUG: board_modifier.py:107: Getting LED5 footprint position: (114300000, 33020000)
+DEBUG: key_placer.py:854: Placing additional elements for S4
+DEBUG: board_modifier.py:107: Getting S4 footprint position: (95250000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED4 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED4 footprint position: (95250000, 33020000)
+DEBUG: board_modifier.py:107: Getting LED4 footprint position: (95250000, 33020000)
+DEBUG: key_placer.py:854: Placing additional elements for S3
+DEBUG: board_modifier.py:107: Getting S3 footprint position: (76200000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED3 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED3 footprint position: (76200000, 33020000)
+DEBUG: board_modifier.py:107: Getting LED3 footprint position: (76200000, 33020000)
+DEBUG: key_placer.py:854: Placing additional elements for S2
+DEBUG: board_modifier.py:107: Getting S2 footprint position: (57150000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED2 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED2 footprint position: (57150000, 33020000)
+DEBUG: board_modifier.py:107: Getting LED2 footprint position: (57150000, 33020000)
+DEBUG: key_placer.py:854: Placing additional elements for SU1
+DEBUG: board_modifier.py:107: Getting SU1 footprint position: (-4911233, 21762500)
+DEBUG: board_modifier.py:84: Searching for optional LEDU1 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:89: Footprint not found
+DEBUG: key_placer.py:854: Placing additional elements for S1
+DEBUG: board_modifier.py:107: Getting S1 footprint position: (38100000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED1 footprint in /Users/anshuln/Projects/prometheus-65/pcb/prometheus-65.kicad_pcb
+DEBUG: board_modifier.py:94: Setting LED1 footprint position: (38100000, 33020000)
+DEBUG: board_modifier.py:107: Getting LED1 footprint position: (38100000, 33020000)

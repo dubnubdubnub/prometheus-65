@@ -1,0 +1,1930 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "ec857ceb-4fd4-4933-8890-41fdef7d6ea1")
+	(paper "A4")
+	(lib_symbols
+		(symbol "Device:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "ScottoKeebs:Placeholder_Resistor"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0 2.032 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Resistor"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 -1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Placeholder_Resistor_0_1"
+				(rectangle
+					(start 2.54 -1.016)
+					(end -2.54 1.016)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Placeholder_Resistor_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:+3.3V"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+3.3V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+3.3V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+3.3V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "prometheus-65-symbols:OPA4323"
+			(pin_names
+				(offset 0.127)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "OPA4323"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa4323.pdf"
+				(at 1.27 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Low-Power, Quad-Operational Amplifiers, DIP-14/SOIC-14/SSOP-14"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "quad opamp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "SOIC*3.9x8.7mm*P1.27mm* DIP*W7.62mm* TSSOP*4.4x5mm*P0.65mm* SSOP*5.3x6.2mm*P0.65mm* MSOP*3x3mm*P0.5mm*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "OPA4323_1_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "OPA4323_2_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "OPA4323_3_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "OPA4323_4_1"
+				(polyline
+					(pts
+						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 -2.54 0)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "OPA4323_5_1"
+				(pin power_in line
+					(at -2.54 7.62 270)
+					(length 3.81)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -7.62 90)
+					(length 3.81)
+					(name "V-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 121.92 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2adce293-58ea-4e28-a2c4-35b21913441e")
+	)
+	(hierarchical_label "SIG_1A"
+		(shape input)
+		(at 82.55 78.74 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "359d203b-1f28-4126-a35b-0d1e8448f8e2")
+	)
+	(hierarchical_label "SIG_1B"
+		(shape input)
+		(at 82.55 83.82 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "359d203b-1f28-4126-a35b-0d1e8448f8e2")
+	)
+	(symbol
+		(lib_id "prometheus-65-symbols:OPA4323")
+		(at 97.79 97.79 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1ddb24c6-4fdb-43e7-aaa0-eeabfb074660")
+		(property "Reference" "U151"
+			(at 97.79 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "OPA4323"
+			(at 97.79 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 96.52 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa4323.pdf"
+			(at 99.06 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low-Power, Quad-Operational Amplifiers, DIP-14/SOIC-14/SSOP-14"
+			(at 97.79 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "da40b9fb-f84a-467e-a0ee-68fe6352808b")
+		)
+		(pin "5"
+			(uuid "6685d519-8bf5-4d8a-90c1-a9443e612e31")
+		)
+		(pin "2"
+			(uuid "5508d815-9882-46db-99fd-d73fd73299be")
+		)
+		(pin "6"
+			(uuid "d65f6086-a6d2-4871-9ead-7e1d8760c7c9")
+		)
+		(pin "7"
+			(uuid "74410712-84b8-4b1c-b7d4-61b0a1033670")
+		)
+		(pin "10"
+			(uuid "1452461d-a88a-49cf-9c87-eb86247e7a6c")
+		)
+		(pin "9"
+			(uuid "9047a53d-29fc-4382-968a-c1eb873ca202")
+		)
+		(pin "8"
+			(uuid "faffd6cd-1215-40dd-8952-4e64210b4254")
+		)
+		(pin "12"
+			(uuid "14a4360c-b25b-455d-806d-1b66eeb7a2e9")
+		)
+		(pin "13"
+			(uuid "29080534-67de-4fb0-b813-d345d584708e")
+		)
+		(pin "14"
+			(uuid "45ef6d62-c8be-4138-a401-492894745d4b")
+		)
+		(pin "4"
+			(uuid "b0a7a560-37c8-4f84-804a-744ccb5f66d2")
+		)
+		(pin "11"
+			(uuid "f4c00496-aab2-47e0-bfdf-291e9c37bf03")
+		)
+		(pin "3"
+			(uuid "f850a7df-c2f2-4b27-bcae-9fba6aa8a887")
+		)
+		(instances
+			(project ""
+				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/1774307a-2268-4d8b-90a1-83d46e8fecab"
+					(reference "U153")
+					(unit 2)
+				)
+				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/1b05bb0f-309a-472b-9923-0867b4afbb6e"
+					(reference "U152")
+					(unit 2)
+				)
+				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/bd98146b-106a-436e-937f-c0eac0c8ab65"
+					(reference "U151")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "prometheus-65-symbols:OPA4323")
+		(at 97.79 115.57 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2118c07e-e8d1-4ec0-8edc-4ba43f8b2db3")
+		(property "Reference" "U151"
+			(at 97.79 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "OPA4323"
+			(at 97.79 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 96.52 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa4323.pdf"
+			(at 99.06 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low-Power, Quad-Operational Amplifiers, DIP-14/SOIC-14/SSOP-14"
+			(at 97.79 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "da40b9fb-f84a-467e-a0ee-68fe6352808c")
+		)
+		(pin "5"
+			(uuid "6685d519-8bf5-4d8a-90c1-a9443e612e32")
+		)
+		(pin "2"
+			(uuid "5508d815-9882-46db-99fd-d73fd73299bf")
+		)
+		(pin "6"
+			(uuid "d65f6086-a6d2-4871-9ead-7e1d8760c7ca")
+		)
+		(pin "7"
+			(uuid "74410712-84b8-4b1c-b7d4-61b0a1033671")
+		)
+		(pin "10"
+			(uuid "1452461d-a88a-49cf-9c87-eb86247e7a6d")
+		)
+		(pin "9"
+			(uuid "9047a53d-29fc-4382-968a-c1eb873ca203")
+		)
+		(pin "8"
+			(uuid "faffd6cd-1215-40dd-8952-4e64210b4255")
+		)
+		(pin "12"
+			(uuid "14a4360c-b25b-455d-806d-1b66eeb7a2ea")
+		)
+		(pin "13"
+			(uuid "29080534-67de-4fb0-b813-d345d584708f")
+		)
+		(pin "14"
+			(uuid "45ef6d62-c8be-4138-a401-492894745d4c")
+		)
+		(pin "4"
+			(uuid "b0a7a560-37c8-4f84-804a-744ccb5f66d3")
+		)
+		(pin "11"
+			(uuid "f4c00496-aab2-47e0-bfdf-291e9c37bf04")
+		)
+		(pin "3"
+			(uuid "f850a7df-c2f2-4b27-bcae-9fba6aa8a888")
+		)
+		(instances
+			(project ""
+				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/1774307a-2268-4d8b-90a1-83d46e8fecab"
+					(reference "U153")
+					(unit 3)
+				)
+				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/1b05bb0f-309a-472b-9923-0867b4afbb6e"
+					(reference "U152")
+					(unit 3)
+				)
+				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/bd98146b-106a-436e-937f-c0eac0c8ab65"
+					(reference "U151")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Resistor")
+		(at 86.36 83.82 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "330f2fbb-abc6-4ec4-94ea-3f37172d80e0")
+		(property "Reference" "R9"
+			(at 86.36 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10kΩ"
+			(at 86.36 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 86.36 82.042 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 86.36 83.82 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 86.36 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9a84f745-16c4-4475-b630-d3cd74d5fe4d")
+		)
+		(pin "2"
+			(uuid "a5388050-e589-47e2-862c-17ea1b8db242")
+		)
+		(instances
+			(project "prometheus-65"
+				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/1774307a-2268-4d8b-90a1-83d46e8fecab"
+					(reference "R11")
+					(unit 1)
+				)
+				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/1b05bb0f-309a-472b-9923-0867b4afbb6e"
+					(reference "R10")
+					(unit 1)
+				)
+				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/bd98146b-106a-436e-937f-c0eac0c8ab65"
+					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 121.92 88.9 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5a02542e-08fc-44c5-809c-3adbeca8ced0")
+		(property "Reference" "#PWR0111"
+			(at 121.92 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 121.92 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 121.92 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "90203e12-88a3-4162-86f5-dca7bd0f0f4c")
+		)
+		(instances
+			(project ""
+				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/1774307a-2268-4d8b-90a1-83d46e8fecab"
+					(reference "#PWR0115")
+					(unit 1)
+				)
+				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/1b05bb0f-309a-472b-9923-0867b4afbb6e"
+					(reference "#PWR0114")
+					(unit 1)
+				)
+				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/bd98146b-106a-436e-937f-c0eac0c8ab65"
+					(reference "#PWR0111")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 121.92 73.66 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "807d3a4f-f46c-4e04-a681-b8e41a2005d2")
+		(property "Reference" "#PWR0106"
+			(at 121.92 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3VA"
+			(at 121.92 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 121.92 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "72134cc3-5f1e-4296-80c9-3b6a65981616")
+		)
+		(instances
+			(project ""
+				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/1774307a-2268-4d8b-90a1-83d46e8fecab"
+					(reference "#PWR0110")
+					(unit 1)
+				)
+				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/1b05bb0f-309a-472b-9923-0867b4afbb6e"
+					(reference "#PWR0107")
+					(unit 1)
+				)
+				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/bd98146b-106a-436e-937f-c0eac0c8ab65"
+					(reference "#PWR0106")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 125.73 73.66 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9f2af267-1780-4b55-834c-be3843add24d")
+		(property "Reference" "C20"
+			(at 125.73 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF"
+			(at 125.73 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 121.92 74.6252 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 125.73 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 125.73 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6181ffd4-2289-4e9a-83bd-4740599973d2")
+		)
+		(pin "1"
+			(uuid "3553572a-f63b-44ce-8b0a-316437d9e5a0")
+		)
+		(instances
+			(project "prometheus-65"
+				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/1774307a-2268-4d8b-90a1-83d46e8fecab"
+					(reference "C22")
+					(unit 1)
+				)
+				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/1b05bb0f-309a-472b-9923-0867b4afbb6e"
+					(reference "C21")
+					(unit 1)
+				)
+				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/bd98146b-106a-436e-937f-c0eac0c8ab65"
+					(reference "C20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Resistor")
+		(at 86.36 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a0b19027-afed-4a92-b845-131a4756e655")
+		(property "Reference" "R6"
+			(at 86.36 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10kΩ"
+			(at 86.36 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 86.36 80.518 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 86.36 78.74 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 86.36 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "caaadd01-91a4-4049-9812-e21d79cc7eb1")
+		)
+		(pin "2"
+			(uuid "6e84bdd7-c78d-4030-a154-2ad9ddd99859")
+		)
+		(instances
+			(project ""
+				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/1774307a-2268-4d8b-90a1-83d46e8fecab"
+					(reference "R8")
+					(unit 1)
+				)
+				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/1b05bb0f-309a-472b-9923-0867b4afbb6e"
+					(reference "R7")
+					(unit 1)
+				)
+				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/bd98146b-106a-436e-937f-c0eac0c8ab65"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "prometheus-65-symbols:OPA4323")
+		(at 97.79 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bc496b8f-2299-472e-ab4e-6e0d6f2008e6")
+		(property "Reference" "U151"
+			(at 97.79 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "OPA4323"
+			(at 97.79 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 96.52 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa4323.pdf"
+			(at 99.06 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low-Power, Quad-Operational Amplifiers, DIP-14/SOIC-14/SSOP-14"
+			(at 97.79 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "da40b9fb-f84a-467e-a0ee-68fe6352808d")
+		)
+		(pin "5"
+			(uuid "6685d519-8bf5-4d8a-90c1-a9443e612e33")
+		)
+		(pin "2"
+			(uuid "5508d815-9882-46db-99fd-d73fd73299c0")
+		)
+		(pin "6"
+			(uuid "d65f6086-a6d2-4871-9ead-7e1d8760c7cb")
+		)
+		(pin "7"
+			(uuid "74410712-84b8-4b1c-b7d4-61b0a1033672")
+		)
+		(pin "10"
+			(uuid "1452461d-a88a-49cf-9c87-eb86247e7a6e")
+		)
+		(pin "9"
+			(uuid "9047a53d-29fc-4382-968a-c1eb873ca204")
+		)
+		(pin "8"
+			(uuid "faffd6cd-1215-40dd-8952-4e64210b4256")
+		)
+		(pin "12"
+			(uuid "14a4360c-b25b-455d-806d-1b66eeb7a2eb")
+		)
+		(pin "13"
+			(uuid "29080534-67de-4fb0-b813-d345d5847090")
+		)
+		(pin "14"
+			(uuid "45ef6d62-c8be-4138-a401-492894745d4d")
+		)
+		(pin "4"
+			(uuid "b0a7a560-37c8-4f84-804a-744ccb5f66d4")
+		)
+		(pin "11"
+			(uuid "f4c00496-aab2-47e0-bfdf-291e9c37bf05")
+		)
+		(pin "3"
+			(uuid "f850a7df-c2f2-4b27-bcae-9fba6aa8a889")
+		)
+		(instances
+			(project ""
+				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/1774307a-2268-4d8b-90a1-83d46e8fecab"
+					(reference "U153")
+					(unit 1)
+				)
+				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/1b05bb0f-309a-472b-9923-0867b4afbb6e"
+					(reference "U152")
+					(unit 1)
+				)
+				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/bd98146b-106a-436e-937f-c0eac0c8ab65"
+					(reference "U151")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "prometheus-65-symbols:OPA4323")
+		(at 97.79 132.08 0)
+		(unit 4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e1546f68-6e09-4714-849f-517b0ea2cb61")
+		(property "Reference" "U151"
+			(at 97.79 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "OPA4323"
+			(at 97.79 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 96.52 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa4323.pdf"
+			(at 99.06 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low-Power, Quad-Operational Amplifiers, DIP-14/SOIC-14/SSOP-14"
+			(at 97.79 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "da40b9fb-f84a-467e-a0ee-68fe6352808e")
+		)
+		(pin "5"
+			(uuid "6685d519-8bf5-4d8a-90c1-a9443e612e34")
+		)
+		(pin "2"
+			(uuid "5508d815-9882-46db-99fd-d73fd73299c1")
+		)
+		(pin "6"
+			(uuid "d65f6086-a6d2-4871-9ead-7e1d8760c7cc")
+		)
+		(pin "7"
+			(uuid "74410712-84b8-4b1c-b7d4-61b0a1033673")
+		)
+		(pin "10"
+			(uuid "1452461d-a88a-49cf-9c87-eb86247e7a6f")
+		)
+		(pin "9"
+			(uuid "9047a53d-29fc-4382-968a-c1eb873ca205")
+		)
+		(pin "8"
+			(uuid "faffd6cd-1215-40dd-8952-4e64210b4257")
+		)
+		(pin "12"
+			(uuid "14a4360c-b25b-455d-806d-1b66eeb7a2ec")
+		)
+		(pin "13"
+			(uuid "29080534-67de-4fb0-b813-d345d5847091")
+		)
+		(pin "14"
+			(uuid "45ef6d62-c8be-4138-a401-492894745d4e")
+		)
+		(pin "4"
+			(uuid "b0a7a560-37c8-4f84-804a-744ccb5f66d5")
+		)
+		(pin "11"
+			(uuid "f4c00496-aab2-47e0-bfdf-291e9c37bf06")
+		)
+		(pin "3"
+			(uuid "f850a7df-c2f2-4b27-bcae-9fba6aa8a88a")
+		)
+		(instances
+			(project ""
+				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/1774307a-2268-4d8b-90a1-83d46e8fecab"
+					(reference "U153")
+					(unit 4)
+				)
+				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/1b05bb0f-309a-472b-9923-0867b4afbb6e"
+					(reference "U152")
+					(unit 4)
+				)
+				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/bd98146b-106a-436e-937f-c0eac0c8ab65"
+					(reference "U151")
+					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "prometheus-65-symbols:OPA4323")
+		(at 124.46 81.28 0)
+		(unit 5)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ed8732f6-680f-492c-83c9-46e3938bbef9")
+		(property "Reference" "U151"
+			(at 123.19 80.0099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "OPA4323"
+			(at 123.19 82.5499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.19 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa4323.pdf"
+			(at 125.73 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low-Power, Quad-Operational Amplifiers, DIP-14/SOIC-14/SSOP-14"
+			(at 124.46 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "da40b9fb-f84a-467e-a0ee-68fe6352808f")
+		)
+		(pin "5"
+			(uuid "6685d519-8bf5-4d8a-90c1-a9443e612e35")
+		)
+		(pin "2"
+			(uuid "5508d815-9882-46db-99fd-d73fd73299c2")
+		)
+		(pin "6"
+			(uuid "d65f6086-a6d2-4871-9ead-7e1d8760c7cd")
+		)
+		(pin "7"
+			(uuid "74410712-84b8-4b1c-b7d4-61b0a1033674")
+		)
+		(pin "10"
+			(uuid "1452461d-a88a-49cf-9c87-eb86247e7a70")
+		)
+		(pin "9"
+			(uuid "9047a53d-29fc-4382-968a-c1eb873ca206")
+		)
+		(pin "8"
+			(uuid "faffd6cd-1215-40dd-8952-4e64210b4258")
+		)
+		(pin "12"
+			(uuid "14a4360c-b25b-455d-806d-1b66eeb7a2ed")
+		)
+		(pin "13"
+			(uuid "29080534-67de-4fb0-b813-d345d5847092")
+		)
+		(pin "14"
+			(uuid "45ef6d62-c8be-4138-a401-492894745d4f")
+		)
+		(pin "4"
+			(uuid "b0a7a560-37c8-4f84-804a-744ccb5f66d6")
+		)
+		(pin "11"
+			(uuid "f4c00496-aab2-47e0-bfdf-291e9c37bf07")
+		)
+		(pin "3"
+			(uuid "f850a7df-c2f2-4b27-bcae-9fba6aa8a88b")
+		)
+		(instances
+			(project ""
+				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/1774307a-2268-4d8b-90a1-83d46e8fecab"
+					(reference "U153")
+					(unit 5)
+				)
+				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/1b05bb0f-309a-472b-9923-0867b4afbb6e"
+					(reference "U152")
+					(unit 5)
+				)
+				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/bd98146b-106a-436e-937f-c0eac0c8ab65"
+					(reference "U151")
+					(unit 5)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 129.54 73.66 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f441c185-8663-4cd0-b1a5-bc47154635d1")
+		(property "Reference" "#PWR099"
+			(at 135.89 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 133.35 73.6601 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 129.54 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 129.54 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5c0c596a-4e86-45dc-90c6-5935c5130607")
+		)
+		(instances
+			(project "prometheus-65"
+				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/1774307a-2268-4d8b-90a1-83d46e8fecab"
+					(reference "#PWR0103")
+					(unit 1)
+				)
+				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/1b05bb0f-309a-472b-9923-0867b4afbb6e"
+					(reference "#PWR0102")
+					(unit 1)
+				)
+				(path "/7080535f-072d-4fc6-b033-a9cfe8594544/bd98146b-106a-436e-937f-c0eac0c8ab65"
+					(reference "#PWR099")
+					(unit 1)
+				)
+			)
+		)
+	)
+)
