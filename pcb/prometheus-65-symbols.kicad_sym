@@ -1,13 +1,190 @@
 (kicad_symbol_lib
-	(version 20241209)
+	(version 20251024)
 	(generator "kicad_symbol_editor")
-	(generator_version "9.0")
+	(generator_version "10.0")
+	(symbol "TMR2615x"
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
+		(property "Reference" "U"
+			(at -3.302 6.096 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMR2615x"
+			(at 0 -6.35 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "prometheus-65-footprints:DFN3L(1.6x1.6x0.5)"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Low Power Large Range TMR Linear Magnetic Sens"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Symbol Name" "TMR2615x"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ki_keywords" "TMR"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(symbol "TMR2615x_0_0"
+			(pin power_in line
+				(at -6.35 -1.27 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -6.35 -3.81 0)
+				(length 2.54)
+				(name "GND"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "TMR2615x_1_0"
+			(pin output line
+				(at -6.35 3.81 0)
+				(length 2.54)
+				(name "VOUT"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 6.35 1.27 180)
+				(length 2.54)
+				(name "VDD"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+		)
+		(symbol "TMR2615x_1_1"
+			(rectangle
+				(start -3.81 5.08)
+				(end 3.81 -5.08)
+				(stroke
+					(width 0)
+					(type solid)
+				)
+				(fill
+					(type color)
+					(color 255 255 194 1)
+				)
+			)
+		)
+		(embedded_fonts no)
+	)
 	(symbol "TMR2652D"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "U"
 			(at 6.858 -6.604 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -16,6 +193,8 @@
 		)
 		(property "Value" "TMR2652D"
 			(at 11.176 -8.636 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -24,29 +203,45 @@
 		)
 		(property "Footprint" "prometheus-65-footprints:TMR2652D"
 			(at 0 -18.796 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "kicad-embed://TMR265x.pdf"
 			(at 0 -21.082 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at -8.89 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+			)
+		)
+		(property "Symbol Name" "TMR2652D"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(symbol "TMR2652D_0_0"
@@ -81,25 +276,6 @@
 					)
 				)
 			)
-			(pin no_connect line
-				(at -10.16 -2.54 0)
-				(length 2.54)
-				(hide yes)
-				(name "NC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
 			(pin power_in line
 				(at -1.27 -7.62 90)
 				(length 2.54)
@@ -111,42 +287,6 @@
 					)
 				)
 				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 0 7.62 270)
-				(length 2.54)
-				(name "VCC"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 1.27 -7.62 90)
-				(length 2.54)
-				(name "EP"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "7"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -183,6 +323,61 @@
 					)
 				)
 				(number "4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 0 7.62 270)
+				(length 2.54)
+				(name "VCC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin no_connect line
+				(at -10.16 -2.54 0)
+				(length 2.54)
+				(hide yes)
+				(name "NC"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 1.27 -7.62 90)
+				(length 2.54)
+				(name "EP"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "7"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5544,8 +5739,12 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "U"
 			(at 5.588 -14.732 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5554,6 +5753,8 @@
 		)
 		(property "Value" "TMUX1308"
 			(at 9.906 -17.272 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5562,29 +5763,45 @@
 		)
 		(property "Footprint" "prometheus-65-footprints:TMUX1308BQBR"
 			(at 1.524 -26.416 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "kicad-embed://tmux1308.pdf"
 			(at 0 -28.702 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+			)
+		)
+		(property "Symbol Name" "TMUX1308"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(symbol "TMUX1308_0_0"
@@ -5601,6 +5818,42 @@
 			)
 		)
 		(symbol "TMUX1308_1_1"
+			(pin bidirectional line
+				(at 8.89 -1.27 180)
+				(length 2.54)
+				(name "S4"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 8.89 -6.35 180)
+				(length 2.54)
+				(name "S6"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
 			(pin bidirectional line
 				(at -8.89 5.08 0)
 				(length 2.54)
@@ -5619,17 +5872,17 @@
 					)
 				)
 			)
-			(pin input line
-				(at -8.89 2.54 0)
+			(pin bidirectional line
+				(at 8.89 -8.89 180)
 				(length 2.54)
-				(name "A0"
+				(name "S7"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "11"
+				(number "4"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5637,35 +5890,17 @@
 					)
 				)
 			)
-			(pin input line
-				(at -8.89 0 0)
+			(pin bidirectional line
+				(at 8.89 -3.81 180)
 				(length 2.54)
-				(name "A1"
+				(name "S5"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "10"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -8.89 -2.54 0)
-				(length 2.54)
-				(name "A2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "9"
+				(number "5"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5728,17 +5963,17 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 0 15.24 270)
+			(pin input line
+				(at -8.89 -2.54 0)
 				(length 2.54)
-				(name "VDD"
+				(name "A2"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "16"
+				(number "9"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5746,17 +5981,53 @@
 					)
 				)
 			)
-			(pin power_in line
-				(at 1.27 -15.24 90)
+			(pin input line
+				(at -8.89 0 0)
 				(length 2.54)
-				(name "GND"
+				(name "A1"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "17"
+				(number "10"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -8.89 2.54 0)
+				(length 2.54)
+				(name "A0"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at 8.89 1.27 180)
+				(length 2.54)
+				(name "S3"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "12"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5818,17 +6089,17 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 8.89 1.27 180)
+			(pin power_in line
+				(at 0 15.24 270)
 				(length 2.54)
-				(name "S3"
+				(name "VDD"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "12"
+				(number "16"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -5836,71 +6107,17 @@
 					)
 				)
 			)
-			(pin bidirectional line
-				(at 8.89 -1.27 180)
+			(pin power_in line
+				(at 1.27 -15.24 90)
 				(length 2.54)
-				(name "S4"
+				(name "GND"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "1"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 8.89 -3.81 180)
-				(length 2.54)
-				(name "S5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "5"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 8.89 -6.35 180)
-				(length 2.54)
-				(name "S6"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "2"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at 8.89 -8.89 180)
-				(length 2.54)
-				(name "S7"
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(number "4"
+				(number "17"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -51480,8 +51697,12 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
+		(duplicate_pin_numbers_are_jumpers no)
 		(property "Reference" "U"
 			(at -12.7 23.86 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51491,6 +51712,8 @@
 		)
 		(property "Value" "TPS7A4700"
 			(at -12.7 -26.86 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -51500,70 +51723,94 @@
 		)
 		(property "Footprint" "prometheus-65-footprints:TPS7A47000RGWT"
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify bottom)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "kicad-embed://TPS7A470x.pdf"
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "MF" "Texas Instruments"
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify bottom)
-				(hide yes)
 			)
 		)
 		(property "Description_1" "1-A, 36-V, low-noise, high-PSRR, low-dropout voltage regulator with enable"
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify bottom)
-				(hide yes)
 			)
 		)
 		(property "Package" "VQFN-20 Texas Instruments"
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify bottom)
-				(hide yes)
 			)
 		)
 		(property "MP" "TPS7A4700RGWT"
 			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(hide yes)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify bottom)
-				(hide yes)
+			)
+		)
+		(property "Symbol Name" "TPS7A4700"
+			(at 0 0 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(symbol "TPS7A4700_0_0"
@@ -51578,17 +51825,17 @@
 					(type background)
 				)
 			)
-			(pin input line
-				(at -17.78 15.24 0)
+			(pin power_out line
+				(at 17.78 15.24 180)
 				(length 5.08)
-				(name "0P1V"
+				(name "OUT"
 					(effects
 						(font
 							(size 1.016 1.016)
 						)
 					)
 				)
-				(number "12"
+				(number "1"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -51597,106 +51844,16 @@
 				)
 			)
 			(pin input line
-				(at -17.78 12.7 0)
+				(at -17.78 -10.16 0)
 				(length 5.08)
-				(name "0P2V"
+				(name "SENSE/FB"
 					(effects
 						(font
 							(size 1.016 1.016)
 						)
 					)
 				)
-				(number "11"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -17.78 10.16 0)
-				(length 5.08)
-				(name "0P4V"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "10"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -17.78 7.62 0)
-				(length 5.08)
-				(name "0P8V"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "9"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -17.78 5.08 0)
-				(length 5.08)
-				(name "1P6V"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "8"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -17.78 2.54 0)
-				(length 5.08)
-				(name "3P2V"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "6"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin input line
-				(at -17.78 0 0)
-				(length 5.08)
-				(name "6P4V1"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "5"
+				(number "3"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -51723,6 +51880,150 @@
 				)
 			)
 			(pin input line
+				(at -17.78 0 0)
+				(length 5.08)
+				(name "6P4V1"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "5"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -17.78 2.54 0)
+				(length 5.08)
+				(name "3P2V"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "6"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at 17.78 -20.32 180)
+				(length 5.08)
+				(name "GND"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "7"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -17.78 5.08 0)
+				(length 5.08)
+				(name "1P6V"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "8"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -17.78 7.62 0)
+				(length 5.08)
+				(name "0P8V"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "9"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -17.78 10.16 0)
+				(length 5.08)
+				(name "0P4V"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "10"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -17.78 12.7 0)
+				(length 5.08)
+				(name "0P2V"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "11"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin input line
+				(at -17.78 15.24 0)
+				(length 5.08)
+				(name "0P1V"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "12"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin input line
 				(at -17.78 -5.08 0)
 				(length 5.08)
 				(name "EN"
@@ -51733,6 +52034,24 @@
 					)
 				)
 				(number "13"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+			)
+			(pin bidirectional line
+				(at -17.78 -15.24 0)
+				(length 5.08)
+				(name "NR"
+					(effects
+						(font
+							(size 1.016 1.016)
+						)
+					)
+				)
+				(number "14"
 					(effects
 						(font
 							(size 1.016 1.016)
@@ -51777,78 +52096,6 @@
 					)
 				)
 			)
-			(pin input line
-				(at -17.78 -10.16 0)
-				(length 5.08)
-				(name "SENSE/FB"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "3"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin bidirectional line
-				(at -17.78 -15.24 0)
-				(length 5.08)
-				(name "NR"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "14"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin power_in line
-				(at 17.78 20.32 180)
-				(length 5.08)
-				(name "TP"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "21"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
-			(pin power_out line
-				(at 17.78 15.24 180)
-				(length 5.08)
-				(name "OUT"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-				(number "1"
-					(effects
-						(font
-							(size 1.016 1.016)
-						)
-					)
-				)
-			)
 			(pin power_out line
 				(at 17.78 15.24 180)
 				(length 5.08)
@@ -51869,16 +52116,16 @@
 				)
 			)
 			(pin power_in line
-				(at 17.78 -20.32 180)
+				(at 17.78 20.32 180)
 				(length 5.08)
-				(name "GND"
+				(name "TP"
 					(effects
 						(font
 							(size 1.016 1.016)
 						)
 					)
 				)
-				(number "7"
+				(number "21"
 					(effects
 						(font
 							(size 1.016 1.016)

@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20250114)
+	(version 20260101)
 	(generator "eeschema")
-	(generator_version "9.0")
+	(generator_version "10.0")
 	(uuid "7080535f-072d-4fc6-b033-a9cfe8594544")
 	(paper "A4")
 	(lib_symbols
@@ -13,8 +13,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "SW"
 				(at 0 6.604 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -23,6 +27,8 @@
 			)
 			(property "Value" "RotaryEncoder_Switch"
 				(at 0 -6.604 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -31,47 +37,57 @@
 			)
 			(property "Footprint" ""
 				(at -3.81 4.064 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" ""
 				(at 0 6.604 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "rotary switch encoder switch push button"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_fp_filters" "RotaryEncoder*Switch*"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "RotaryEncoder_Switch_0_1"
@@ -319,24 +335,6 @@
 					)
 				)
 				(pin passive line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
 					(at -7.62 -2.54 0)
 					(length 2.54)
 					(name "B"
@@ -347,6 +345,24 @@
 						)
 					)
 					(number "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "C"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "C"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -404,9 +420,12 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "S"
 				(at 0 0 0)
-				(do_not_autoplace)
+				(show_name no)
+				(do_not_autoplace yes)
 				(effects
 					(font
 						(size 0.635 0.635)
@@ -417,6 +436,8 @@
 			)
 			(property "Value" ""
 				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -425,38 +446,46 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at -2.54 -1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "switch normally-open pushbutton push-button"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "Placeholder_Keyswitch_0_1"
@@ -570,7 +599,7 @@
 			(embedded_fonts no)
 		)
 		(symbol "power:GND"
-			(power)
+			(power global)
 			(pin_numbers
 				(hide yes)
 			)
@@ -581,17 +610,23 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "#PWR"
 				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Value" "GND"
 				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -600,38 +635,46 @@
 			)
 			(property "Footprint" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Datasheet" ""
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "global power"
 				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(symbol "GND_0_1"
@@ -652,7 +695,7 @@
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
-					(name "~"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -665,6 +708,179 @@
 								(size 1.27 1.27)
 							)
 						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "prometheus-65-symbols:TMR2615x"
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -3.302 6.096 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TMR2615x"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "prometheus-65-footprints:DFN3L(1.6x1.6x0.5)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Low Power Large Range TMR Linear Magnetic Sens"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Symbol Name" "TMR2615x"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "TMR"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TMR2615x_0_0"
+				(pin power_in line
+					(at -6.35 -1.27 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -6.35 -3.81 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "TMR2615x_1_0"
+				(pin output line
+					(at -6.35 3.81 0)
+					(length 2.54)
+					(name "VOUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 6.35 1.27 180)
+					(length 2.54)
+					(name "VDD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "TMR2615x_1_1"
+				(rectangle
+					(start -3.81 5.08)
+					(end 3.81 -5.08)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type color)
+						(color 255 255 194 1)
 					)
 				)
 			)
@@ -948,6 +1164,12 @@
 		(uuid "b56d7846-7e96-46b9-9059-949286a3a98c")
 	)
 	(junction
+		(at 22.86 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c0d5f3bf-35d2-4a82-a4f0-267510583516")
+	)
+	(junction
 		(at 252.73 142.24)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1062,6 +1284,16 @@
 			(type default)
 		)
 		(uuid "015a96b0-e0b6-4cf1-9ef0-d322982069a0")
+	)
+	(wire
+		(pts
+			(xy 22.86 59.69) (xy 22.86 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05c8a695-e3a6-431b-a8e0-dabbec4fa1b5")
 	)
 	(wire
 		(pts
@@ -3015,6 +3247,16 @@
 	)
 	(wire
 		(pts
+			(xy 22.86 62.23) (xy 22.86 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be8bda77-c2e4-4b5a-b55c-654037ff5bfb")
+	)
+	(wire
+		(pts
 			(xy 181.61 118.11) (xy 181.61 120.65)
 		)
 		(stroke
@@ -3858,14 +4100,17 @@
 		(at 53.34 139.7 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "07468eaa-0997-4aa2-b5d1-248ebbb7306a")
 		(property "Reference" "S33"
 			(at 53.34 139.7 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -3875,40 +4120,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 53.34 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 53.34 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 50.8 137.922 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 53.34 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -3931,14 +4184,17 @@
 		(at 261.62 139.7 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "07f6975b-5cff-4d8e-aea5-3768a17ce5cf")
 		(property "Reference" "S64"
 			(at 261.62 139.7 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -3948,40 +4204,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 261.62 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 261.62 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 259.08 137.922 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 261.62 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4004,14 +4268,17 @@
 		(at 175.26 139.7 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0d95e0eb-2c55-4475-bc4b-a11cd76b8fe2")
 		(property "Reference" "S51"
 			(at 175.26 139.7 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -4021,40 +4288,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 175.26 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 175.26 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 172.72 137.922 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 175.26 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4077,14 +4352,17 @@
 		(at 194.31 139.7 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0f1c5612-e31c-4335-91f4-a8f43f57243e")
 		(property "Reference" "S54"
 			(at 194.31 139.7 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -4094,40 +4372,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 194.31 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 194.31 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 191.77 137.922 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 194.31 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4149,14 +4435,18 @@
 		(lib_id "Device:RotaryEncoder_Switch")
 		(at 31.75 132.08 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "115f89f4-f814-4a51-8bf7-5655fb2bbd8a")
 		(property "Reference" "SW1"
 			(at 31.75 121.92 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4165,6 +4455,8 @@
 		)
 		(property "Value" "RotaryEncoder_Switch"
 			(at 31.75 124.46 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4173,29 +4465,35 @@
 		)
 		(property "Footprint" "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm"
 			(at 27.94 128.016 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" ""
 			(at 31.75 125.476 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Rotary encoder, dual channel, incremental quadrate outputs, with switch"
 			(at 31.75 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "A"
@@ -4226,14 +4524,17 @@
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 200.66 45.72 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "15777ea1-29fa-45fd-815a-44b7752dbef3")
 		(property "Reference" "S23"
 			(at 200.66 45.72 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -4243,40 +4544,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 200.66 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 200.66 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 198.12 47.498 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 200.66 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4295,17 +4604,98 @@
 		)
 	)
 	(symbol
-		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
-		(at 175.26 45.72 0)
+		(lib_id "power:GND")
+		(at 22.86 64.77 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "17cc7b3e-f82d-46f1-a4b4-4b861539984f")
+		(property "Reference" "#PWR0386"
+			(at 22.86 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 22.86 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 22.86 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 22.86 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 22.86 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "216d7303-4523-49c9-80bf-bd1794a714cd")
+		)
+		(instances
+			(project "prometheus-65"
+				(path "/7080535f-072d-4fc6-b033-a9cfe8594544"
+					(reference "#PWR0386")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
+		(at 175.26 45.72 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1a76ab5c-be2d-42ac-b4a9-77afd47bc153")
 		(property "Reference" "S19"
 			(at 175.26 45.72 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -4315,40 +4705,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 175.26 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 175.26 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 172.72 47.498 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 175.26 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4370,14 +4768,17 @@
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 107.95 45.72 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1b86be21-c554-44b3-864a-546caacd94ed")
 		(property "Reference" "S9"
 			(at 107.95 45.72 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -4387,40 +4788,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 107.95 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 107.95 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 105.41 47.498 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 107.95 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4443,14 +4852,17 @@
 		(at 181.61 139.7 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2278376c-4879-4c12-8ff2-97857d3cf10e")
 		(property "Reference" "S52"
 			(at 181.61 139.7 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -4460,40 +4872,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 181.61 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_2.00u"
 			(at 181.61 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 179.07 137.922 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 181.61 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4515,14 +4935,17 @@
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 261.62 45.72 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "22ae7cd4-11b8-4d10-9d00-09308e1425ce")
 		(property "Reference" "S32"
 			(at 261.62 45.72 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -4532,40 +4955,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 261.62 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_6.25u"
 			(at 261.62 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 259.08 47.498 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 261.62 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4587,23 +5018,29 @@
 		(lib_id "power:GND")
 		(at 44.45 43.18 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "23a844a6-a920-4903-8752-ddd21fddfd89")
 		(property "Reference" "#PWR0220"
 			(at 44.45 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 44.45 48.26 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4612,29 +5049,35 @@
 		)
 		(property "Footprint" ""
 			(at 44.45 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 44.45 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 44.45 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4654,14 +5097,17 @@
 		(at 107.95 139.7 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2653a8ee-13c7-48dc-8baf-401d3ced2167")
 		(property "Reference" "S41"
 			(at 107.95 139.7 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -4671,40 +5117,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 107.95 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 107.95 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 105.41 137.922 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 107.95 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4727,14 +5181,17 @@
 		(at 236.22 139.7 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2864559b-0c7c-43af-9d37-92643f00f09a")
 		(property "Reference" "S60"
 			(at 236.22 139.7 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -4744,40 +5201,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 236.22 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 236.22 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 233.68 137.922 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 236.22 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4800,14 +5265,17 @@
 		(at 78.74 139.7 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3082252a-4f7c-4356-b858-7ae434d5c6f6")
 		(property "Reference" "S37"
 			(at 78.74 139.7 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -4817,40 +5285,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 78.74 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 78.74 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 76.2 137.922 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 78.74 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4873,14 +5349,17 @@
 		(at 229.87 139.7 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "30a549e1-1e52-4a70-a65d-c34e0da032bb")
 		(property "Reference" "S59"
 			(at 229.87 139.7 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -4890,40 +5369,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 229.87 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_2.75u"
 			(at 229.87 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 227.33 137.922 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 229.87 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -4946,14 +5433,17 @@
 		(at 187.96 139.7 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "323f9ce1-8b8f-4fc1-808e-5cd4fa824469")
 		(property "Reference" "S53"
 			(at 187.96 139.7 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -4963,40 +5453,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 187.96 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 187.96 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 185.42 137.922 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 187.96 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5019,14 +5517,17 @@
 		(at 133.35 139.7 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3633165e-67e1-48c8-a63f-05d940dcdcd0")
 		(property "Reference" "S45"
 			(at 133.35 139.7 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -5036,40 +5537,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 133.35 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 133.35 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 130.81 137.922 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 133.35 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5092,14 +5601,17 @@
 		(at 168.91 139.7 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "383ae07d-73f7-4190-93d2-0d4b5205b00a")
 		(property "Reference" "S50"
 			(at 168.91 139.7 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -5109,40 +5621,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 168.91 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 168.91 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 166.37 137.922 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 168.91 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5164,14 +5684,17 @@
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 162.56 45.72 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3b2d32af-1180-41a1-b494-5219d82b4423")
 		(property "Reference" "S17"
 			(at 162.56 45.72 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -5181,40 +5704,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 162.56 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 162.56 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 160.02 47.498 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 162.56 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5236,23 +5767,29 @@
 		(lib_id "power:GND")
 		(at 39.37 134.62 90)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3c2e819a-6f92-4fa5-9d88-9c914fa93176")
 		(property "Reference" "#PWR02"
 			(at 45.72 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 43.18 134.6199 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5262,29 +5799,35 @@
 		)
 		(property "Footprint" ""
 			(at 39.37 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 39.37 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 39.37 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5303,14 +5846,17 @@
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 248.92 45.72 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "53a7e490-aa3b-4a3d-a423-f48a2d87f4a8")
 		(property "Reference" "S30"
 			(at 248.92 45.72 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -5320,40 +5866,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 248.92 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 248.92 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 246.38 47.498 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 248.92 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5376,14 +5930,17 @@
 		(at 66.04 139.7 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5a99fafd-f7a2-4f0c-9089-727fcdfae6ac")
 		(property "Reference" "S35"
 			(at 66.04 139.7 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -5393,40 +5950,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 66.04 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 66.04 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 63.5 137.922 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 66.04 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5448,14 +6013,17 @@
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 91.44 45.72 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5b0d9028-af47-4d30-b836-0e7a009c2126")
 		(property "Reference" "S7"
 			(at 91.44 45.72 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -5465,40 +6033,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 91.44 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 91.44 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 88.9 47.498 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 91.44 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5520,14 +6096,17 @@
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 242.57 45.72 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "625b77b8-dcbf-4cdf-972e-b92d5ad85ec4")
 		(property "Reference" "S29"
 			(at 242.57 45.72 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -5537,40 +6116,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 242.57 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 242.57 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 240.03 47.498 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 242.57 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5593,14 +6180,17 @@
 		(at 120.65 139.7 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "661cbfe4-08dd-4425-8d63-b19c731eb1b9")
 		(property "Reference" "S43"
 			(at 120.65 139.7 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -5610,40 +6200,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 120.65 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 120.65 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 118.11 137.922 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 120.65 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5665,14 +6263,17 @@
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 72.39 45.72 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "67970f64-d1ac-480b-9a84-63db2d2903b5")
 		(property "Reference" "S4"
 			(at 72.39 45.72 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -5682,40 +6283,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 72.39 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 72.39 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 69.85 47.498 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 72.39 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5738,14 +6347,17 @@
 		(at 248.92 139.7 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "68ff6c1d-4798-4c79-a232-3c8e22f60f73")
 		(property "Reference" "S62"
 			(at 248.92 139.7 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -5755,40 +6367,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 248.92 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.25u"
 			(at 248.92 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 246.38 137.922 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 248.92 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5811,14 +6431,17 @@
 		(at 152.4 139.7 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "69403526-62c7-4e15-892d-9a3f4e6436e0")
 		(property "Reference" "S48"
 			(at 152.4 139.7 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -5828,40 +6451,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 152.4 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.25u"
 			(at 152.4 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 149.86 137.922 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 152.4 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5883,14 +6514,17 @@
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 114.3 45.72 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6d466edc-3187-4045-b915-2eb770d32ca9")
 		(property "Reference" "S10"
 			(at 114.3 45.72 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -5900,40 +6534,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 114.3 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 114.3 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 111.76 47.498 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 114.3 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -5955,14 +6597,17 @@
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 146.05 45.72 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "73124193-0a92-430e-89c8-fe4afe84ad8b")
 		(property "Reference" "S15"
 			(at 146.05 45.72 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -5972,40 +6617,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 146.05 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.25u"
 			(at 146.05 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 143.51 47.498 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 146.05 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6027,14 +6680,17 @@
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 207.01 45.72 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7455aef7-6f90-4dbf-838e-c6b8795845e0")
 		(property "Reference" "S24"
 			(at 207.01 45.72 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -6044,40 +6700,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 207.01 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 207.01 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 204.47 47.498 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 207.01 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6099,14 +6763,17 @@
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 223.52 45.72 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7512bbe7-c56c-4cdc-b3a4-8673e916b585")
 		(property "Reference" "S26"
 			(at 223.52 45.72 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -6116,40 +6783,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 223.52 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 223.52 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 220.98 47.498 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 223.52 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6171,14 +6846,17 @@
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 255.27 45.72 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "75858544-b5b3-425f-b6f6-1b09d1791a2d")
 		(property "Reference" "S31"
 			(at 255.27 45.72 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -6188,40 +6866,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 255.27 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 255.27 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 252.73 47.498 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 255.27 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6243,14 +6929,17 @@
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 217.17 45.72 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "79e7693e-3b93-4e0b-beb1-94c5cc4b13e7")
 		(property "Reference" "S25"
 			(at 217.17 45.72 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -6260,40 +6949,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 217.17 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 217.17 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 214.63 47.498 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 217.17 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6315,14 +7012,17 @@
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 127 45.72 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7b69f645-ff87-4a90-8662-f3f2e1f52956")
 		(property "Reference" "S12"
 			(at 127 45.72 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -6332,40 +7032,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 127 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 127 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 124.46 47.498 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 127 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6388,14 +7096,17 @@
 		(at 146.05 139.7 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7d074778-102c-4b96-a51d-2406f693a999")
 		(property "Reference" "S47"
 			(at 146.05 139.7 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -6405,40 +7116,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 146.05 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 146.05 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 143.51 137.922 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 146.05 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6457,18 +7176,118 @@
 		)
 	)
 	(symbol
+		(lib_id "prometheus-65-symbols:TMR2615x")
+		(at 29.21 58.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7fb77d98-d91c-4dce-926b-22bb56d1498f")
+		(property "Reference" "U77"
+			(at 29.21 48.26 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "TMR2615x"
+			(at 29.21 50.8 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "prometheus-65-footprints:DFN3L(1.6x1.6x0.5)"
+			(at 29.21 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 29.21 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Low Power Large Range TMR Linear Magnetic Sens"
+			(at 29.21 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Symbol Name" "TMR2615x"
+			(at 29.21 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "13bf0a91-229f-47ec-b74d-a3feadd76be5")
+		)
+		(pin "4"
+			(uuid "09240eb9-56ca-4ec6-933f-714a8763b9f3")
+		)
+		(pin "3"
+			(uuid "5ec034de-a269-45ba-b5e2-9ae67460620b")
+		)
+		(pin "1"
+			(uuid "75447e4a-56b5-4b94-8e23-fc905416649c")
+		)
+		(instances
+			(project ""
+				(path "/7080535f-072d-4fc6-b033-a9cfe8594544"
+					(reference "U77")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 139.7 139.7 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8175dd2e-883c-491b-87b6-624324fa3e10")
 		(property "Reference" "S46"
 			(at 139.7 139.7 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -6478,40 +7297,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 139.7 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 139.7 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 137.16 137.922 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 139.7 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6533,14 +7360,17 @@
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 85.09 45.72 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8414dc28-cdbe-4cfe-b5f2-bb79990870f6")
 		(property "Reference" "S6"
 			(at 85.09 45.72 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -6550,40 +7380,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 85.09 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 85.09 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 82.55 47.498 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 85.09 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6606,14 +7444,17 @@
 		(at 242.57 139.7 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "884e22c8-bd3f-4ebc-a357-cb8672373e38")
 		(property "Reference" "S61"
 			(at 242.57 139.7 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -6623,40 +7464,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 242.57 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.25u"
 			(at 242.57 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 240.03 137.922 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 242.57 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6679,14 +7528,17 @@
 		(at 97.79 139.7 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8eb0a412-d875-4517-b429-e5373f9b211a")
 		(property "Reference" "S40"
 			(at 97.79 139.7 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -6696,40 +7548,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 97.79 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 97.79 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 95.25 137.922 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 97.79 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6752,14 +7612,17 @@
 		(at 162.56 139.7 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "90d5d1db-2f66-4cbf-af9b-df72f5d48eba")
 		(property "Reference" "S49"
 			(at 162.56 139.7 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -6769,40 +7632,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 162.56 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 162.56 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 160.02 137.922 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 162.56 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6824,14 +7695,17 @@
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 168.91 45.72 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "93026aeb-0589-4050-959f-853ef928a466")
 		(property "Reference" "S18"
 			(at 168.91 45.72 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -6841,40 +7715,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 168.91 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 168.91 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 166.37 47.498 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 168.91 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6897,14 +7779,17 @@
 		(at 217.17 139.7 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "93c6a572-eed0-475b-a5a5-0d0f3ad82a3a")
 		(property "Reference" "S57"
 			(at 217.17 139.7 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -6914,40 +7799,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 217.17 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_2.25u"
 			(at 217.17 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 214.63 137.922 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 217.17 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -6969,14 +7862,17 @@
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 152.4 45.72 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9dc64e62-cf67-4254-a515-9b206e2a8065")
 		(property "Reference" "S16"
 			(at 152.4 45.72 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -6986,40 +7882,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 152.4 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.25u"
 			(at 152.4 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 149.86 47.498 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 152.4 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7041,14 +7945,17 @@
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 187.96 45.72 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9f4c2417-23d9-433c-b000-35a29287a806")
 		(property "Reference" "S21"
 			(at 187.96 45.72 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -7058,40 +7965,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 187.96 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 187.96 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 185.42 47.498 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 187.96 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7113,14 +8028,17 @@
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 53.34 45.72 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a11559a7-577f-4d03-8259-75e6c54856aa")
 		(property "Reference" "S1"
 			(at 53.34 45.72 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -7130,40 +8048,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 53.34 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 53.34 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 50.8 47.498 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 53.34 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7186,14 +8112,17 @@
 		(at 91.44 139.7 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a8e2e891-e59d-4593-bd8f-7ce30d39775d")
 		(property "Reference" "S39"
 			(at 91.44 139.7 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -7203,40 +8132,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 91.44 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 91.44 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 88.9 137.922 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 91.44 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7258,14 +8195,17 @@
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 78.74 45.72 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aad6e480-bbec-4c02-8e75-1e4600988a8c")
 		(property "Reference" "S5"
 			(at 78.74 45.72 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -7275,40 +8215,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 78.74 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.50u"
 			(at 78.74 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 76.2 47.498 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 78.74 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7331,14 +8279,17 @@
 		(at 114.3 139.7 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "acf9df46-8397-46d3-a138-a407566011a2")
 		(property "Reference" "S42"
 			(at 114.3 139.7 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -7348,40 +8299,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 114.3 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 114.3 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 111.76 137.922 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 114.3 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7403,14 +8362,17 @@
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 133.35 45.72 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ad1085c0-a0cf-4985-baca-bae0e49f2376")
 		(property "Reference" "S13"
 			(at 133.35 45.72 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -7420,40 +8382,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 133.35 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 133.35 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 130.81 47.498 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 133.35 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7475,14 +8445,17 @@
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 120.65 45.72 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b629cae8-4972-4c7a-bf83-c6daae82de0e")
 		(property "Reference" "S11"
 			(at 120.65 45.72 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -7492,40 +8465,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 120.65 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_2.25u"
 			(at 120.65 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 118.11 47.498 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 120.65 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7548,14 +8529,17 @@
 		(at 223.52 139.7 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b7b617b2-3fb3-450f-9d14-925ed20e7736")
 		(property "Reference" "S58"
 			(at 223.52 139.7 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -7565,40 +8549,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 223.52 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 223.52 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 220.98 137.922 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 223.52 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7621,23 +8613,29 @@
 		(at 44.45 142.24 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b7ff7609-337b-46d8-acc1-90a5d2a65388")
 		(property "Reference" "#PWR0221"
 			(at 44.45 135.89 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 44.45 137.16 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7646,29 +8644,35 @@
 		)
 		(property "Footprint" ""
 			(at 44.45 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 44.45 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 44.45 142.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7687,14 +8691,17 @@
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 59.69 45.72 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b8d9da10-8a20-4a19-a322-57ca79e247bf")
 		(property "Reference" "S2"
 			(at 59.69 45.72 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -7704,40 +8711,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 59.69 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 59.69 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 57.15 47.498 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 59.69 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7759,14 +8774,17 @@
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 194.31 45.72 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bfe2293e-b76b-4651-8d08-cc6bcd4a09cf")
 		(property "Reference" "S22"
 			(at 194.31 45.72 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -7776,40 +8794,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 194.31 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 194.31 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 191.77 47.498 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 194.31 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7831,14 +8857,17 @@
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 236.22 45.72 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c4a34013-080e-4d95-b1fb-f18d0edbeba4")
 		(property "Reference" "S28"
 			(at 236.22 45.72 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -7848,40 +8877,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 236.22 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 236.22 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 233.68 47.498 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 236.22 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7904,14 +8941,17 @@
 		(at 207.01 139.7 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d3b56a63-0993-45b7-a009-fef52b1a98b8")
 		(property "Reference" "S56"
 			(at 207.01 139.7 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -7921,40 +8961,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 207.01 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.50u"
 			(at 207.01 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 204.47 137.922 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 207.01 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -7976,14 +9024,17 @@
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 97.79 45.72 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d692b45b-a01b-4bf2-984f-cf3a73802bec")
 		(property "Reference" "S8"
 			(at 97.79 45.72 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -7993,40 +9044,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 97.79 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.75u"
 			(at 97.79 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 95.25 47.498 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 97.79 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8048,22 +9107,28 @@
 		(lib_id "power:GND")
 		(at 24.13 132.08 270)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(uuid "d92ac3f6-104e-4550-a4f4-27692c15bedb")
 		(property "Reference" "#PWR01"
 			(at 17.78 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Value" "GND"
 			(at 21.082 132.08 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8073,29 +9138,35 @@
 		)
 		(property "Footprint" ""
 			(at 24.13 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 24.13 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 24.13 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8114,14 +9185,17 @@
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 181.61 45.72 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d94d8bc3-6b2a-4ed1-ad99-e74e4049803a")
 		(property "Reference" "S20"
 			(at 181.61 45.72 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -8131,40 +9205,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 181.61 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 181.61 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 179.07 47.498 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 181.61 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8187,14 +9269,17 @@
 		(at 255.27 139.7 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e47d9b22-bdd4-4003-a3fe-e9a26cb7f825")
 		(property "Reference" "S63"
 			(at 255.27 139.7 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -8204,40 +9289,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 255.27 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.25u"
 			(at 255.27 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 252.73 137.922 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 255.27 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8259,14 +9352,17 @@
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 66.04 45.72 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e5f26884-bcb1-4d8c-a889-4cc57fac715b")
 		(property "Reference" "S3"
 			(at 66.04 45.72 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -8276,40 +9372,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 66.04 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 66.04 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 63.5 47.498 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 66.04 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8331,14 +9435,17 @@
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 139.7 45.72 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e79e2180-66ed-4f77-ae3e-35253e9bf6a8")
 		(property "Reference" "S14"
 			(at 139.7 45.72 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -8348,40 +9455,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 139.7 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.25u"
 			(at 139.7 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 137.16 47.498 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 139.7 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8404,14 +9519,17 @@
 		(at 59.69 139.7 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e9e20125-e414-494a-9d37-454b4b1a611a")
 		(property "Reference" "S34"
 			(at 59.69 139.7 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -8421,40 +9539,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 59.69 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 59.69 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 57.15 137.922 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 59.69 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8477,14 +9603,17 @@
 		(at 85.09 139.7 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ed651da6-d027-4619-b8b2-c2f414549909")
 		(property "Reference" "S38"
 			(at 85.09 139.7 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -8494,40 +9623,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 85.09 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 85.09 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 82.55 137.922 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 85.09 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8550,14 +9687,17 @@
 		(at 72.39 139.7 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ed6d427d-7217-4bcd-873e-499e6cf82278")
 		(property "Reference" "S36"
 			(at 72.39 139.7 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -8567,40 +9707,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 72.39 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 72.39 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 69.85 137.922 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 72.39 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8622,14 +9770,17 @@
 		(lib_id "ScottoKeebs:Placeholder_Keyswitch")
 		(at 229.87 45.72 0)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f3746287-8904-4e37-a3fd-caffd1cfce98")
 		(property "Reference" "S27"
 			(at 229.87 45.72 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -8639,40 +9790,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 229.87 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 229.87 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 227.33 47.498 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 229.87 45.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8695,14 +9854,17 @@
 		(at 127 139.7 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f4e8ab97-b56f-49ce-aefc-11cbcefa0223")
 		(property "Reference" "S44"
 			(at 127 139.7 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -8712,40 +9874,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 127 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 127 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 124.46 137.922 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 127 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8768,14 +9938,17 @@
 		(at 200.66 139.7 0)
 		(mirror x)
 		(unit 1)
+		(body_style 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
+		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fdca4123-3fb6-4a5c-9e75-ccf436311e0d")
 		(property "Reference" "S55"
 			(at 200.66 139.7 0)
+			(show_name no)
 			(do_not_autoplace yes)
 			(effects
 				(font
@@ -8785,40 +9958,48 @@
 				)
 			)
 		)
-		(property "Value" "~"
+		(property "Value" ""
 			(at 200.66 144.78 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "ScottoKeebs_Hotswap:Hotswap_MX_Plated_1.00u"
 			(at 200.66 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" ""
 			(at 198.12 137.922 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Description" ""
 			(at 200.66 139.7 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(pin "1"
@@ -8848,11 +10029,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "048cdda8-be0c-4970-b8ac-0e46b05e7dcc")
 		(property "Sheetname" "TMR_21"
 			(at 200.152 55.88 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8862,12 +10045,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 201.2446 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -8910,11 +10095,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "092bdb10-eb64-43b1-ab97-63e9dabeca89")
 		(property "Sheetname" "TMR_59"
 			(at 242.062 132.08 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8924,12 +10111,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 243.1546 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -8972,11 +10161,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "0942ce78-b1a0-4bab-9dea-af7c27e66d40")
 		(property "Sheetname" "TMR_37"
 			(at 90.932 130.81 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8986,12 +10177,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 92.0246 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -9034,11 +10227,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "0adfa91a-0784-424f-9949-4c22152ab92f")
 		(property "Sheetname" "Mux_4"
 			(at 66.548 118.11 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9048,12 +10243,14 @@
 		)
 		(property "Sheetfile" "Multiplexer.kicad_sch"
 			(at 57.404 126.746 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "MUX_D" output
@@ -9166,11 +10363,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "15c3a46d-4056-4731-baf0-fa6e5a25fe3e")
 		(property "Sheetname" "TMR_48"
 			(at 168.402 132.08 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9180,12 +10379,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 169.4946 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -9228,11 +10429,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "1737d41e-d6c6-481d-b71f-54dece6c00b0")
 		(property "Sheetname" "TMR_38"
 			(at 97.282 130.81 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9242,12 +10445,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 98.3746 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -9290,11 +10495,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "19cf88fd-7261-4e42-a6e5-365cda70b9dd")
 		(property "Sheetname" "TMR_12"
 			(at 139.192 55.88 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9304,12 +10511,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 140.2846 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -9352,11 +10561,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "1fb83b42-c83e-4b7d-86ca-69118303d4f6")
 		(property "Sheetname" "TMR_60"
 			(at 248.412 132.08 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9366,12 +10577,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 249.5046 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -9414,11 +10627,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "2090042c-bd5c-4934-a829-ade250e64e3c")
 		(property "Sheetname" "TMR_31"
 			(at 267.462 55.88 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9428,12 +10643,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 268.5546 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -9476,11 +10693,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "250f9ee4-352e-4d55-a18e-5ebac116b695")
 		(property "Sheetname" "TMR_0"
 			(at 59.182 54.61 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9490,12 +10709,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 60.2746 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -9538,11 +10759,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "256680a4-1800-428c-ba57-bedf5dfd4205")
 		(property "Sheetname" "TMR_49"
 			(at 174.752 132.08 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9552,12 +10775,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 175.8446 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -9600,11 +10825,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "2594ddef-a993-45d6-9181-7c6081c9c5d3")
 		(property "Sheetname" "TMR_62"
 			(at 261.112 132.08 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9614,12 +10841,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 262.2046 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -9662,11 +10891,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "278a705c-9763-4ff9-b3f5-1f4f4e9b250d")
 		(property "Sheetname" "TMR_61"
 			(at 254.762 132.08 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9676,12 +10907,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 255.8546 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -9724,11 +10957,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "28bbee2e-5397-47a2-9053-9fd780080563")
 		(property "Sheetname" "TMR_15"
 			(at 158.242 55.88 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9738,12 +10973,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 159.3346 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -9786,11 +11023,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "356d2cb1-2dc3-4a77-a594-70e64faf0e8e")
 		(property "Sheetname" "TMR_55"
 			(at 212.852 132.08 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9800,12 +11039,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 213.9446 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -9848,11 +11089,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "36f4f21a-35b7-43a7-a9fa-c1c8f4cc42bf")
 		(property "Sheetname" "TMR_8"
 			(at 113.792 54.61 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9862,12 +11105,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 114.8846 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -9910,11 +11155,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "3e3a217e-ca61-4a0b-8e6d-97b34320df5d")
 		(property "Sheetname" "TMR_13"
 			(at 145.542 55.88 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9924,12 +11171,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 146.6346 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -9972,11 +11221,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "3f7b206c-d127-4e47-8429-889ff0f36ea9")
 		(property "Sheetname" "TMR_23"
 			(at 212.852 55.88 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9986,12 +11237,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 213.9446 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -10034,11 +11287,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "40471456-264e-4cc2-9859-54980bed1cf6")
 		(property "Sheetname" "TMR_58"
 			(at 235.712 132.08 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10048,12 +11303,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 236.8046 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -10096,11 +11353,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "4097d32e-f715-4ea2-8b72-0bbfa6a43156")
 		(property "Sheetname" "TMR_34"
 			(at 71.882 130.81 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10110,12 +11369,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 72.9746 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -10158,11 +11419,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "46374541-28c8-4c14-a6eb-1eff0ef4128f")
 		(property "Sheetname" "TMR_25"
 			(at 229.362 55.88 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10172,12 +11435,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 230.4546 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -10220,11 +11485,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "497b26c6-d28b-4717-aea3-3d0398e80284")
 		(property "Sheetname" "TMR_4"
 			(at 84.582 54.61 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10234,12 +11501,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 85.6746 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -10283,11 +11552,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "4aa91533-6d19-4b18-bd97-843bbf9a2ebd")
 		(property "Sheetname" "Mux_5"
 			(at 121.2084 118.11 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10297,12 +11568,14 @@
 		)
 		(property "Sheetfile" "Multiplexer.kicad_sch"
 			(at 145.3646 118.11 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "MUX_D" output
@@ -10415,11 +11688,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "4c625ff7-d4b2-42ec-a009-b5990acb0b7f")
 		(property "Sheetname" "TMR_24"
 			(at 223.012 55.88 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10429,12 +11704,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 224.1046 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -10477,11 +11754,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "55bcbf20-1f87-4c56-b154-40b8eff75fc5")
 		(property "Sheetname" "TMR_30"
 			(at 261.112 55.88 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10491,12 +11770,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 262.2046 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -10539,11 +11820,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "5701f229-442b-4d7d-b138-59bd62385464")
 		(property "Sheetname" "TMR_53"
 			(at 200.152 132.08 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10553,12 +11836,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 201.2446 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -10601,11 +11886,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "57499abe-bae0-4aba-b387-192b72537f00")
 		(property "Sheetname" "Mux_3"
 			(at 230.378 82.55 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10615,12 +11902,14 @@
 		)
 		(property "Sheetfile" "Multiplexer.kicad_sch"
 			(at 221.234 91.186 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "MUX_D" output
@@ -10733,11 +12022,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "5cf5f06b-9b63-49df-a3a6-3b441d758d3a")
 		(property "Sheetname" "TMR_28"
 			(at 248.412 55.88 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10747,12 +12038,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 249.5046 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -10796,11 +12089,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "5fb3d5f1-a778-4ba7-9988-406cde0bb447")
 		(property "Sheetname" "Mux_2"
 			(at 175.8184 82.55 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10810,12 +12105,14 @@
 		)
 		(property "Sheetfile" "Multiplexer.kicad_sch"
 			(at 199.9746 82.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "MUX_D" output
@@ -10928,11 +12225,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "60c62524-3449-46b4-ac27-c4ade0155b63")
 		(property "Sheetname" "TMR_14"
 			(at 151.892 55.88 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10942,12 +12241,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 152.9846 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -10990,11 +12291,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "664ad246-43f8-4548-a4f3-74f15c0212c6")
 		(property "Sheetname" "TMR_6"
 			(at 97.282 54.61 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11004,12 +12307,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 98.3746 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -11052,11 +12357,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "6dbeaf9c-2544-4a5b-9c5c-24dd5c284933")
 		(property "Sheetname" "TMR_1"
 			(at 65.532 54.61 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11066,12 +12373,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 66.6246 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -11114,11 +12423,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "6fbb01bd-ae71-420e-a126-4b01cddbccea")
 		(property "Sheetname" "TMR_36"
 			(at 84.582 130.81 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11128,12 +12439,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 85.6746 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -11176,11 +12489,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "72475d5c-3d26-4ab1-b797-5c9baaf8a96c")
 		(property "Sheetname" "TMR_16"
 			(at 168.402 55.88 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11190,12 +12505,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 169.4946 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -11238,11 +12555,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "7334ca68-65c3-41ae-83dd-ff212c52de9a")
 		(property "Sheetname" "TMR_3"
 			(at 78.232 54.61 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11252,12 +12571,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 79.3246 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -11300,11 +12621,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "81c901ef-19c6-4350-9707-c3d661d58521")
 		(property "Sheetname" "TMR_11"
 			(at 132.842 55.88 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11314,12 +12637,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 133.9346 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -11362,11 +12687,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "8322910b-9f40-43d7-a6d9-a812010da9eb")
 		(property "Sheetname" "TMR_35"
 			(at 78.232 130.81 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11376,12 +12703,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 79.3246 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -11425,11 +12754,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "86ea6946-9a6c-47e9-ad6e-248d3f456e58")
 		(property "Sheetname" "STM32F405RGT6"
 			(at 13.97 80.5684 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11439,12 +12770,14 @@
 		)
 		(property "Sheetfile" "STM32F405RGT6.kicad_sch"
 			(at 13.97 112.3446 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "MUX_D0" input
@@ -11587,11 +12920,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "87cba1fc-4f1b-4d64-b19c-e93429b8e965")
 		(property "Sheetname" "TMR_51"
 			(at 187.452 132.08 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11601,12 +12936,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 188.5446 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -11649,11 +12986,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "889ed2ca-fdd0-4578-af6a-126cea25f240")
 		(property "Sheetname" "TMR_45"
 			(at 145.542 132.08 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11663,12 +13002,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 146.6346 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -11711,11 +13052,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "8c0c9b97-c04a-4b95-bab9-fafa0e035d34")
 		(property "Sheetname" "TMR_50"
 			(at 181.102 132.08 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11725,12 +13068,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 182.1946 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -11773,11 +13118,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "8e0605c6-c367-4b49-91f0-b4eb55437a11")
 		(property "Sheetname" "TMR_2"
 			(at 71.882 54.61 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11787,12 +13134,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 72.9746 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -11836,11 +13185,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "8fd9d515-2105-4930-9563-b36413125d29")
 		(property "Sheetname" "Mux_1"
 			(at 121.2084 82.55 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11850,12 +13201,14 @@
 		)
 		(property "Sheetfile" "Multiplexer.kicad_sch"
 			(at 145.3646 82.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "MUX_D" output
@@ -11968,11 +13321,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "913dbe78-7a74-4c81-85c1-8d6046c2c60b")
 		(property "Sheetname" "TMR_10"
 			(at 126.492 55.88 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11982,12 +13337,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 127.5846 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -12030,11 +13387,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "99a11c45-3442-4211-9457-e8eb0399c280")
 		(property "Sheetname" "TMR_20"
 			(at 193.802 55.88 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12044,12 +13403,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 194.8946 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -12092,11 +13453,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "9c4db4bf-936a-41ad-9a84-21853eaeb271")
 		(property "Sheetname" "TMR_52"
 			(at 193.802 132.08 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12106,12 +13469,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 194.8946 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -12154,11 +13519,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "a49b8cb2-1a0f-4292-b8c0-03c4f9c43b66")
 		(property "Sheetname" "TMR_56"
 			(at 223.012 132.08 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12168,12 +13535,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 224.1046 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -12216,11 +13585,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "a571a3cb-9a3f-45da-9aeb-e9806687f4b8")
 		(property "Sheetname" "TMR_9"
 			(at 120.142 54.61 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12230,12 +13601,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 121.2346 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -12278,11 +13651,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "a587a507-9861-4fea-b031-bf8b6916dfce")
 		(property "Sheetname" "TMR_46"
 			(at 151.892 132.08 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12292,12 +13667,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 152.9846 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -12340,11 +13717,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "a71a9b97-95c6-4306-8883-dde19e6ecca8")
 		(property "Sheetname" "TMR_54"
 			(at 206.502 132.08 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12354,12 +13733,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 207.5946 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -12403,11 +13784,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "a9c42e61-5ec1-4fa9-ae2f-cdc1de1fa9fe")
 		(property "Sheetname" "Mux_0"
 			(at 66.5984 82.55 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12417,12 +13800,14 @@
 		)
 		(property "Sheetfile" "Multiplexer.kicad_sch"
 			(at 90.7546 82.55 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "MUX_D" output
@@ -12535,11 +13920,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "ad7f1861-ebc3-4ce7-9018-492a02894392")
 		(property "Sheetname" "TMR_17"
 			(at 174.752 55.88 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12549,12 +13936,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 175.8446 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -12597,11 +13986,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "ba31728b-a9ec-432c-9006-d58e283d1595")
 		(property "Sheetname" "TMR_19"
 			(at 187.452 55.88 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12611,12 +14002,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 188.5446 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -12659,11 +14052,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "bb72217b-5685-4924-8436-469361b30dbd")
 		(property "Sheetname" "TMR_44"
 			(at 139.192 132.08 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12673,12 +14068,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 140.2846 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -12721,11 +14118,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "bc5701e0-5910-48a4-bd8f-2ade5941d3c8")
 		(property "Sheetname" "TMR_22"
 			(at 206.502 55.88 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12735,12 +14134,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 207.5946 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -12783,11 +14184,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "bd2b2567-3e15-4344-9d0d-58333114af22")
 		(property "Sheetname" "TMR_57"
 			(at 229.362 132.08 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12797,12 +14200,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 230.4546 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -12845,11 +14250,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "bda72b86-bb3d-4765-8d77-102cd8832778")
 		(property "Sheetname" "TMR_40"
 			(at 113.792 130.81 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12859,12 +14266,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 114.8846 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -12907,11 +14316,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "be0a23b6-ebda-42ac-95fd-bf25f587b34d")
 		(property "Sheetname" "TMR_27"
 			(at 242.062 55.88 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12921,12 +14332,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 243.1546 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -12969,11 +14382,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "bf8b54e9-a178-4793-a403-5c99ab29e914")
 		(property "Sheetname" "TMR_32"
 			(at 59.182 130.81 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12983,12 +14398,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 60.2746 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -13031,11 +14448,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "c6fe1ffe-939c-428e-9bcf-59855e5b3299")
 		(property "Sheetname" "TMR_47"
 			(at 158.242 132.08 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13045,12 +14464,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 159.3346 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -13094,11 +14515,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "d29ca35b-02f8-4b21-b4fb-a8eeeabc8497")
 		(property "Sheetname" "Power"
 			(at 13.97 14.5284 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13108,6 +14531,8 @@
 		)
 		(property "Sheetfile" "Power.kicad_sch"
 			(at 13.97 29.7946 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13135,11 +14560,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "d4cf789d-d57a-4da7-ae65-94e84ee54b7b")
 		(property "Sheetname" "TMR_26"
 			(at 235.712 55.88 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13149,12 +14576,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 236.8046 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -13197,11 +14626,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "d4e18f09-0671-474e-8d67-a1fc54349e65")
 		(property "Sheetname" "TMR_29"
 			(at 254.762 55.88 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13211,12 +14642,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 255.8546 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -13259,11 +14692,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "d781730a-072d-4ebf-a075-37957a806c42")
 		(property "Sheetname" "TMR_39"
 			(at 103.632 130.81 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13273,12 +14708,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 104.7246 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -13321,11 +14758,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "d9156e8d-9f41-4bf6-9de6-ca79227b20a2")
 		(property "Sheetname" "TMR_63"
 			(at 267.462 132.08 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13335,12 +14774,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 268.5546 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -13383,11 +14824,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "d970b0fa-c6f1-41cf-abc4-7c21438e8c5b")
 		(property "Sheetname" "LEDs"
 			(at 39.37 111.252 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13397,12 +14840,14 @@
 		)
 		(property "Sheetfile" "LEDs.kicad_sch"
 			(at 39.37 109.8046 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "LED_DIN" input
@@ -13435,11 +14880,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "dff3e384-c54a-45d1-961e-75066ad8d0ec")
 		(property "Sheetname" "TMR_18"
 			(at 181.102 55.88 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13449,12 +14896,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 182.1946 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -13497,11 +14946,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "e0db5a42-96b1-4ffe-804f-d91c10629d96")
 		(property "Sheetname" "TMR_33"
 			(at 65.532 130.81 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13511,12 +14962,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 66.6246 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -13559,11 +15012,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "ea2387ef-8c0f-4c5a-8676-14a5cae0faf6")
 		(property "Sheetname" "TMR_5"
 			(at 90.932 54.61 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13573,12 +15028,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 92.0246 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -13622,11 +15079,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "ea62a3f7-6568-4743-86d5-db015650f22d")
 		(property "Sheetname" "Mux_6"
 			(at 175.8184 118.11 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13636,12 +15095,14 @@
 		)
 		(property "Sheetfile" "Multiplexer.kicad_sch"
 			(at 199.9746 118.11 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "MUX_D" output
@@ -13754,11 +15215,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "ed77a9fe-cd8b-4f8e-887d-b0e7e2ef5b66")
 		(property "Sheetname" "TMR_41"
 			(at 120.142 130.81 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13768,12 +15231,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 121.2346 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -13816,11 +15281,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "eda83c7f-cff0-45b1-b242-240baa45e297")
 		(property "Sheetname" "TMR_7"
 			(at 103.632 54.61 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13830,12 +15297,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 104.7246 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -13878,11 +15347,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "f0785ed9-a295-4c03-b4a6-a9b38147610a")
 		(property "Sheetname" "TMR_42"
 			(at 126.492 132.08 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13892,12 +15363,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 127.5846 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
@@ -13941,11 +15414,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "f2e1a5a1-adb9-4d0f-84af-2191946e6f18")
 		(property "Sheetname" "Mux_7"
 			(at 230.4284 118.11 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13955,12 +15430,14 @@
 		)
 		(property "Sheetfile" "Multiplexer.kicad_sch"
 			(at 254.5846 118.11 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "MUX_D" output
@@ -14073,11 +15550,13 @@
 			(type solid)
 		)
 		(fill
-			(color 0 0 0 0.0000)
+			(color 0 0 0 0)
 		)
 		(uuid "fe5e0eb8-ce9b-402f-8354-d3151dcad8de")
 		(property "Sheetname" "TMR_43"
 			(at 132.842 132.08 90)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14087,12 +15566,14 @@
 		)
 		(property "Sheetfile" "TMR.kicad_sch"
 			(at 133.9346 137.16 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(pin "SIG" output
